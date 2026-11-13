@@ -1,0 +1,19 @@
+# Block all PHP execution in this directory
+Options -Indexes -ExecCGI
+
+<FilesMatch "\.php[0-9]?$|\.phtml$|\.phar$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Allow only PDF, DOC, DOCX files to be served
+<FilesMatch "\.(pdf|doc|docx)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Block direct access to everything else
+<FilesMatch "^(?!.*\.(pdf|doc|docx)$).*$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>

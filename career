@@ -1,0 +1,2046 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/images/se-logo-favicon.png" />
+    <title>SecureEdge - Career Page</title>
+    <meta name="description" content=" Explore career opportunities at SecureEdge Fintech. Join our team building AEPS, KYC and identity verification technology for banks across India.">
+    <meta name="keywords" content="Digital Account Opening Platform,
+Digital Account Opening Solution">
+
+    <link rel="canonical" href="https://secureedgefintech.com/openedge.html" />
+
+    <link rel="icon" type="image/png" href="./assets/images/se-logo-favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <!-- <link href="https://db.onlinewebfonts.com/c/2cf31cbaf98b296b692adb4ed0483799?family=Qurova+DEMO" rel="stylesheet" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/custome.css" /> -->
+    <link rel="stylesheet" href="./assets/css/bdadge.css" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .bgadge-section-main-wrapper .main-content h1 {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .bgadge-section-main-wrapper .main-content p {
+            padding: 20px 10px;
+            max-width: 900px;
+            font-size: 20px;
+            color: #D3D3D3;
+        }
+
+        .careerwrap {
+            padding-top: 120px;
+        }
+
+        .hero-badge {
+            display: flex;
+            background: #FB2C361A;
+            border: 1px solid #FB2C3633;
+            border-radius: 999px;
+            padding: 8px 24px;
+            font-size: 16px;
+            color: #FF5252;
+            margin: 30px auto;
+        }
+
+        .highlight {
+            color: #FF5252;
+            font-weight: 700;
+            font-family: Qurova DEMO;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center
+        }
+
+        .btn-primary {
+            background: #FB2C36;
+            color: var(--white);
+            border: none;
+            border-radius: 20px;
+            padding: 14px 32px;
+            font-size: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration:none;
+        }
+
+        .btn-primary svg {
+            width: 16px;
+            height: 16px;
+            transform: rotate(90deg)
+        }
+
+        .btn-outline {
+            border: 1px solid #FB2C364D;
+            background: black;
+            border-radius: 20px;
+            padding: 14px 32px;
+            font-size: 15px;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .bgadge-section-main-wrapper .wrapper-container {
+            margin-top: 100px;
+        }
+
+        .hero-watermark {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            font-size: 120px;
+            text-transform: uppercase;
+            background: linear-gradient(to bottom, rgb(216 208 208 / 19%), rgb(247 247 247 / 7%));
+            /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(0, 0, 0, 0.04) 100%); */
+            /* 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; */
+            background-clip: text;
+            color: transparent;
+            position: absolute;
+            bottom: 10%;
+            left: 0;
+            transform: translateX(-50%);
+            white-space: nowrap
+        }
+
+        /* [data-aos="slide-to-initial"] {
+            opacity: 0;
+            transform: translateX(-50%) translateY(60px);
+            transition-property: transform, opacity;
+        }
+
+        [data-aos="slide-to-initial"].aos-animate {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        } */
+
+        /* SECTION COMMON */
+        section {
+            /* max-width: 1200px; */
+            margin: 0 auto;
+            padding: 20px 0
+        }
+
+        .section-label {
+            font-weight: 500;
+            font-size: 20px;
+            color: #FF5555;
+            letter-spacing: 2.2px;
+            margin-bottom: 12px
+        }
+
+        .section-title {
+            font-weight: 600;
+            font-size: 36px;
+            color: #FFFFFF;
+            line-height: 48px;
+            margin-bottom: 0;
+            font-family: Qurova DEMO;
+        }
+
+        .section-desc {
+            font-size: 16px;
+            color: #D3D3D3;
+            line-height: 28px;
+            max-width: 550px;
+            margin-bottom: 70px;
+        }
+
+        .desc2 {
+            max-width: 450px;
+        }
+
+        /* WHY CARDS */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px
+        }
+
+        .why-card {
+            background:
+                linear-gradient(#191919, #191919) padding-box,
+                linear-gradient(180deg, #0A0A0A 0%, #c5c3c3bd 100%) border-box;
+            border: 1px solid transparent;
+            border-radius: 16px;
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .why-card:hover {
+            box-shadow: 0px -2px 2px rgba(255, 255, 255, 0.2);
+            transform: translateY(-8px);
+        }
+
+        .why-icon {
+            width: 40px;
+            height: 40px;
+            background: #FF55552E;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px
+        }
+
+        .why-icon svg {
+            width: 20px;
+            height: 20px;
+            color: #FF5555
+        }
+
+        .why-card h3 {
+            /* font-family: var(--font-display); */
+            font-weight: 600;
+            font-size: 20px;
+            color: #FF5555;
+            letter-spacing: 2.2px;
+            margin-bottom: 8px
+        }
+
+        .why-card p {
+            font-size: 16px;
+            color: var(--gray);
+            line-height: 26px
+        }
+
+        .redtext {
+            color: #FF5555;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(320deg, #FF5A5A 19%, #0000000e 61%);
+            margin: -10px 0 20px
+        }
+
+        .hiring-text {
+            font-family: Aeonik TRIAL;
+            font-weight: 700;
+            font-size: 85px;
+            -webkit-text-stroke: 0.5px #595959;
+            color: transparent;
+            margin: 20px 0
+        }
+
+        /* OPEN POSITIONS */
+        .filter-tabs {
+            display: flex;
+            gap: 16px;
+            margin: 30px 0 40px
+        }
+
+        .filter-tab {
+            border-radius: 999px;
+            padding: 8px 24px;
+            font-size: 16px;
+            cursor: pointer;
+            border-top: 0.67px solid #FB2C361A;
+            background: #1a1a1a;
+            color: #D3D3D3;
+        }
+
+        .filter-tab.active {
+            background: #FF5555;
+            color: #ffffff;
+            box-shadow: 0px 4px 6px -4px #FB2C3633;
+            box-shadow: 0px 10px 15px -3px #FB2C3633;
+            box-shadow: 0 10px 15px rgba(251, 44, 54, .2)
+        }
+
+        .job-card {
+            background: #161616;
+            border: 0.67px solid #FB2C3633;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 24px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 210px
+        }
+
+        .job-card h3 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 8px
+        }
+
+        .job-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 8px;
+            font-size: 16px;
+            color: #D3D3D3;
+        }
+
+        .job-meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px
+        }
+
+        .job-meta svg {
+            width: 14px;
+            height: 14px;
+            opacity: .7
+        }
+
+        .job-desc {
+            font-size: 16px;
+            color: #D3D3D3;
+            line-height: 26px;
+            margin-bottom: 16px;
+            flex: 1
+        }
+
+        .job-tags {
+            display: flex;
+            gap: 8px
+        }
+
+        .job-tag {
+            background: #252525;
+            border: 1px solid #FB2C361A;
+            border-radius: 22px;
+            padding: 4px 16px;
+            font-size: 16px;
+            color: #D3D3D3;
+        }
+
+        .job-badge {
+            position: absolute;
+            top: 28px;
+            right: 28px;
+            background: #FB2C361A;
+            border: 1px solid #FB2C3633;
+            border-radius: 26px;
+            padding: 6px 10px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #FF6467;
+        }
+
+        /* JOB CARD HOVER */
+        .job-card {
+            cursor: pointer;
+            transition: border-color .2s, transform .2s
+        }
+
+        .job-card:hover {
+            /* border-color: #FF5555; */
+            transform: translateY(-2px)
+        }
+
+        /* JOB MODAL */
+        .job-modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .78);
+            backdrop-filter: blur(6px);
+            z-index: 1055;
+            align-items: center;
+            justify-content: center;
+            padding: 20px
+        }
+
+        .job-modal-overlay.open {
+            display: flex
+        }
+
+        .job-modal {
+            background: #161616;
+            border: 1px solid rgba(251, 44, 54, .25);
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 720px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            font-family: 'Outfit', sans-serif
+        }
+
+        .job-modal-close {
+            position: absolute;
+            top: 18px;
+            right: 22px;
+            background: none;
+            border: none;
+            color: #99a1af;
+            cursor: pointer;
+            font-size: 26px;
+            line-height: 1
+        }
+
+        .job-modal-close:hover {
+            color: #fff
+        }
+
+        .job-modal-cat {
+            display: inline-block;
+            background: rgba(251, 44, 54, .1);
+            border: 1px solid rgba(251, 44, 54, .2);
+            border-radius: 8px;
+            padding: 2px 10px;
+            font-size: 12px;
+            font-weight: 500;
+            color: #ff6467;
+            margin-bottom: 12px
+        }
+
+        .job-modal h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 26px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 12px
+        }
+
+        .job-modal-meta {
+            display: flex;
+            gap: 20px;
+            font-size: 15px;
+            color: #D3D3D3;
+            margin-bottom: 18px;
+            flex-wrap: wrap
+        }
+
+        .job-modal-meta span {
+            display: flex;
+            align-items: center;
+            gap: 6px
+        }
+
+        .job-modal-meta svg {
+            width: 14px;
+            height: 14px;
+            opacity: .7
+        }
+
+        .job-modal-hr {
+            height: 1px;
+            background: rgba(251, 44, 54, .2);
+            margin: 18px 0
+        }
+
+        .job-modal-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #ff6467;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            margin-bottom: 10px
+        }
+
+        .job-modal p {
+            font-size: 15px;
+            color: #D3D3D3;
+            line-height: 26px;
+            margin-bottom: 14px
+        }
+
+        .job-modal ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 14px
+        }
+
+        .job-modal ul li {
+            font-size: 15px;
+            color: #D3D3D3;
+            line-height: 26px;
+            padding-left: 18px;
+            position: relative;
+            margin-bottom: 6px
+        }
+
+        .job-modal ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 6px;
+            height: 6px;
+            background: #FF5555;
+            border-radius: 50%
+        }
+
+        .job-modal-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 20px
+        }
+
+        .job-modal-inforow {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 18px
+        }
+
+        .job-modal-infobox {
+            background: #252525;
+            border-radius: 10px;
+            padding: 10px 18px
+        }
+
+        .job-modal-infobox small {
+            display: block;
+            font-size: 12px;
+            color: #99a1af;
+            margin-bottom: 3px
+        }
+
+        .job-modal-infobox span {
+            font-size: 15px;
+            font-weight: 500;
+            color: #fff
+        }
+
+        .job-modal-applybtn {
+            background: #FF5555;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 14px 36px;
+            font-size: 15px;
+            font-family: 'Outfit', sans-serif;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 6px
+        }
+
+        .job-modal-applybtn:hover {
+            background: #fb2c36
+        }
+
+        /* NO JOBS EMPTY STATE */
+        .no-jobs-card {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 40px;
+            background: #161616;
+            border: 0.67px solid #FB2C3633;
+            border-radius: 16px;
+            margin-bottom: 24px;
+        }
+
+        .no-jobs-card.visible {
+            display: flex;
+        }
+
+        /* span full grid row so centering works */
+        #noJobsCard {
+            grid-column: 1 / -1;
+        }
+
+        .no-jobs-icon {
+            width: 72px;
+            height: 72px;
+            background: rgba(251, 44, 54, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 28px;
+        }
+
+        .no-jobs-icon i {
+            font-size: 28px;
+            color: #FF5555;
+        }
+
+        .no-jobs-card h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 14px;
+        }
+
+        .no-jobs-card p {
+            font-size: 16px;
+            color: #D3D3D3;
+            max-width: 480px;
+            line-height: 26px;
+        }
+
+        /* APPLY */
+        .apply-section {
+            padding: 80px 0
+        }
+
+        .apply-form-wrapper {
+            margin-top: 40px;
+            background: #6E6E6E2B;
+            backdrop-filter: blur(9px);
+            border: 1px solid #FC3131;
+            border-bottom: none;
+            border-radius: 50px;
+            padding: 40px 50px;
+            max-width: 1169px;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px 40px;
+            overflow: visible;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #E0E0E0;
+        }
+
+        .form-group input,
+        .form-group select {
+            background: rgba(13, 13, 13, .17);
+            backdrop-filter: blur(9px);
+            border: 1px solid #474747;
+            border-radius: 10px;
+            padding: 14px 16px;
+            font-size: 16px;
+            outline: none;
+            color: #ffffff;
+        }
+
+        .input-icon-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .input-icon-wrapper input,
+        .input-icon-wrapper select {
+            width: 100%;
+            padding-left: 42px;
+
+        }
+
+        .input-icon-wrapper .input-icon {
+            position: absolute;
+            left: 14px;
+            color: #f7f7f7;
+            font-size: 15px;
+        }
+
+
+        .form-upload {
+            grid-column: 1/-1
+        }
+
+        .upload-area {
+            background: rgba(13, 13, 13, .17);
+            backdrop-filter: blur(9px);
+            border: 1px solid #474747;
+            border-radius: 10px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 180px;
+            cursor: pointer
+        }
+
+        .upload-area svg {
+            width: 40px;
+            height: 40px;
+            color: #666;
+            margin-bottom: 16px
+        }
+
+        .upload-area p {
+            font-size: 20px;
+            color: var(--gray3)
+        }
+
+        .upload-area p span {
+            color: #FF5555;
+        }
+
+        .upload-area small {
+            font-size: 16px;
+            color: #c9c9c9;
+            margin-top: 8px
+        }
+
+        /* ── CUSTOM ROLE DROPDOWN ── */
+        .custom-select-wrapper { position: relative; width: 100%; z-index: 100; }
+        .custom-select {
+            background: rgba(13,13,13,.17);
+            backdrop-filter: blur(9px);
+            border: 1px solid #474747;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+            user-select: none;
+        }
+        .custom-select.open { border-color: #FF5555; }
+        .custom-select-trigger {
+            display: flex;
+            align-items: center;
+            padding: 14px 16px 14px 42px;
+            font-size: 16px;
+            color: #fff;
+        }
+        .custom-select-trigger .cs-icon {
+            position: absolute;
+            left: 14px;
+            color: #f7f7f7;
+            font-size: 15px;
+            pointer-events: none;
+        }
+        .custom-select-trigger .cs-text { flex: 1; }
+        .custom-select-trigger .cs-text.placeholder { color: #888; }
+        .custom-select-trigger .cs-arrow {
+            font-size: 12px;
+            color: #888;
+            transition: transform 0.2s;
+            margin-left: 8px;
+        }
+        .custom-select-options{
+            /* border:1px solid #ee4e4e !important; */
+        }
+        .custom-select.open .cs-arrow { transform: rotate(180deg); }
+        .custom-select-options {
+            position: absolute;
+            top: calc(100% + 6px);
+            left: 0; right: 0;
+            background: #1a1a1a;
+            border: 1px solid #474747;
+            border-radius: 10px;
+            z-index: 9999;
+            display: none;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            max-height: 220px;
+            overflow-y: auto;
+        }
+        .custom-select.open .custom-select-options { display: block; }
+        .custom-option {
+            padding: 12px 16px;
+            font-size: 15px;
+            color: #ccc;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
+        }
+        .custom-option:hover    { background: rgba(255,85,85,0.12); color: #fff; }
+        .custom-option.selected { background: rgba(255,85,85,0.18); color: #FF5555; font-weight: 500; }
+        .custom-option-other { border-top: 1px solid #2a2a2a; color: #888 !important; font-style: italic; }
+        .custom-option-other:hover { color: #fff !important; }
+
+        .submit-btn {
+            background: #FFFFFF;
+            color: #FF0A0A;
+            border: none;
+            border-radius: 23px;
+            padding: 12px 60px;
+            font-weight: 600;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 30px
+        }
+
+        /* CULTURE */
+        .culture-section {
+            text-align: center;
+            padding: 80px 0 40px
+        }
+
+        .culture-section .section-desc {
+            text-align: left;
+            max-width: 576px;
+        }
+
+        .culture-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+            text-align: left
+        }
+
+        /* REVIEWS */
+        .reviews-section {
+            padding: 60px 0 80px
+        }
+
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px
+        }
+
+        .review-carousel {
+            display: block !important;
+            margin-top: 40px
+        }
+
+        .review-carousel .slick-list {
+            margin: 0 -12px
+        }
+
+        .review-carousel .slick-slide {
+            margin: 0 12px
+        }
+
+        .review-nav {
+            display: flex;
+            justify-content: right;
+            gap: 16px;
+            margin-top: 32px
+        }
+
+        .review-nav-btn {
+            width: 48px;
+            height: 48px;
+            background: #ffffff;
+            border: 1px solid #2a2a2a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s, border-color 0.2s
+        }
+
+        .review-nav-btn:hover {
+            background: #252525;
+            border-color: #FF5555
+        }
+
+        .review-nav-btn svg {
+            width: 20px;
+            height: 20px;
+            stroke: #FF5555;
+            fill: none;
+            stroke-width: 2.5;
+            stroke-linecap: round;
+            stroke-linejoin: round
+        }
+
+        .review-card {
+            background:
+                linear-gradient(#191919, #191919) padding-box,
+                linear-gradient(180deg, #0A0A0A 0%, #c5c3c3bd 100%) border-box;
+            border: 1px solid transparent;
+            border-radius: 16px;
+            padding: 20px 28px;
+            min-height: 320px;
+        }
+
+        .review-header {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            margin-bottom: 16px
+        }
+
+        .review-avatar {
+            width: 48px;
+            height: 48px;
+            background: #FF5555;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0
+        }
+
+        .review-info h4 {
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 4px
+        }
+
+        .review-info p {
+            font-size: 14px;
+            color: var(--gray)
+        }
+
+        .review-info small {
+            font-size: 12px;
+            color: var(--gray)
+        }
+
+        .review-stars {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 12px;
+            fill: #FF5555 !important;
+        }
+
+        .review-stars svg {
+            width: 20px;
+            height: 20px;
+            fill: #FF5555 !important
+        }
+
+        .review-text {
+            font-size: 16px;
+            color: var(--gray);
+            line-height: 26px
+        }
+
+        .redtext {
+            color: #FF5555;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 991px) {
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .culture-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 16px;
+            }
+
+            .careerwrap {
+                padding-top: 80px;
+            }
+
+            .bgadge-section-main-wrapper .main-content p {
+                font-size: 16px;
+                padding: 14px 6px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-primary,
+            .btn-outline {
+                width: 100%;
+                justify-content: center;
+                max-width: 280px;
+            }
+
+            .hero-watermark {
+                font-size: 55px;
+                left: 2%;
+                /* bottom: 4%; */
+            }
+
+            .hiring-text {
+                font-size: 48px;
+            }
+
+            .section-title {
+                font-size: 28px;
+                line-height: 38px;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .culture-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .apply-form-wrapper {
+                padding: 24px 20px;
+                border-radius: 24px;
+            }
+
+            .filter-tabs {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .job-meta {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .job-badge {
+                position: static;
+                display: inline-block;
+                margin-bottom: 10px;
+                align-self: flex-start;
+            }
+
+            .job-card {
+                padding: 20px 16px;
+                flex-direction: column;
+            }
+
+            .job-tags {
+                flex-wrap: wrap;
+            }
+
+            .job-modal {
+                padding: 24px 16px;
+                border-radius: 16px;
+            }
+
+            .job-modal-inforow {
+                flex-wrap: wrap;
+            }
+
+            .no-jobs-card {
+                padding: 48px 20px;
+            }
+
+            .submit-btn {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .culture-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hiring-text {
+                font-size: 32px;
+            }
+
+            .hero-watermark {
+                font-size: 50px;
+                /* left: 50%; */
+            }
+
+            .section-title {
+                font-size: 24px;
+                line-height: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start header section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand p-0" href="/">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+                <!-- Toggler (mobile only) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                    aria-controls="mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Desktop Menu -->
+                <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Our Product
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown">
+                                <li><a class="dropdown-item" href="bcedge.html">BC Edge</a></li>
+                                <li><a class="dropdown-item" href="openedge.html">Open Edge</a></li>
+                                <li><a class="dropdown-item" href="verifyedge.html">Verify Edge</a></li>
+                                <li><a class="dropdown-item" href="mobileBanking.html">Mobile Banking</a></li>
+                                 <li><a class="dropdown-item" href="samay.html">Samay</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="blogpage.html">Blog</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Desktop Contact Button -->
+                <div class="d-none d-lg-block">
+                    <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Mobile Offcanvas -->
+    <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title">
+                <a class="navbar-brand p-0" href="/">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div class="accordion" id="menuAccordion">
+                <a href="/" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blogpage.html" class="nav-link">Blog</a>
+                <div class="accordion-item border-0 bg-transparent">
+                    <h2 class="accordion-header" id="headingProduct">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">
+                            Our Product
+                        </button>
+                    </h2>
+                    <div id="collapseProduct" class="accordion-collapse collapse" aria-labelledby="headingProduct"
+                        data-bs-parent="#menuAccordion">
+                        <div class="accordion-body p-0">
+                            <a href="bcedge.html" class="d-block mb-2">BC Edge</a>
+                            <a href="openedge.html" class="d-block mb-2">Open Edge</a>
+                            <a href="verifyedge.html" class="d-block">Verify Edge</a>
+                            <a href="mobileBanking.html" class="d-block">Mobile banking</a>
+                            <a href="samay.html" class="d-block">Samay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="mt-4 text-center">
+                    <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End header section -->
+    <!-- Hero Section -->
+    <main>
+        <section class="bgadge-section-main-wrapper careerwrap">
+            <div class="container">
+                <div class="main-content">
+                    <button class="hero-badge" data-aos="zoom-out">Join Us </button>
+                    <h1 data-aos="zoom-in">Build The Future of <span class="highlight">Fintech</span></h1>
+                    <p data-aos="zoom-in">Join our mission to secure and revolutionize financial technology. Work with
+                        cutting-edge tech, brilliant minds, and make a real impact.</p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#job-openings" class="btn-primary">View Open Positions <i class="fa-solid fa-arrow-down"></i></a>
+                  <a href="about.html"><button class="btn-outline">  Learn More About Us</button></a>
+                </div>
+                <div class="hero-watermark" data-aos="fade-left">SECUREDGE</div>
+                <div class="wrapper-container">
+                    <div class="wrapper-imagemainrotation">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- WHY SECUREEDGE -->
+        <section>
+            <div class="container">
+                <div class="section-label ">Why SecureEdge?</div>
+                <div class="divider" data-aos="fade-left"></div>
+                <div class="section-title">Where talent meets opportunity</div>
+                <div class="section-desc">At SecureEdge, we focus on continuous learning, career growth, and a healthy
+                    work
+                    culture that helps you reach your full potential.</div>
+                <div class="why-grid">
+                    <div class="why-card" data-aos="zoom-in">
+                        <div class="why-icon"><i class="fa-solid fa-arrow-trend-up redtext"></i></div>
+                        <h3>Career Growth</h3>
+                        <p>Continuous learning opportunities, mentorship programs, and clear advancement paths.</p>
+                    </div>
+                    <div class="why-card" data-aos="zoom-out">
+                        <div class="why-icon"><i class="fa-solid fa-brain redtext"></i></div>
+                        <h3>Innovative Work</h3>
+                        <p>Solve real fintech challenges using advanced tools and tech. Be part of products that shape
+                            the
+                            future of finance</p>
+                    </div>
+                    <div class="why-card" data-aos="zoom-in">
+                        <div class="why-icon"><i class="fa-solid fa-arrows-down-to-people redtext"></i></div>
+                        <h3>Collaborative Culture</h3>
+                        <p>Work with talented professionals in an inclusive, supportive environment.</p>
+                    </div>
+                    <div class="why-card" data-aos="zoom-in">
+                        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg></div>
+                        <h3>Cutting-Edge-Tech</h3>
+                        <p>Work with the latest technologies and tools in cloud, AI, and security.</p>
+                    </div>
+                    <div class="why-card" data-aos="zoom-out">
+                        <div class="why-icon"><i class="fa-solid fa-person-rays redtext"></i></div>
+                        <h3>Monthly Spotlight</h3>
+                        <p>Shoutout to the team member who stood out with incredible work, dedication, and impact.</p>
+                    </div>
+                    <div class="why-card" data-aos="zoom-in">
+                        <div class="why-icon"><i class="fa-regular fa-clock redtext"></i></div>
+                        <h3>Work-Life Balance</h3>
+                        <p>Enjoy 2nd and 4th Saturdays off, ensuring a healthy balance between work and personal time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WE'RE HIRING -->
+        <section>
+            <div class="container">
+                <div class="hiring-text" data-aos="zoom-out">We're Hiring</div>
+            </div>
+        </section>
+        <!-- </section> -->
+
+
+        <!-- OPEN POSITIONS -->
+        <section id="job-openings">
+            <div class="container">
+                <div class="section-title">Current Job Openings at SecureEdge Fintech</div>
+                <div class="section-desc desc2">We're always looking for talented people. Check out roles that fit your
+                    expertise.
+                </div>
+                <div class="filter-tabs">
+                    <div class="filter-tab active">All</div>
+                                        <div class="filter-tab">Technology</div>
+                                        <div class="filter-tab">Marketing</div>
+                                        <div class="filter-tab">Business</div>
+                                    </div>
+
+                                                        <div class="job-card"
+                         data-category="Business"
+                         data-job-id="4"
+                         onclick="openJob(4)"
+                         data-aos="zoom-in">
+                        <h3>Business Development Executive</h3>
+                        <span class="job-badge">Business</span>
+                        <div class="job-meta">
+                            <span><i class="fa-solid fa-location-dot redtext"></i> Lucknow, Mumbai</span>
+                            <span><i class="fa-regular fa-clock redtext"></i> Full Time</span>
+                        </div>
+                        <div class="job-desc">Job Summary: We are looking for energetic and goal-oriented Sales Executives to join our growing team. The candidate will be responsible for field sales as well as tele-calling activities, generating leads, building client relationships, and driving business growth in the fintech and marketing services sector.</div>
+                                                <div class="job-tags">
+                                                        <span class="job-tag">BDE</span>
+                                                        <span class="job-tag">Sales</span>
+                                                        <span class="job-tag">B2b</span>
+                                                        <span class="job-tag">Digital Marketing</span>
+                                                        <span class="job-tag">Fintech</span>
+                                                        <span class="job-tag">Field Sales</span>
+                                                        <span class="job-tag">Inside Sales</span>
+                                                    </div>
+                                            </div>
+                    
+                    <div class="no-jobs-card" id="noJobsCard">
+                        <div class="no-jobs-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <h3 id="noJobsTitle">No Openings</h3>
+                        <p id="noJobsDesc">We don't have any open positions in this department at the moment. Check back later or explore other opportunities.</p>
+                    </div>
+                            </div>
+        </section>
+
+
+        <!-- APPLY NOW -->
+        <section class="apply-section">
+            <div class="container">
+                <div class="section-title">Apply Now</div>
+                <div class="divider" data-aos="fade-left"></div>
+                <div class="section-desc">We're always on the lookout for exceptional people. Drop your details and
+                    we'll reach
+                    out when the right opportunity opens up.</div>
+
+
+                <div class="apply-form-wrapper">
+                    <form id="contactForm" action="/submit-career" method="POST" enctype="multipart/form-data">
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fa-regular fa-user input-icon"></i>
+                                    <input type="text" name="name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fa-regular fa-envelope input-icon"></i>
+                                    <input type="email" id="email" name="email"  required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fa-solid fa-phone input-icon"></i>
+                                    <input type="tel" name="phone" 
+                                        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)"
+                                        pattern="\d{10}" title="Phone number must contain exactly 10 digits"
+                                        maxlength="10" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Role</label>
+                                <!-- <div class="input-icon-wrapper">
+                                    <i class="fa-solid fa-briefcase input-icon"></i>
+                                    <select style="padding-left: 42px;">
+                                        <option value="">Select a role</option>
+                                        <option>Full Stack Engineer</option>
+                                        <option>Product Manager</option>
+                                        <option>Business Development</option>
+                                    </select>
+                                </div> -->
+                                <div class="custom-select-wrapper">
+                                    <input type="hidden" name="role" id="roleValue" required/>
+                                    <div class="custom-select" id="roleDropdown">
+                                        <div class="custom-select-trigger" onclick="toggleRoleDropdown()">
+                                            <i class="fa-solid fa-briefcase cs-icon"></i>
+                                            <span class="cs-text " id="roleText">Select a role</span>
+                                            <i class="fa-solid fa-chevron-down cs-arrow"></i>
+                                        </div>
+                                        <div class="custom-select-options" id="roleOptions">
+                                                                                        <div class="custom-option" data-value="Business Development Executive">
+                                                Business Development Executive                                            </div>
+                                                                                        <div class="custom-option custom-option-other" data-value="__other__">
+                                                <i class="fa-solid fa-pen" style="margin-right:8px;font-size:12px;opacity:0.6;"></i>Other — specify your role
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="roleOtherWrapper" style="display:none;margin-top:8px;">
+                                        <div class="input-icon-wrapper">
+                                            <i class="fa-solid fa-briefcase input-icon"></i>
+                                            <input type="text" id="roleOtherInput" placeholder="Enter your desired role" style="width:100%;padding-left:42px;"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>LinkedIn</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fa-brands fa-linkedin input-icon"></i>
+                                    <input type="url" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Portfolio Link</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fa-solid fa-link input-icon"></i>
+                                    <input type="url" name="portfolio" placeholder="https://yourportfolio.com">
+                                </div>
+                            </div>
+                            <div class="form-group form-upload">
+                                <label>Send Resume</label>
+                                <div class="upload-area" id="uploadArea" onclick="document.getElementById('resumeUpload').click()">
+                                    <input type="file" id="resumeUpload" name="resume" accept=".pdf,.doc,.docx" style="display:none">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path
+                                            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+                                    </svg>
+                                    <p><span>Click to upload </span>or drag &amp; Drop your resume</p>
+                                    <small id="uploadFileName">Pdf, Doc up to 5 Mb</small>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn" data-aos="zoom-in">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- CULTURE & VALUES -->
+        <section class="culture-section" style="text-align:left">
+            <div class="container">
+                <div class="section-title">Our Culture &amp; Values</div>
+                <div class="divider" data-aos="fade-left"></div>
+                <div class="section-desc">We're building more than products—we're building a
+                    culture
+                    of
+                    excellence, innovation, and impact.</div>
+                <div class="culture-grid">
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fa-solid fa-brain redtext"></i></div>
+                        <h3>Innovation First</h3>
+                        <p>We embrace new ideas and technologies to stay ahead in fintech.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fa-solid fa-shield-halved redtext"></i></div>
+                        <h3>Security Mindset</h3>
+                        <p>Security is at the core of everything we build and deliver.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fa-regular fa-user redtext"></i></div>
+                        <h3>Customer Obsessed</h3>
+                        <p>Our customers success drives every decision we make.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon"><i class="fa-solid fa-users redtext"></i></div>
+                        <h3>Inclusive Team</h3>
+                        <p>We celebrate diversity and foster an inclusive workplace.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EMPLOYEE REVIEWS -->
+        <section class="reviews-section">
+            <div class="container">
+                <div class="section-label">Employee Reviews</div>
+                <div class="divider" data-aos="fade-left"></div>
+                <div class="section-title">What Our Team Says</div>
+                <div class="section-desc">Don't just take our word for it. Here's what our team members have to say
+                    about
+                    working at SecureEdge.</div>
+                <div class="review-carousel" id="reviewCarousel">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">AC</div>
+                            <div class="review-info">
+                                <h4>Abhishek Chaudhary</h4>
+                                <p>SDE</p>
+                                <small>1 year at SecureEdge</small>
+                            </div>
+                        </div>
+                        <div class="review-stars" data-aos="zoom-out">
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                        </div>
+                        <div class="review-text">"SecureEdge has been an incredible place to grow my career. The
+                            work-life
+                            balance is genuine, not just a talking point. I love working with cutting-edge technology
+                            and
+                            the
+                            team is brilliant."</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">JS</div>
+                            <div class="review-info">
+                                <h4>Jaya Shrivastav</h4>
+                                <p>UI UX Designer</p>
+                                <small>1 year at SecureEdge</small>
+                            </div>
+                        </div>
+                        <div class="review-stars" data-aos="zoom-out">
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#444">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                        </div>
+                        <div class="review-text">"Great environment for designers. We have access to the best tools and
+                            resources. The design team is collaborative and supportive. Love the impact we make on
+                            financial
+                            products."</div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">AS</div>
+                            <div class="review-info">
+                                <h4>Aditi Shrivastava</h4>
+                                <p>Digital marketing excutive</p>
+                                <small>1 year at SecureEdge</small>
+                            </div>
+                        </div>
+                        <div class="review-stars" data-aos="zoom-out">
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#444">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                        </div>
+                        <div class="review-text">Great experience working as a Digital Marketing Executive! The company
+                            offers a supportive environment, encourages creativity, and provides excellent growth
+                            opportunities.
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">SV</div>
+                            <div class="review-info">
+                                <h4>Shaurya Verma</h4>
+                                <p>Video Editor</p>
+                                <small>1 year at SecureEdge</small>
+                            </div>
+                        </div>
+                        <div class="review-stars" data-aos="zoom-out">
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#FFD700">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                            <svg viewBox="0 0 20 20" fill="#444">
+                                <path d="M10 1l2.5 6h6.5l-5 4 2 6.5L10 14l-6 3.5 2-6.5-5-4h6.5z" />
+                            </svg>
+                        </div>
+                        <div class="review-text">"The culture of innovation here is unmatched. Leadership actually
+                            listens
+                            to
+                            our ideas and we have the autonomy to execute. Best career decision I ever made."</div>
+                    </div>
+                </div>
+
+                <!-- Carousel Navigation -->
+                <div class="review-nav">
+                    <button class="review-nav-btn" id="reviewPrev" aria-label="Previous review">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="review-nav-btn" id="reviewNext" aria-label="Next review">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Start Footer section -->
+    <footer class="footer" data-aos="zoom-in">
+        <div class="container footerContent">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer-logo">
+                    <img src="./assets/images/logo.svg" alt="Secure Edge Logo" class="mb-3" />
+                    <p>At Secure Edge Fintech, we are shaping the future of finance: Secure and Seamless. Driven by
+                        Innovation and
+                        built on Trust</p>
+                    <div
+                        class="social-iconsblock mt-3 mb-lg-0 mb-md-5 mb-4 d-flex align-items-center justify-content-md-start justify-content-center">
+                        <a href="https://www.facebook.com/SecureEdgeFintech/" class="social-icons"
+                            aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/secureedgefintech/" class="social-icons"
+                            aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/secureedgefintech" class="social-icons"
+                            aria-label="Follow us on Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@Secureedgefintech" class="social-icons"
+                            aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://x.com/secureedgefin" class="social-icons" aria-label="X-twitter"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="openedge.html">Open Edge</a></li>
+                        <li><a href="verifyedge.html">Verify Edge</a></li>
+                        <li><a href="bcedge.html">BC Edge</a></li>
+                        <li><a href="mobileBanking.html">Mobile Banking</a></li>
+                        <li><a href="samay.html">Samay</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <!-- <h5>Know US</h5> -->
+                    <h5>Important Link</h5>
+                    <ul>
+                        <li><a href="Terms&C.html"> Terms & Conditions</a></li>
+                        <li><a href="privacy_policy.html"> Privacy Policy</a></li>
+                        <li><a href="/career">Career</a></li>
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact</h5>
+                    <p class="mb-3">
+                        204, 2nd Floor, Cyber Heights,<br />
+                        Vibhuti Khand, Gomti Nagar,<br />
+                        Lucknow, U.P. 226010
+                    </p>
+                     <p class="mb-3">9793850675</p>
+                    <p class="mb-3">0522-3692505</p>
+                    <p><a href="mailto:sales@secureedge.in" class="nav-link m-0">sales@secureedge.in</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="mb-0">Copyright @ <a href="#">Secureedge Fintech</a> Pvt. Ltd.</p>
+                <p class="mb-0">Designed By <a href="#">Goforad Technology</a> Pvt. Ltd.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer section -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script>
+        AOS.init({
+            duration: 1400,
+            easing: "ease-in-out",
+            once: true,
+        });
+
+        $('#reviewCarousel').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            infinite: true,
+            speed: 400,
+            responsive: [
+                { breakpoint: 992, settings: { slidesToShow: 2 } },
+                { breakpoint: 576, settings: { slidesToShow: 1 } }
+            ]
+        });
+
+        $('#reviewPrev').on('click', function () {
+            $('#reviewCarousel').slick('slickPrev');
+        });
+
+        $('#reviewNext').on('click', function () {
+            $('#reviewCarousel').slick('slickNext');
+        });
+    </script>
+
+    <style>
+        .swal-small-popup {
+            width: 320px !important;
+            font-size: 14px !important;
+            padding: 1em !important;
+            background-color: rgb(14, 13, 13);
+            border: 1px solid red;
+            border-radius: 24px;
+            color: rgb(203, 205, 203);
+        }
+        .swal-small-title { font-size: 20px !important; font-family: 'Outfit', sans-serif; }
+        .swal-small-content { font-size: 14px !important; }
+    </style>
+
+    <script>
+        (function () {
+            var form = document.getElementById('contactForm');
+            if (!form) return;
+
+            var submitBtn = form.querySelector('button[type="submit"]');
+            var swalCls = { popup: 'swal-small-popup', title: 'swal-small-title', content: 'swal-small-content' };
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // ── Role validation (hidden input; browser ignores `required` on hidden fields)
+                var roleVal = (document.getElementById('roleValue').value || '').trim();
+                if (!roleVal) {
+                    var otherWrapper = document.getElementById('roleOtherWrapper');
+                    if (otherWrapper && otherWrapper.style.display !== 'none') {
+                        if (window.Swal) Swal.fire({ icon: 'error', title: 'Role required', text: 'Please type your desired role in the field below the dropdown.', customClass: swalCls });
+                    } else {
+                        if (window.Swal) Swal.fire({ icon: 'error', title: 'Role required', text: 'Please select a role from the dropdown.', customClass: swalCls });
+                    }
+                    return;
+                }
+
+                // ── Resume validation
+                var resumeFile = document.getElementById('resumeUpload').files[0];
+                if (!resumeFile) {
+                    if (window.Swal) Swal.fire({ icon: 'error', title: 'Resume required', text: 'Please upload your resume (PDF, DOC, or DOCX).', customClass: swalCls });
+                    return;
+                }
+
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    var originalText = submitBtn.innerHTML;
+                    submitBtn.innerHTML = 'Sending...';
+                }
+
+                var formData = new FormData(form);
+
+                fetch(form.action, {
+                    method: 'POST',
+                    body: formData
+                }).then(function (response) {
+                    return response.json();
+                }).then(function (data) {
+                    if (data.success) {
+                        if (window.Swal) {
+                            Swal.fire({ icon: 'success', title: 'Thank you ! We’ll respond shortly.', text: data.message, timer: 3000, showConfirmButton: false, customClass: { popup: 'swal-small-popup', title: 'swal-small-title', content: 'swal-small-content' } });
+                        }
+                        form.reset();
+                        document.getElementById('uploadFileName').textContent = 'Pdf, Doc up to 5 Mb';
+                    } else {
+                        if (window.Swal) {
+                            Swal.fire({ icon: 'error', title: 'Submission error', text: data.message || 'There was a problem submitting the form.', customClass: { popup: 'swal-small-popup', title: 'swal-small-title', content: 'swal-small-content' } });
+                        }
+                    }
+                }).catch(function () {
+                    if (window.Swal) {
+                        Swal.fire({ icon: 'error', title: 'Network error', text: 'Please check your connection and try again.', customClass: { popup: 'swal-small-popup', title: 'swal-small-title', content: 'swal-small-content' } });
+                    }
+                }).finally(function () {
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalText || 'Submit';
+                    }
+                });
+            });
+
+            // Show selected file name in upload area
+            document.getElementById('resumeUpload').addEventListener('change', function () {
+                var fileName = this.files[0] ? this.files[0].name : 'Pdf, Doc up to 5 Mb';
+                document.getElementById('uploadFileName').textContent = fileName;
+            });
+        })();
+    </script>
+    <!-- JOB DETAIL MODAL -->
+    <div class="job-modal-overlay" id="jobModal" onclick="closeJobOnOverlay(event)">
+        <div class="job-modal" id="jobModalContent">
+            <button class="job-modal-close" onclick="closeJob()">&#x2715;</button>
+            <div id="jobModalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        // const JOBS = {
+        //     1: {
+        //         title: "Senior Full Stack Engineer",
+        //         category: "Technology",
+        //         location: "Work From Office / Lucknow",
+        //         type: "Full-time",
+        //         experience: "5+ Years",
+        //         openings: 2,
+        //         desc: "Build scalable fintech solutions using React, Node.js, and cloud technologies. You will architect and deliver high-impact features for our core financial platform.",
+        //         tags: ["React", "Node.js", "AWS"],
+        //         responsibilities: [
+        //             "Design, develop, and maintain high-performance web applications",
+        //             "Collaborate with product, design, and backend teams on feature delivery",
+        //             "Architect scalable cloud-based microservices on AWS",
+        //             "Conduct code reviews and uphold engineering standards",
+        //             "Optimize application performance and ensure security best practices"
+        //         ],
+
+        //         requirements: [
+        //             "5+ years of experience with React.js and Node.js",
+        //             "Strong understanding of AWS services (EC2, Lambda, RDS, S3)",
+        //             "Experience working in fintech or financial systems is a plus",
+        //             "Proficiency in RESTful APIs and database design (SQL/NoSQL)",
+        //             "Excellent problem-solving skills and attention to detail"
+        //         ]
+        //     },
+
+        //     2: {
+        //         title: "Product Manager",
+        //         category: "Technology",
+        //         location: "Work From Office / Lucknow",
+        //         type: "Full-time",
+        //         experience: "3+ Years",
+        //         openings: 1,
+        //         desc: "Drive product strategy and execution for our flagship fintech platform. You will own the product roadmap and work closely with engineering, design, and business teams.",
+        //         tags: ["Product Strategy", "Fintech"],
+        //         responsibilities: [
+        //             "Define and communicate a clear product vision and roadmap",
+        //             "Gather, prioritize, and translate user requirements into product specs",
+        //             "Work closely with engineering and UX teams on feature delivery",
+        //             "Monitor product metrics and drive continuous improvements",
+        //             "Analyze competitor landscape and market trends in fintech"
+        //         ],
+        //         requirements: [
+        //             "3+ years of product management experience in SaaS or fintech",
+        //             "Strong analytical skills with ability to use data to drive decisions",
+        //             "Experience writing product requirements and user stories",
+        //             "Excellent stakeholder communication and prioritization skills",
+        //             "Familiarity with Agile/Scrum development processes"
+        //         ]
+        //     },
+
+        //     4: {
+        //         title: "Digital Marketing Manager",
+        //         category: "Marketing",
+        //         location: "Work From Office / Lucknow",
+        //         type: "Full-time",
+        //         experience: "3+ Years",
+        //         openings: 1,
+        //         desc: "Lead our digital marketing initiatives and drive brand growth across all channels. You will own campaigns, SEO, and content strategy.",
+        //         tags: ["SEO", "Social Media", "Content"],
+        //         responsibilities: [
+        //             "Develop and execute integrated digital marketing strategies",
+        //             "Manage SEO/SEM, social media, email, and content programs",
+        //             "Analyze campaign performance and optimize for ROI",
+        //             "Collaborate with design team on creative assets and brand voice",
+        //             "Grow organic reach and manage paid acquisition budgets"
+        //         ],
+        //         requirements: [
+        //             "3+ years of digital marketing experience",
+        //             "Proficiency in Google Analytics, Google Ads, and Meta Ads",
+        //             "Experience with SEO tools (Ahrefs, SEMrush, or similar)",
+        //             "B2B or fintech marketing background preferred",
+        //             "Strong analytical thinking and creative communication skills"
+        //         ]
+        //     }
+        // };
+
+        // Filter tabs
+        document.querySelectorAll('.filter-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const category = tab.textContent.trim();
+                let visibleCount = 0;
+                document.querySelectorAll('.job-card').forEach(card => {
+                    if (category === 'All' || card.dataset.category === category) {
+                        card.style.display = '';
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                const noJobsCard = document.getElementById('noJobsCard');
+                if (visibleCount === 0 && category !== 'All') {
+                    document.getElementById('noJobsTitle').textContent = 'No ' + category + ' Openings';
+                    document.getElementById('noJobsDesc').textContent = "We don't have any open positions in the " + category + " department at the moment. Check back later or explore other opportunities.";
+                    noJobsCard.classList.add('visible');
+                } else {
+                    noJobsCard.classList.remove('visible');
+                }
+            });
+        });
+
+        // Jobs data from PHP
+        const JOBS = {"4":{"title":"Business Development Executive","category":"Business","location":"Lucknow, Mumbai","type":"Full Time","experience":"0-2 years","openings":"7","desc":"Job Summary: We are looking for energetic and goal-oriented Sales Executives to join our growing team. The candidate will be responsible for field sales as well as tele-calling activities, generating leads, building client relationships, and driving business growth in the fintech and marketing services sector.","tags":["BDE","Sales","B2b","Digital Marketing","Fintech","Field Sales","Inside Sales"],"responsibilities":["Key Responsibilities:","Generate new business opportunities through field visits, cold calling, and client meetings","* Basic exposure to LinkedIn Outreach Handle outbound and inbound sales calls professionally","* Explain company products\/services to prospective clients","* Convert leads into successful business closures","* Build and maintain strong customer relationships Meet daily, weekly, and monthly sales targets","* Maintain proper follow-ups with interested clients","* Coordinate with internal teams for smooth onboarding and client support","* Update sales activities and client interactions in CRM or reporting systems","* Conduct market research and identify potential business opportunities"],"requirements":["Required Skills & Qualifications:","* Excellent communication and interpersonal skills","* Comfortable with field sales and calling profiles Strong convincing and negotiation abilities","* Target-oriented and self-motivated personality Basic knowledge of MS Office and CRM tools","* Ability to work in a fast-paced environment Prior experience in sales, fintech, saas\/product based will be preferred"]}};
+
+        // Open job detail modal
+        function openJob(id) {
+            const job = JOBS[id];
+            if (!job) return;
+            const tagsHtml = job.tags.map(t => `<span class="job-tag">${t}</span>`).join('');
+            const respHtml = job.responsibilities.map(r => `<li>${r}</li>`).join('');
+            const reqHtml  = job.requirements.map(r => `<li>${r}</li>`).join('');
+            const locSvg   = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>`;
+            const timeSvg  = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>`;
+            document.getElementById('jobModalBody').innerHTML = `
+                <span class="job-modal-cat">${job.category}</span>
+                <h2>${job.title}</h2>
+                <div class="job-modal-meta">
+                    <span>${locSvg} ${job.location}</span>
+                    <span>${timeSvg} ${job.type}</span>
+                </div>
+                <div class="job-modal-inforow">
+                    <div class="job-modal-infobox"><small>Experience</small><span>${job.experience}</span></div>
+                    ${job.openings ? `<div class="job-modal-infobox"><small>Openings</small><span>${job.openings}</span></div>` : ''}
+                </div>
+                ${tagsHtml ? `<div class="job-modal-tags">${tagsHtml}</div>` : ''}
+                <div class="job-modal-hr"></div>
+                <div class="job-modal-label">About the Role</div>
+                <p>${job.desc}</p>
+                ${respHtml ? `<div class="job-modal-hr"></div><div class="job-modal-label">Responsibilities</div><ul>${respHtml}</ul>` : ''}
+                ${reqHtml  ? `<div class="job-modal-hr"></div><div class="job-modal-label">Requirements</div><ul>${reqHtml}</ul>` : ''}
+                <button class="job-modal-applybtn" onclick="applyNow('${job.title.replace(/'/g,"\\'")}')">Apply for this Role</button>
+            `;
+            document.getElementById('jobModal').classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeJob() {
+            document.getElementById('jobModal').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        function closeJobOnOverlay(e) {
+            if (e.target === document.getElementById('jobModal')) closeJob();
+        }
+
+        // Clicking "Apply for this Role" → close modal, scroll to form, set dropdown
+        function applyNow(title) {
+            closeJob();
+            const applySection = document.querySelector('.apply-section');
+            if (applySection) {
+                applySection.scrollIntoView({ behavior: 'smooth' });
+                // Set the custom dropdown to matching job title
+                const options = document.querySelectorAll('#roleOptions .custom-option');
+                options.forEach(opt => {
+                    if (opt.dataset.value === title) {
+                        selectRoleOption(opt);
+                    }
+                });
+            }
+        }
+
+        // document.addEventListener('keydown', e => { if (e.key === 'Escape') closeJob(); });
+    </script>
+    <script>
+        (function () {
+            const area = document.getElementById('uploadArea');
+            const input = document.getElementById('resumeUpload');
+            const label = document.getElementById('uploadFileName');
+            const allowed = ['.pdf', '.doc', '.docx'];
+
+            function setFile(file) {
+                if (!file) return;
+                const ext = '.' + file.name.split('.').pop().toLowerCase();
+                if (!allowed.includes(ext)) {
+                    label.textContent = 'Invalid file type. Use PDF or DOC.';
+                    label.style.color = '#FF5555';
+                    return;
+                }
+                if (file.size > 5 * 1024 * 1024) {
+                    label.textContent = 'File exceeds 5 MB limit.';
+                    label.style.color = '#FF5555';
+                    return;
+                }
+                label.textContent = file.name;
+                label.style.color = '';
+            }
+
+            input.addEventListener('change', () => setFile(input.files[0]));
+
+            // ── Custom role dropdown ────────────────────────
+            const roleDropdown = document.getElementById('roleDropdown');
+            const roleValue    = document.getElementById('roleValue');
+            const roleText     = document.getElementById('roleText');
+
+            window.toggleRoleDropdown = function() {
+                const isOpening = !roleDropdown.classList.contains('open');
+                roleDropdown.classList.toggle('open');
+                // Hide the other-input while dropdown is open so it doesn't overlap options
+                if (roleOtherWrapper) {
+                    roleOtherWrapper.style.visibility = isOpening ? 'hidden' : 'visible';
+                }
+            };
+
+            const roleOtherWrapper = document.getElementById('roleOtherWrapper');
+            const roleOtherInput   = document.getElementById('roleOtherInput');
+
+            window.selectRoleOption = function(opt) {
+                document.querySelectorAll('#roleOptions .custom-option').forEach(o => o.classList.remove('selected'));
+                opt.classList.add('selected');
+                roleDropdown.classList.remove('open');
+
+                if (opt.dataset.value === '__other__') {
+                    roleOtherWrapper.style.display = 'block';
+                    roleOtherWrapper.style.visibility = 'visible';
+                    roleText.textContent = 'Other — specify your role';
+                    roleText.classList.remove('placeholder');
+                    roleValue.value = '';
+                    setTimeout(() => roleOtherInput.focus(), 50);
+                } else {
+                    roleOtherWrapper.style.display = 'none';
+                    roleOtherWrapper.style.visibility = 'visible';
+                    roleOtherInput.value = '';
+                    roleValue.value = opt.dataset.value;
+                    roleText.textContent = opt.dataset.value;
+                    roleText.classList.remove('placeholder');
+                }
+            };
+
+            // Sync typed value into hidden input live
+            roleOtherInput.addEventListener('input', function() {
+                roleValue.value = this.value.trim();
+            });
+
+            document.querySelectorAll('#roleOptions .custom-option').forEach(opt => {
+                opt.addEventListener('click', () => selectRoleOption(opt));
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function(e) {
+                if (roleDropdown && !roleDropdown.contains(e.target)) {
+                    roleDropdown.classList.remove('open');
+                    if (roleOtherWrapper) roleOtherWrapper.style.visibility = 'visible';
+                }
+            });
+
+            area.addEventListener('dragover', function (e) {
+                e.preventDefault();
+                area.style.borderColor = '#FF5555';
+            });
+
+            area.addEventListener('dragleave', function () {
+                area.style.borderColor = '';
+            });
+
+            area.addEventListener('drop', function (e) {
+                e.preventDefault();
+                area.style.borderColor = '';
+                const file = e.dataTransfer.files[0];
+                if (file) {
+                    const dt = new DataTransfer();
+                    dt.items.add(file);
+                    input.files = dt.files;
+                }
+                setFile(file);
+            });
+        })();
+    </script>
+</body>
+
+</html>

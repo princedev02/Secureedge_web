@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KHJNDC6Z');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepfakes in Video KYC: V-CIP &amp; Liveness Detection</title>
+    <meta name="description" content="Learn how deepfakes, replay attacks and identity fraud threaten Video KYC, and how liveness detection, face matching and secure V-CIP controls work together.">
+    <link rel="canonical" href="https://secureedgefintech.com/deepfakes-video-kyc-vcip-liveness-detection.html">
+
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://secureedgefintech.com/deepfakes-video-kyc-vcip-liveness-detection.html"
+  },
+  "headline": "Deepfakes in Video KYC: How Fraudsters Bypass V-CIP and What Liveness Detection Must Catch",
+  "description": "Learn how deepfakes, replay attacks and identity fraud threaten Video KYC, and how liveness detection, face matching and secure V-CIP controls work together.",
+  "image": "https://secureedgefintech.com/assets/images/blogs/deepfakes-video-kyc-vcip-liveness-detection.png",
+  "author": {
+    "@type": "Organization",
+    "name": "SecureEdge Team",
+    "url": "https://secureedgefintech.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SecureEdge Fintech",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://secureedgefintech.com/assets/images/logo.svg"
+    }
+  },
+  "datePublished": "2026-10-14",
+  "dateModified": "2026-10-14"
+}
+</script>
+
+
+    <link rel="icon" type="image/png" href="./assets/images/se-logo-favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/blogpage.css" />
+    <link rel="stylesheet" href="./assets/css/custome.css" />
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Deepfakes in Video KYC: How Fraudsters Bypass V-CIP and What Liveness Detection Must Catch">
+<meta property="og:description" content="Learn how deepfakes, replay attacks and identity fraud threaten Video KYC, and how liveness detection, face matching and secure V-CIP controls work together.">
+<meta property="og:url" content="https://secureedgefintech.com/deepfakes-video-kyc-vcip-liveness-detection.html">
+<meta property="og:site_name" content="SecureEdge Fintech">
+<meta property="og:image" content="https://secureedgefintech.com/assets/images/blogs/deepfakes-video-kyc-vcip-liveness-detection.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="5000">
+<meta property="og:image:height" content="2626">
+<meta property="og:image:alt" content="Deepfakes in Video KYC: How Fraudsters Bypass V-CIP and What Liveness Detection Must Catch">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Deepfakes in Video KYC: V-CIP &amp; Liveness Detection">
+<meta name="twitter:description" content="Learn how deepfakes, replay attacks and identity fraud threaten Video KYC, and how liveness detection, face matching and secure V-CIP controls work together.">
+<meta name="twitter:image" content="https://secureedgefintech.com/assets/images/blogs/deepfakes-video-kyc-vcip-liveness-detection.png">
+<style>.video-kyc-article h2{font-size:28px;line-height:1.35;color:#ff5555;margin:36px 0 18px}.video-kyc-article h4{font-size:18px;color:#eee;margin:24px 0 12px}.video-kyc-article a{color:#ff7777;text-decoration:underline}.card-section>h2{font-size:30px;font-weight:700;color:#e4e4e4;margin:50px}@media(max-width:600px){.video-kyc-article h2{font-size:24px}.blog-content-section .container{width:100%}}</style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHJNDC6Z" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Start header section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand p-0" href="#">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+                <!-- Toggler (mobile only) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                    aria-controls="mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Desktop Menu -->
+                <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Our Product
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown">
+                                <li><a class="dropdown-item" href="bcedge.html">BC Edge</a></li>
+                                <li><a class="dropdown-item" href="openedge.html">Open Edge</a></li>
+                                <li><a class="dropdown-item" href="verifyedge.html">Verify Edge</a></li>
+                                <li><a class="dropdown-item" href="mobileBanking.html">Mobile Banking</a></li>
+                                <li><a class="dropdown-item" href="samay.html">Samay</a></li>
+                                 <li><a class="dropdown-item" href="frms.html">FRMS</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="blogpage.html">Blog</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Desktop Contact Button -->
+                <div class="d-none d-lg-block">
+                    <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Mobile Offcanvas -->
+    <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title">
+                <a class="navbar-brand p-0" href="/">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div class="accordion" id="menuAccordion">
+                <a href="/" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blogpage.html" class="nav-link">Blog</a>
+                <div class="accordion-item border-0 bg-transparent">
+                    <h2 class="accordion-header" id="headingProduct">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">
+                            Our Product
+                        </button>
+                    </h2>
+                    <div id="collapseProduct" class="accordion-collapse collapse" aria-labelledby="headingProduct"
+                        data-bs-parent="#menuAccordion">
+                        <div class="accordion-body p-0">
+                            <a href="bcedge.html" class="d-block mb-2">BC Edge</a>
+                            <a href="openedge.html" class="d-block mb-2">Open Edge</a>
+                            <a href="verifyedge.html" class="d-block">Verify Edge</a>
+                            <a href="mobileBanking.html" class="d-block">Mobile banking </a>
+                            <a href="samay.html" class="d-block">Samay</a>
+                            <a href="frms.html" class="d-block">FRMS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="mt-4 text-center">
+                    <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header section -->
+
+    <!-- hereo section start -->
+    <section class="hero-section-blog"><div class="container"><div class="row"><div class="col-lg-12"><div class="copy"><img src="assets/images/blogs/deepfakes-video-kyc-vcip-liveness-detection.png" alt="Deepfakes in Video KYC: How Fraudsters Bypass V-CIP and What Liveness Detection Must Catch" width="5000" height="2626" style="border-radius:15px;width:100%;max-width:1000px;height:auto;"></div></div></div></div></section>
+    <!----------- main section --------------------->
+    <main>
+<section class="blog-content-section"><div class="container"><div class="blog-header"><span class="blog-category">Video KYC Security</span><h1>Deepfakes in Video KYC: How Fraudsters Bypass V-CIP and What Liveness Detection Must Catch</h1><p class="blog-meta">Published on October 14, 2026 • by SecureEdge Team</p></div><article class="blog-body video-kyc-article">
+<p>Imagine a customer applying for a loan from their phone. They upload their identity document, join a video call, look into the camera, and answer the verification questions. Everything seems normal, and the onboarding process moves forward.</p>
+<p>But what if the face on the screen is not what it appears to be?</p>
+<p>With AI-generated faces, manipulated videos, and increasingly realistic digital impersonation, this is a challenge financial institutions can no longer afford to ignore. A video may look genuine while hiding signs of manipulation. A face may resemble the person on an identity document without belonging to the actual applicant.</p>
+<p>For banks, NBFCs, and fintech companies, this raises an important question: How do you know the person completing Video KYC is genuinely who they claim to be?</p>
+<p>That is where deepfake detection, liveness detection, and a stronger identity verification process become important.</p>
+<h2>What Is Video KYC and Why Is It a Target?</h2>
+<p>Video-based Customer Identification Process (V-CIP) allows regulated financial institutions to verify customers remotely through a live audio-visual interaction. It reduces the need for physical visits and makes digital onboarding more convenient.</p>
+<p>However, remote verification also creates opportunities for fraud when the system cannot reliably distinguish a genuine customer from an impersonator.</p>
+<p>Deepfake technology can manipulate facial appearance, generate synthetic media, or alter video content. Fraudsters may attempt to use such content to impersonate another person during a verification session.</p>
+<p>Not every Video KYC attack involves a deepfake. Some involve prerecorded videos, photographs, manipulated video feeds, stolen identity documents, or a combination of these methods.</p>
+<p>The difference matters because each attack requires the right detection controls.</p>
+<p>A system that checks only whether a face appears on screen may miss other warning signs. Financial institutions need to assess whether the person is genuinely present, whether the video session is trustworthy, and whether the face matches the claimed identity.</p>
+<p>The <a href="https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=11566"> RBI's Master Direction on KYC</a> provides the regulatory framework for V-CIP and its associated verification requirements.</p>
+<h2>How Fraudsters Attempt to Bypass V-CIP</h2>
+<p>Understanding the problem starts with looking at what can go wrong during a remote verification session.</p>
+<h3>AI-Generated Faces and Manipulated Videos</h3>
+<p>AI tools can create realistic facial images and manipulate existing video content. In a fraudulent onboarding attempt, this technology may be used to make an impostor appear similar to a genuine applicant.</p>
+<p>The difficulty is that visual realism alone is not proof of authenticity. A convincing face can still be part of a manipulated video.</p>
+<h4>What should verification systems catch?</h4>
+<p>They should look for evidence of synthetic or manipulated media alongside other signals from the live session. Facial consistency, changes between video frames, capture integrity, and presentation attack indicators can all contribute to the assessment.</p>
+<p>No single visual clue is enough to identify every deepfake. Detection systems need to be tested against different types of attacks and changing real-world conditions.</p>
+<h3>Prerecorded Videos and Replay Attacks</h3>
+<p>A fraudster may try to use an existing recording instead of participating in a genuine, live verification session.</p>
+<p>At first glance, the recording might appear convincing. The person may blink, speak, or move naturally because those actions were already captured in the original video.</p>
+<p>This is why simply asking whether a face is moving is not enough.</p>
+<h4>What should verification systems catch?</h4>
+<p>The system should assess whether the interaction is taking place in real time. Relevant controls may include varied questions, real-time interaction, replay detection, and checks for inconsistencies in the captured session.</p>
+<p>RBI's V-CIP framework addresses real-time interaction and the use of varied questions or sequences to help establish that the session is live.</p>
+<h3>Manipulated Video Sources and Capture Environments</h3>
+<p>Sometimes, the problem is not the face itself but the way the video reaches the verification system.</p>
+<p>A manipulated capture environment or an unauthorised video source may create a gap between what the reviewer sees and what is actually happening during the session.</p>
+<h4>What should verification systems catch?</h4>
+<p>Financial institutions should assess the integrity of the video capture process, look for suspicious changes in the stream, and apply appropriate security controls to the verification session.</p>
+<p>A clear picture does not automatically mean the source of that picture is trustworthy.</p>
+<h3>Impersonation With Stolen Identity Documents</h3>
+<p>A person can appear live on camera and still be attempting identity fraud.</p>
+<p>For example, an applicant may present one person's identity document while using another person's face during the video session. This type of impersonation does not always require sophisticated deepfake technology.</p>
+<h4>What should verification systems catch?</h4>
+<p>The captured face must be compared with the appropriate identity reference. Document verification and face matching should be evaluated alongside liveness results.</p>
+<p>A successful liveness check confirms neither the ownership of an identity document nor the legitimacy of the entire application.</p>
+<h3>Mixed Identity Evidence and Document Inconsistencies</h3>
+<p>Identity fraud can also involve a mixture of real and manipulated information. A fraudster may use genuine personal details alongside altered documents or someone else's identity evidence.</p>
+<p>If the verification process checks only the video, inconsistencies elsewhere in the application may go unnoticed.</p>
+<h4>What should the verification process catch?</h4>
+<p>It should identify discrepancies across identity documents, extracted information, face-matching results, and other appropriate verification checks.</p>
+<p>This is where an integrated <a href="https://secureedgefintech.com/verifyedge.html"> identity verification API</a> can help businesses bring multiple checks into a more consistent onboarding workflow.</p>
+<h2>What Liveness Detection Must Catch</h2>
+<p>Liveness detection helps determine whether a biometric sample appears to come from a live person rather than a spoofed presentation. It plays an important role in remote identity verification, but it should not be treated as a complete solution to deepfake fraud.</p>
+<p>Here are the key areas financial institutions should consider.</p>
+<h3>Presence During the Current Session</h3>
+<p>The system should assess whether the face is being captured from a live person during the current session rather than presented through a replay or another spoofing method.</p>
+<p>Depending on the implementation, this assessment may use passive analysis, active interaction, or a combination of controls.</p>
+<h3>Facial Consistency and Motion Signals</h3>
+<p>Facial movements and changes between frames can provide useful signals. Inconsistencies may indicate that a video needs further scrutiny.</p>
+<p>However, not every unusual movement indicates fraud, and realistic synthetic content may reproduce natural-looking behaviour. These signals should be assessed together rather than used as standalone proof.</p>
+<h3>Presentation Attack Resistance</h3>
+<p>Verification systems should be tested against relevant attack types, including printed photographs, replayed recordings, and other attempts to present a false biometric sample.</p>
+<p>Testing should reflect the devices, cameras, lighting conditions, and network environments customers actually use.</p>
+<h3>Liveness and Face Matching Must Work Together</h3>
+<p>Liveness detection and face matching answer two different questions.</p>
+<p>Liveness detection assesses whether the facial sample appears to come from a live person. Face matching assesses whether that face corresponds to the reference image associated with the claimed identity.</p>
+<p>Both matter. Passing one check should not automatically result in approval of the other.</p>
+<h3>Capture and Session Integrity</h3>
+<p>The verification process should also consider whether the capture environment and session behave as expected.</p>
+<p>Appropriate controls may include secure video capture, session integrity checks, monitoring for suspicious interruptions, and reliable audit records.</p>
+<h3>Reviewer Oversight and Coercion Signals</h3>
+<p>A person may be physically present but still be participating in a fraudulent or coerced application. Another individual may be directing the answers or influencing the process.</p>
+<p>Liveness detection alone cannot reliably resolve every such situation. Appropriate reviewer oversight, real-time interaction, and clear escalation procedures remain important.</p>
+<p>The key point is simple: Liveness detection should be one part of the verification decision, not the only reason an application gets approved.</p>
+<h2>Deepfake Detection, Liveness and Identity Verification</h2>
+<p>The terms are often used together, but they are not interchangeable.</p>
+<p>Consider a simple example. A liveness system may identify that a video is live, but that does not establish that the person is using their own identity. Similarly, a deepfake detector may flag manipulated content without confirming who the genuine applicant is.</p>
+<p>For this reason, banks and NBFCs should evaluate how these controls work together, not just whether each tool is available.</p>
+<p>The <a href="https://pages.nist.gov/800-63-3-Implementation-Resources/63A/ial2remote/"> NIST Digital Identity Guidelines</a> offer useful technical guidance on remote identity proofing and related assurance considerations.</p>
+<h2>Building a Stronger Video KYC Verification Process</h2>
+<p>There is no single tool that can eliminate every identity fraud attempt. A more practical approach is to build a verification process in which different controls support one another.</p>
+<h3>Combine Complementary Verification Controls</h3>
+<p>Use liveness detection alongside face matching, document verification, and appropriate independent identity checks. Each check should address a different risk in the onboarding process.</p>
+<h3>Use Real-Time Interaction</h3>
+<p>Where required by the applicable V-CIP framework, use varied questions and interaction sequences to help establish that the customer is participating in a live session.</p>
+<p>Suspicious behaviour should be assessed in context rather than treated as automatic proof of fraud.</p>
+<h3>Protect the Capture Environment</h3>
+<p>Review how video is captured, transmitted, and processed. Identify weaknesses in the capture environment and test whether the verification workflow can recognise suspicious activity.</p>
+<h3>Define Clear Exception and Escalation Rules</h3>
+<p>A borderline liveness result, a face mismatch, or conflicting document information should not be ignored simply because the rest of the application looks complete.</p>
+<p>Define clear rules for further checks, human review, and rejection where appropriate. A model score should support the decision, not replace the complete verification process.</p>
+<h3>Test and Reassess Detection Performance</h3>
+<p>Fraud techniques change, so verification systems need ongoing evaluation.</p>
+<p>Test against relevant attack scenarios, monitor false acceptance and false rejection rates, and reassess performance across different devices and customer environments.</p>
+<h3>Maintain Verification Records and Auditability</h3>
+<p>Financial institutions need reliable records of verification outcomes, relevant events, reviewer actions, and decisions in line with applicable regulatory requirements.</p>
+<p>These records help teams investigate suspicious applications, identify recurring weaknesses, and improve future onboarding decisions.</p>
+<h3>Protect Customer Data</h3>
+<p>Video recordings, identity documents, and biometric information require careful protection. Access controls, secure storage, appropriate retention periods, and privacy safeguards should form part of the verification process.</p>
+<p>Fraud prevention should strengthen customer trust, not create unnecessary risks for the customer's personal information.</p>
+<h2>Why Stronger Verification Matters for Banks and NBFCs</h2>
+<p>For a bank or NBFC, identity verification is not just a step to complete before opening an account or processing a loan. It helps establish the foundation for the entire customer relationship.</p>
+<p>If an impersonation attempt goes undetected, the consequences may extend to fraudulent credit applications, account misuse, financial losses, investigation costs, and operational disruption.</p>
+<p>At the same time, overly aggressive detection can flag genuine customers and delay legitimate applications.</p>
+<p>The challenge is to find the right balance: detect suspicious activity without making verification unnecessarily difficult for genuine applicants.</p>
+<h2>Where an Integrated Verification Workflow Helps</h2>
+<p>For businesses managing multiple onboarding channels, fragmented verification systems can make this harder. One provider may check a PAN, another may verify bank account details, and a separate system may handle document checks. This can create gaps in visibility and make it more difficult to understand the complete verification outcome.</p>
+<p>An integrated, API-based approach can help businesses connect relevant identity and document checks within a consistent workflow.</p>
+<p> <a href="https://secureedgefintech.com/verifyedge.html">Explore VerifyEdge by SecureEdge</a> to learn more about API-based identity and document verification for digital onboarding.</p>
+<h2>Conclusion: Trust the Evidence, Not Just the Video</h2>
+<p>A convincing video is not necessarily a trustworthy one. And a face that appears genuine does not automatically establish that the person is using their own identity.</p>
+<p>As digital onboarding becomes more common, financial institutions need to look beyond what appears on the screen. They need to assess whether the person is genuinely present, whether the video session is trustworthy, and whether the identity is supported by reliable evidence.</p>
+<p>For banks, NBFCs, and fintech companies, the answer lies in combining liveness detection with face matching, document verification, secure capture, and appropriate human oversight.</p>
+<p>Verify the person. Validate the identity. Trust the evidence, not just the video.</p>
+<p>Learn more about <a href="https://secureedgefintech.com/verifyedge.html"> SecureEdge VerifyEdge</a> and its identity verification capabilities for digital onboarding workflows.</p>
+</article></div></section>
+
+        <!------------------------------------ card section main part-------------------------------------->
+
+        <section class="fintech-ai  card-section">
+
+            <div class="border"></div>
+            <h2>Latest Blog</h2>
+            <section class="custom-blog-section">
+                <div class="custom-blog-grid">
+
+                    <div class="custom-blog-card">
+                        <img src="assets/images/blogs/how-head.webp" alt="Blog Image" class="custom-blog-image">
+                        <div class="custom-blog-text">
+                            <h3>How NBFCs Use PAN Verification to Speed Up Loan Processing</h3>
+                        </div>
+                        <div class="card-button">
+                            <a href="how-nbfcs-use-pan-verification-to-speed-up-loan-processing.html">
+                                <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="custom-blog-card">
+                        <img src="assets/images/blogs/identify-fraud.webp" alt="Blog Image" class="custom-blog-image">
+                        <div class="custom-blog-text">
+                            <h3>Synthetic Identity Fraud: How Criminals are Using AI To Beat Verification (And
+                                Businesses Can Stay Ahead).</h3>
+                        </div>
+                        <div class="card-button">
+                            <a href="synthetic-identity-fraud-ai-verification.html">
+                                <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="custom-blog-card">
+                        <img src="assets/images/blogs/top-10.webp" alt="Blog Image" class="custom-blog-image">
+                        <div class="custom-blog-text">
+                            <h3>Top 10 APIs- The Future of Fintech Starts with the Right APIs</h3>
+                        </div>
+                        <div class="card-button">
+                            <a href="top-10-apis-every-fintech-company-needs-2026.html">
+                                <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="custom-blog-card">
+                        <img src="assets/images/blogs/secure-head.jpeg" alt="Blog Image" class="custom-blog-image">
+                        <div class="custom-blog-text">
+                            <h3>Why Secure Digital Infrastructure Is Powering India's Next Wave of Fintech Growth</h3>
+                        </div>
+                        <div class="card-button">
+                            <a href="secure-digital-infrastructure-india-fintech-growth.html">
+                                <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="custom-blog-card">
+                        <img src="assets/images/card4_400x215.webp" alt="Blog Image" class="custom-blog-image">
+                        <div class="custom-blog-text">
+                            <h3>Indian Financial Literacy is Broken. Can Fintechs Fix What Schools Never Taught?</h3>
+                        </div>
+                        <div class="card-button">
+                            <a href="indian-financial-literacy-fintech-solution.html">
+                                <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+    </main>
+    <!--------------------- end of main section---------------------->
+    <!-- Start Footer section -->
+    <footer class="footer" data-aos="zoom-in">
+        <div class="container footerContent">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer-logo">
+                    <img src="./assets/images/logo.svg" alt="Secure Edge Logo" class="mb-3">
+                    <p>At Secure Edge Fintech, we are shaping the future of finance: Secure and Seamless. Driven by
+                        Innovation and
+                        built on Trust</p>
+                    <div
+                        class="social-iconsblock mt-3 mb-lg-0 mb-md-5 mb-4 d-flex align-items-center justify-content-md-start justify-content-center">
+                        <a href="https://www.facebook.com/SecureEdgeFintech/" class="social-icons"
+                            aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/secureedgefintech/" class="social-icons"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/secureedgefintech" class="social-icons"
+                            aria-label="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@Secureedgefintech" class="social-icons"
+                            aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://x.com/secureedgefin" class="social-icons" aria-label="X-twitter"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="openedge.html">Open Edge</a></li>
+                        <li><a href="verifyedge.html">Verify Edge</a></li>
+                        <li><a href="bcedge.html">BC Edge</a></li>
+                        <li><a href="mobileBanking.html">Mobile Banking</a></li>
+                        <li><a href="samay.html">Samay</a></li>
+                        <li><a href="frms.html">FRMS</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <!-- <h5>Know US</h5> -->
+                    <h5>Important Link</h5>
+                    <ul>
+                        <li><a href="Terms&C.html"> Terms & Conditions</a></li>
+                        <li><a href="privacy_policy.html"> Privacy Policy</a></li>
+                        <li><a href="/career">Career</a></li>
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact</h5>
+                    <p class="mb-3">204, 2nd Floor, Cyber Heights,<br>
+                        Vibhuti Khand, Gomti Nagar,<br>
+                        Lucknow, U.P. 226010
+                    </p>
+                    <p class="mb-3">9793853777</p>
+                    <!--<p class="mb-3">0522-3692505</p>-->
+                    <p><a href="mailto:sales@secureedge.in" class="nav-link m-0">sales@secureedge.in</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="mb-0">Copyright @ <a href="#">Secureedge Fintech</a> Pvt. Ltd.</p>
+                <p class="mb-0">Designed By <a href="#">Goforad Technology</a> Pvt. Ltd.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="https://wa.me/919793853777" class="whatsapp-sticky-btn" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!-- End Footer section -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <style>
+        .blog-body ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .blog-body ul li {
+            display: list-item;
+            color: #dcdcdc;
+        }
+
+        .key-text {
+            color: rgba(255, 85, 85, 1);
+        }
+    </style>
+</body>
+
+</html>

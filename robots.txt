@@ -1,0 +1,56 @@
+
+User-agent: dotbot
+Disallow:
+Crawl-delay: 0
+
+User-agent: rogerbot
+Disallow:
+Crawl-delay: 0
+
+# Allow popular SEO tools
+User-agent: AhrefsBot
+Disallow:
+Crawl-delay: 0
+
+User-agent: SemrushBot
+Disallow:
+Crawl-delay: 0
+
+# Bing
+User-agent: bingbot
+Disallow:
+Crawl-delay: 0
+
+# Yandex - slower crawl due to load
+User-agent: Yandex
+Disallow:
+Crawl-delay: 0
+
+# Allow Feed crawlers (RSS)
+User-agent: Feedly
+User-agent: feeder.co
+User-agent: FlipboardRSS
+User-agent: FeedBurner
+User-agent: UniversalFeedParser
+Allow: /feed/
+Crawl-delay: 30
+
+# Block low-value or aggressive crawlers
+User-agent: RyteBot
+User-agent: OnPageBot
+User-agent: MJ12bot
+User-agent: SeznamBot
+User-agent: DataForSeoBot
+User-agent: PetalBot
+User-agent: coccocbot-web
+User-agent: SEOkicks
+User-agent: AwarioRssBot
+User-agent: AwarioSmartBot
+User-agent: SerendeputyBot
+User-agent: MojeekBot
+User-agent: Scrapy
+User-agent: Orbbot
+User-agent: MauiBot
+User-agent: Neevabot
+Disallow: /
+Sitemap: https://secureedgefintech.com/sitemap.xml

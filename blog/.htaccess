@@ -1,0 +1,15 @@
+# Pretty blog URLs: /blog/my-post-slug -> index.php?slug=my-post-slug
+RewriteEngine On
+RewriteBase /blog/
+
+# Never rewrite real files or directories.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-zA-Z0-9\-]+)/?$ index.php?slug=$1 [L,QSA]
+
+# The cache directory holds CRM responses; it must never be web-readable.
+<IfModule mod_authz_core.c>
+    <FilesMatch "\.json$">
+        Require all denied
+    </FilesMatch>
+</IfModule>

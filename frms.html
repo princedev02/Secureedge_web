@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KHJNDC6Z');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fraud Risk Management System (FRMS) | SecureEdge</title>
+  <meta name="description" content="FRMS by SecureEdge is a real-time fraud risk management system for banks, fintechs and payment gateways - transaction monitoring, rule-based risk scoring, case management and audit-ready reporting." />
+  <meta name="keywords" content="Fraud Risk Management System, FRMS, real-time fraud detection, transaction monitoring software, fraud rule engine, payment fraud prevention India" />
+  <link rel="canonical" href="https://secureedgefintech.com/frms.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fraud Risk Management System (FRMS) | SecureEdge" />
+  <meta property="og:description" content="Next-gen fraud detection for every transaction. FRMS monitors, scores, flags and investigates fraudulent transactions in real time across Card, UPI, Net Banking, Mobile Banking and ATM." />
+  <meta property="og:url" content="https://secureedgefintech.com/frms.html" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FRMS - Fraud Risk Management System",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web-based",
+    "provider": {
+      "@type": "Organization",
+      "name": "SecureEdge Fintech Pvt. Ltd.",
+      "url": "https://secureedgefintech.com/"
+    },
+    "areaServed": "IN",
+    "description": "FRMS is a web-based fraud risk management system for banks, fintech companies, payment gateways and financial institutions to monitor, detect, score, investigate and prevent fraudulent transactions in real time.",
+    "audience": {
+      "@type": "BusinessAudience",
+      "audienceType": "Banks, fintech companies, payment gateways and financial institutions"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is FRMS used for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FRMS helps banks, fintech companies, and payment platforms detect, score, and prevent fraudulent transactions in real time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does FRMS detect fraud?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every transaction is captured the moment it is initiated and evaluated against the fraud rule engine. Amount, velocity, channel, device and behaviour checks produce a risk score that decides whether the transaction is approved instantly, flagged for review, or blocked."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can we create our own fraud rules?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Rules are created and adjusted from the dashboard without writing code, so risk and compliance teams can respond to new fraud patterns without waiting on engineering."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is FRMS secure and compliant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Access is role-based, every login and action is recorded in a full audit trail, and reports can be generated and downloaded on demand for internal audits and regulatory reviews."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can suspicious or risky users be blocked?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. High-risk transactions can be auto-blocked before they settle, and accounts linked to repeated risk events can be blocked and escalated into a case for investigation."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="./assets/images/se-logo-favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/bdadge.css" />
+  <!-- Icons (non-critical) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'" />
+  <!-- Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'" />
+  <style>
+  
+  .video-container-wrapperedge {
+      margin-bottom: -109px !important ;
+      
+  }
+    .bgadge-section-main-wrapper .main-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .bgadge-section-main-wrapper .main-content p {
+      padding: 20px 100px;
+    }
+
+    .bgadge-section-main-wrapper {
+      padding-bottom: 90px;
+    }
+
+    .hero-watermark {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      font-size: 112px;
+      text-transform: uppercase;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 53.85%, rgba(0, 0, 0, 0.04) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+
+    .description {
+      max-width: 860px;
+      margin: 20px auto 40px;
+      text-align: center;
+    }
+
+    .highlight-text {
+      margin: 0 auto;
+      justify-content: center;
+      display: flex;
+    }
+
+    .frms-second {
+      padding: 20px 0;
+    }
+
+    /* How FRMS works - glass card */
+    .custom-glass-section {
+      position: relative;
+      background-image: url("./assets/images/glowbg.png");
+      background-size: 350px;
+      background-position: left;
+      background-repeat: no-repeat;
+    }
+
+    .glass-card {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 50px;
+      border-radius: 40px;
+      background: #161616;
+      backdrop-filter: blur(10px);
+    }
+
+    .small-heading {
+      color: #ff4d4d;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    .main-heading {
+      color: #fff;
+      font-size: 36px;
+      font-weight: 600;
+      max-width: 800px;
+      margin: 0 auto 25px;
+    }
+
+    .card-description {
+      color: #aaa;
+      font-size: 16px;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: 0 auto 25px;
+    }
+
+    .flow-text {
+      color: #ff4d4d;
+      font-size: 16px;
+      line-height: 2;
+      margin-bottom: 0;
+    }
+
+    .footer_title {
+      font-size: 34px;
+      font-weight: 700;
+      font-family: "Qurova DEMO";
+      max-width: 750px;
+    }
+
+    .btn-contact {
+      margin: 20px auto;
+    }
+
+    .service-card-ourservicess i {
+      color: #fff;
+    }
+
+    /* FRMS dashboard visual */
+    .frms-dashboard-visual {
+      max-width: 560px;
+      margin-left: auto;
+    }
+
+    .frms-dashboard-visual img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 22px 45px rgba(0, 0, 0, 0.55));
+    }
+
+    /* FAQ */
+    .faq-section-wrapper {
+      padding: 80px 0;
+      position: relative;
+    }
+
+    .faq-section-wrapper .faq-visual img {
+      width: 100% !important;
+      max-width: 360px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .faq-accordion .accordion-item {
+      background-color: #1a1a1a;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+
+    .faq-accordion .accordion-button {
+      background-color: #1a1a1a;
+      color: #fff;
+      font-family: "Outfit", sans-serif;
+      font-weight: 600;
+      font-size: 17px;
+      box-shadow: none;
+      padding: 20px 22px;
+    }
+
+    .faq-accordion .accordion-button:not(.collapsed) {
+      background-color: #1a1a1a;
+      color: #FF5252;
+      box-shadow: none;
+    }
+
+    .faq-accordion .accordion-button::after {
+      filter: invert(1);
+    }
+
+    .faq-accordion .accordion-button:focus {
+      box-shadow: none;
+      border-color: transparent;
+    }
+
+    .faq-accordion .accordion-body {
+      color: #D3D3D3;
+      font-size: 15.5px;
+      line-height: 1.7;
+      padding: 0 22px 22px;
+    }
+
+    .faq-accordion .faq-number {
+      color: #FF5252;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+
+    @media (max-width: 991px) {
+      .glass-card {
+        padding: 40px 28px;
+        border-radius: 28px;
+      }
+
+      .main-heading {
+        font-size: 28px;
+      }
+
+      .footer_title {
+        font-size: 26px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .bgadge-section-main-wrapper .main-content p {
+        padding: 20px 0 !important;
+      }
+
+      .hero-watermark {
+        font-size: 48px;
+      }
+
+      .faq-section-wrapper {
+        padding: 50px 0;
+      }
+
+      .faq-section-wrapper .faq-visual {
+        margin-top: 30px;
+      }
+
+      .frms-dashboard-visual {
+        margin: 30px auto 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHJNDC6Z" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Start header section -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand p-0" href="/">
+          <img src="./assets/images/logo.svg" alt="Logo" />
+        </a>
+        <!-- Toggler (mobile only) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Desktop Menu -->
+        <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Our Product
+              </a>
+              <ul class="dropdown-menu custom-dropdown">
+                <li><a class="dropdown-item" href="bcedge.html">BC Edge</a></li>
+                <li><a class="dropdown-item" href="openedge.html">Open Edge</a></li>
+                <li><a class="dropdown-item" href="verifyedge.html">Verify Edge</a></li>
+                <li><a class="dropdown-item" href="mobileBanking.html">Mobile Banking</a></li>
+                <li><a class="dropdown-item" href="samay.html">Samay</a></li>
+                <li><a class="dropdown-item" href="frms.html">FRMS</a></li>
+                  <li><a class="dropdown-item" href="dpdp.html">DPDP</a></li>
+              </ul>
+            <li class="nav-item"><a class="nav-link" href="blogpage.html">Blog</a></li>
+            </li>
+          </ul>
+        </div>
+        <!-- Desktop Contact Button -->
+        <div class="d-none d-lg-block">
+          <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Mobile Offcanvas -->
+  <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h5 class="offcanvas-title">
+        <a class="navbar-brand p-0" href="/">
+          <img src="./assets/images/logo.svg" alt="Logo" />
+        </a>
+      </h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+      <div class="accordion" id="menuAccordion">
+        <a href="/" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blogpage.html" class="nav-link">Blog</a>
+        <div class="accordion-item border-0 bg-transparent">
+          <h2 class="accordion-header" id="headingProduct">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">
+              Our Product
+            </button>
+          </h2>
+          <div id="collapseProduct" class="accordion-collapse collapse" aria-labelledby="headingProduct"
+            data-bs-parent="#menuAccordion">
+            <div class="accordion-body p-0">
+              <a href="bcedge.html" class="d-block mb-2">BC Edge</a>
+              <a href="openedge.html" class="d-block mb-2">Open Edge</a>
+              <a href="verifyedge.html" class="d-block mb-2">Verify Edge</a>
+              <a href="mobileBanking.html" class="d-block mb-2">Mobile banking</a>
+              <a href="samay.html" class="d-block mb-2">Samay</a>
+              <a href="frms.html" class="d-block">FRMS</a>
+              <a href="dpdp.html" class="d-block">DPDP</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="mt-4 text-center">
+          <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End header section -->
+
+  <main>
+    <!-- Hero Section -->
+    <section class="bgadge-section-main-wrapper">
+      <div class="container">
+        <div class="main-content">
+          <h1 data-aos="zoom-in">Next-Gen Fraud Detection for Every Transaction.</h1>
+          <p data-aos="zoom-in">A smart, real-time fraud risk management system that detects suspicious activity,
+            reduces threats, and keeps every transaction secure.</p>
+          <a href="contact-us.html" class="btn-getstart-eadge aos-init aos-animate" data-aos="zoom-out">Get Started</a>
+        </div>
+        <div class="wrapper-container">
+          <div class="wrapper-imagemainrotation">
+            <a href="#next-section" aria-label="Scroll to learn more about FRMS">
+              <div class="video-container-wrapperedge">
+                <div class="circle-wrapper">
+                  <div class="circle"></div>
+                </div>
+                <div class="circular-text">
+                  <svg viewBox="0 0 200 200">
+                    <defs>
+                      <path id="circlePath" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"></path>
+                    </defs>
+                    <text fill="#ffffff" font-size="16.8" font-weight="600" letter-spacing="3">
+                      <textPath href="#circlePath">Secureedge Secureedge Secureedge Secureedge</textPath>
+                    </text>
+                  </svg>
+                </div>
+                <div class="arrow"><img src="./assets/images/bgadge/Arrow 2 (1).webp" loading="lazy" decoding="async"
+                    alt="Arrow" /></div>
+                <div class="hover-content">
+                  <div class="text">Explore More</div>
+                  <span class="inner-arrow">⟶</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="hero-watermark">SECUREEDGE</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About FRMS -->
+    <section id="next-section" class="aeps-section frms-second position-relative">
+      <div class="container position-relative">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-6">
+            <p class="title-bcedge-heading01" data-aos="zoom-in">Fraud Risk Management System</p>
+            <h2 class="mb-4 mt-3 sub-title-bcedge-heading01" data-aos="zoom-out">Protect Every Transaction. Prevent
+              Every Threat</h2>
+            <p data-aos="zoom-in">
+              FRMS (Fraud Risk Management System) is a web-based platform built for banks, fintech companies, payment
+              gateways, and financial institutions to monitor, detect, score, investigate, and prevent fraudulent
+              transactions in real time. It sits between the transaction processing layer and the business/compliance
+              team, continuously watching every payment (Card, UPI, Net Banking, Mobile Banking, ATM) as it happens,
+              scoring it against a rule engine, flagging suspicious activity, and giving analysts the tools to
+              investigate and act before losses occur.
+            </p>
+            <a href="contact-us.html" class="btn-bg-uscontact mt-4" data-aos="zoom-out">Contact Us</a>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="frms-dashboard-visual">
+              <picture>
+                <source srcset="./assets/images/frms-dashboard.webp" type="image/webp" />
+                <img src="./assets/images/frms-dashboard.png" width="536" height="428" loading="lazy"
+                  decoding="async"
+                  alt="FRMS dashboard showing a suspicious transaction alert of Rs 8,750 from a new device and a transaction-volume chart with a suspected fraud spike"
+                  data-aos="zoom-out" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why real-time fraud detection -->
+    <section class="bgadge-ourcard-section01">
+      <div class="container">
+        <div>
+          <p class="title-bcedge-heading01 highlight-text" data-aos="fade-up">Why FRMS</p>
+          <h2 class="description sub-title-bcedge-heading01" data-aos="fade-down">Why Real-Time Fraud Detection Is Core
+            to Payment Trust</h2>
+          <p class="description" data-aos="fade-up">FRMS keeps every transaction safe, verified, and fraud-free in real
+            time.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-boxes"></i>
+              <h5>All-In-One Platform</h5>
+              <p>Monitoring, rules, scoring, case management, and reporting — all in one system, no extra tools needed.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-lightning-charge"></i>
+              <h5>True Real-Time Engine</h5>
+              <p>Detects and blocks fraud as it happens, not hours or days later.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-sliders"></i>
+              <h5>No-Code Rule Configuration</h5>
+              <p>Create and adjust fraud rules yourself, without depending on engineering teams.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-arrows-fullscreen"></i>
+              <h5>Built to Scale</h5>
+              <p>Handles high transaction volumes across every payment channel without slowing down.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-eye"></i>
+              <h5>Full Transparency</h5>
+              <p>Every login, action, and decision is logged and traceable — nothing is a black box.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-graph-up"></i>
+              <h5>Fast Return on Investment</h5>
+              <p>Cuts fraud losses and investigation time from day one of deployment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How FRMS works -->
+    <section class="whyto-chooseus-oursection03 custom-glass-section">
+      <div class="container">
+        <div class="glass-card text-center" data-aos="zoom-in">
+          <p class="small-heading">How FRMS Works</p>
+          <h2 class="main-heading">
+            How FRMS Turns Every Transaction Into a Risk-Aware Decision
+          </h2>
+          <p class="card-description">
+            Every transaction is checked in real time before it completes. The moment a payment is made, FRMS captures
+            its details and runs them through the Fraud Rules engine, generating a risk score. Low-risk transactions are
+            approved instantly; medium- and high-risk ones are flagged, escalated to a case if needed, investigated, and
+            logged for audit.
+          </p>
+          <p class="flow-text">
+            Transaction Initiated &rarr; Real-Time Ingestion &rarr; Rule Engine Evaluation &rarr; Risk Scoring &rarr;
+            Decision &rarr; Alert &amp; Notification &rarr; Case Creation (if needed) &rarr; Investigation &amp; Action
+            &rarr; Reporting &amp; Audit
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="bgadge-ourcard-section01">
+      <div class="container">
+        <div>
+          <p class="title-bcedge-heading01 highlight-text" data-aos="fade-up">Benefits</p>
+          <h2 class="description sub-title-bcedge-heading01" data-aos="fade-down">Benefits That Go Beyond Detection,
+            Delivering Fraud Protection You Can Rely On</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-shield-exclamation"></i>
+              <h5>Real-Time Fraud Detection</h5>
+              <p>Screens every transaction instantly and flags high-risk activity the moment it happens.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-currency-rupee"></i>
+              <h5>Reduced Financial Losses</h5>
+              <p>Auto-blocks risky transactions before they settle, protecting revenue.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-arrows-angle-expand"></i>
+              <h5>Faster Investigation &amp; Resolution</h5>
+              <p>Turns flagged transactions into trackable cases for quick resolution.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-columns-gap"></i>
+              <h5>Centralized Visibility for Decision-Making</h5>
+              <p>One dashboard shows all key risk metrics at a glance.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-person-check"></i>
+              <h5>Stronger Access Control &amp; Accountability</h5>
+              <p>Role-based access and full login audit trail keep every action accountable.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-file-earmark-check"></i>
+              <h5>Audit-Ready, Compliance-Friendly Reporting</h5>
+              <p>Generate and download reports instantly for audits and compliance.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-credit-card-2-front"></i>
+              <h5>Multi-Channel Coverage</h5>
+              <p>Monitors every payment mode — Card, UPI, Net Banking, Mobile Banking, ATM — from a single system.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+            <div class="service-card-ourservicess">
+              <i class="bi bi-graph-up-arrow"></i>
+              <h5>Data-Driven Insights</h5>
+              <p>Trend charts and fraud-type breakdowns help spot patterns early and continuously improve rules.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="nextGen-section">
+      <div class="container d-flex justify-content-center align-items-center">
+        <div class="nextGen-card">
+          <div class="bottom-left-img">
+            <img src="./assets/images/circle-2.webp" loading="lazy" alt="Next Gen" class="img-fluid rorate-spin" />
+          </div>
+          <span class="text-center relative z-3 footer_title" data-aos="zoom-in">
+            Take the Next Step Toward Smarter Fraud Protection
+          </span>
+          <a href="contact-us.html" class="btn btn-contact relative z-3" data-aos="zoom-in">Contact</a>
+          <div class="top-right-img">
+            <img src="./assets/images/circle-2.webp" loading="lazy" alt="Next Gen"
+              class="img-fluid rorate-spin bottom" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section-wrapper">
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-8">
+            <p class="title-bcedge-heading01" data-aos="fade-up">FAQs</p>
+            <h2 class="mb-4 mt-3 sub-title-bcedge-heading01" data-aos="fade-down">Got Questions? We&rsquo;ve Got
+              Answers.</h2>
+            <div class="accordion faq-accordion" id="frmsFaq" data-aos="fade-up">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody1"
+                    aria-expanded="true" aria-controls="faqBody1">
+                    <span class="faq-number">1.</span> What is FRMS used for?
+                  </button>
+                </h3>
+                <div id="faqBody1" class="accordion-collapse collapse show" aria-labelledby="faqHeading1"
+                  data-bs-parent="#frmsFaq">
+                  <div class="accordion-body">
+                    FRMS helps banks, fintech companies, and payment platforms detect, score, and prevent fraudulent
+                    transactions in real time.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqBody2" aria-expanded="false" aria-controls="faqBody2">
+                    <span class="faq-number">2.</span> How does FRMS detect fraud?
+                  </button>
+                </h3>
+                <div id="faqBody2" class="accordion-collapse collapse" aria-labelledby="faqHeading2"
+                  data-bs-parent="#frmsFaq">
+                  <div class="accordion-body">
+                    Every transaction is captured the moment it is initiated and evaluated against the fraud rule
+                    engine. Amount, velocity, channel, device and behaviour checks produce a risk score that decides
+                    whether the transaction is approved instantly, flagged for review, or blocked.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqBody3" aria-expanded="false" aria-controls="faqBody3">
+                    <span class="faq-number">3.</span> Can we create our own fraud rules?
+                  </button>
+                </h3>
+                <div id="faqBody3" class="accordion-collapse collapse" aria-labelledby="faqHeading3"
+                  data-bs-parent="#frmsFaq">
+                  <div class="accordion-body">
+                    Yes. Rules are created and adjusted from the dashboard without writing code, so risk and compliance
+                    teams can respond to new fraud patterns without waiting on engineering.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqBody4" aria-expanded="false" aria-controls="faqBody4">
+                    <span class="faq-number">4.</span> Is FRMS secure and compliant?
+                  </button>
+                </h3>
+                <div id="faqBody4" class="accordion-collapse collapse" aria-labelledby="faqHeading4"
+                  data-bs-parent="#frmsFaq">
+                  <div class="accordion-body">
+                    Access is role-based, every login and action is recorded in a full audit trail, and reports can be
+                    generated and downloaded on demand for internal audits and regulatory reviews.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="faqHeading5">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqBody5" aria-expanded="false" aria-controls="faqBody5">
+                    <span class="faq-number">5.</span> Can suspicious or risky users be blocked?
+                  </button>
+                </h3>
+                <div id="faqBody5" class="accordion-collapse collapse" aria-labelledby="faqHeading5"
+                  data-bs-parent="#frmsFaq">
+                  <div class="accordion-body">
+                    Yes. High-risk transactions can be auto-blocked before they settle, and accounts linked to repeated
+                    risk events can be blocked and escalated into a case for investigation.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 text-center faq-visual">
+            <picture>
+              <source srcset="./assets/images/frms-faq.webp" type="image/webp" />
+              <img src="./assets/images/frms-faq.png" width="472" height="496" loading="lazy" decoding="async"
+                alt="Mobile phone showing the FRMS FAQ screen" data-aos="zoom-in" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Start Footer section -->
+  <footer class="footer" data-aos="zoom-in">
+    <div class="container footerContent">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 footer-logo">
+          <img src="./assets/images/logo.svg" alt="Secure Edge Logo" class="mb-3" />
+          <p>At Secure Edge Fintech, we are shaping the future of finance: Secure and Seamless. Driven by Innovation and
+            built on Trust</p>
+          <div
+            class="social-iconsblock mt-3 mb-lg-0 mb-md-5 mb-4 d-flex align-items-center justify-content-md-start justify-content-center">
+            <a href="https://www.facebook.com/SecureEdgeFintech/" class="social-icons"
+              aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/secureedgefintech/" class="social-icons"
+              aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/secureedgefintech" class="social-icons"
+              aria-label="Follow us on Linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@Secureedgefintech" class="social-icons" aria-label="Youtube"><i
+                class="fa-brands fa-youtube"></i></a>
+            <a href="https://x.com/secureedgefin" class="social-icons" aria-label="X-twitter"><i
+                class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5>Products</h5>
+          <ul>
+            <li><a href="openedge.html">Open Edge</a></li>
+            <li><a href="verifyedge.html">Verify Edge</a></li>
+            <li><a href="bcedge.html">BC Edge</a></li>
+            <li><a href="mobileBanking.html">Mobile Banking</a></li>
+            <li><a href="samay.html">Samay</a></li>
+            <li><a href="frms.html">FRMS</a></li>
+            <li><a href="dpdp.html">DPDP</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5>Important Link</h5>
+          <ul>
+            <li><a href="Terms&C.html"> Terms &amp; Conditions</a></li>
+            <li><a href="privacy_policy.html"> Privacy Policy</a></li>
+            <li><a href="/career">Career</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5>Contact</h5>
+          <p class="mb-3">
+            204, 2nd Floor, Cyber Heights,<br />
+            Vibhuti Khand, Gomti Nagar,<br />
+            Lucknow, U.P. 226010
+          </p>
+          <p class="mb-3">9793853777</p>
+          <p><a href="mailto:sales@secureedge.in" class="nav-link m-0">sales@secureedge.in</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="mb-0">Copyright @ <a href="#">Secureedge Fintech</a> Pvt. Ltd.</p>
+        <p class="mb-0">Designed By <a href="#">Goforad Technology</a> Pvt. Ltd.</p>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/919793853777" class="whatsapp-sticky-btn" target="_blank" rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <!-- End Footer section -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="./assets/js/custom.js"></script>
+  <script>
+    AOS.init({
+      duration: 1400,
+      easing: "ease-in-out",
+      once: true,
+    });
+  </script>
+</body>
+
+</html>

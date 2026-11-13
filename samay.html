@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Railway Operations Software | SE Samay Rail
+    </title>
+    <meta name="description" content=" SE Samay Rail digitizes station master operations with digital TSR, train movement tracking, line clear, block management, and secure records.">
+    <link rel="canonical" href="https://secureedgefintech.com/samay.html">
+
+    <link rel="icon" type="image/png" href="./assets/images/se-logo-favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <!-- <link href="https://db.onlinewebfonts.com/c/2cf31cbaf98b296b692adb4ed0483799?family=Qurova+DEMO" rel="stylesheet" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/custome.css" /> -->
+    <link rel="stylesheet" href="./assets/css/bdadge.css" />
+    <style>
+        .bgadge-section-main-wrapper .main-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .bgadge-section-main-wrapper .main-content p {
+            padding: 20px 100px;
+        }
+
+        .hero-watermark {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            font-size: 112px;
+            text-transform: uppercase;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 53.85%, rgba(0, 0, 0, 0.04) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap
+        }
+
+        .description {
+            max-width: 800px;
+            justify-content: center;
+            margin: 20px auto 40px;
+            text-align: center;
+        }
+
+        .highlight-text {
+            margin: 0 auto;
+            justify-content: center;
+            display: flex;
+        }
+
+        .samay-second {
+            padding: 20px 0;
+        }
+
+        .service-card-ourservicess svg {
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .custom-glass-section {
+            position: relative;
+            background-image: url("./assets/images/glowbg.png");
+            background-size: 350px;
+            background-position: left;
+            background-repeat: no-repeat;
+            /* height: 100vh; */
+        }
+
+        /* Main card */
+        .glass-card {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 50px;
+            border-radius: 40px;
+            background: #161616;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Small red heading */
+        .small-heading {
+            color: #ff4d4d;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        /* Main title */
+        .main-heading {
+            color: #fff;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin: 0 auto 25px;
+        }
+
+        .card-description {
+            color: #aaa;
+            font-size: 16px;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto 25px;
+        }
+
+        /* Bottom flow text */
+        .flow-text {
+            color: #ff4d4d;
+            font-size: 16px;
+        }
+
+        .footer_title {
+            font-size: 34px;
+            font-weight: 700;
+            font-family: "Qurova DEMO";
+            max-width: 750px;
+        }
+
+        .btn-contact {
+            margin: 20px auto;
+        }
+
+        /* Top Text */
+        .top-label {
+            color: #ff4d4d;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        .main-title {
+            font-size: 36px;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+
+        .sub-text {
+            max-width: 700px;
+            margin: 0 auto;
+            color: #E4E4E4;
+            font-size: 17px;
+        }
+
+        .tsr-card {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            color: white;
+            border: 1px solid transparent;
+            transition: all 0.3s ease-in-out;
+            height: 100%;
+            box-shadow: 0px -0.5px 2px 0 rgb(255, 254, 254);
+            text-align: left;
+        }
+
+        .tsr-card h5 {
+            color: #FF5555;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .tsr-card ul {
+            padding-left: 18px;
+        }
+
+        .tsr-card li {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #D3D3D3;
+            list-style-type: disc;
+        }
+
+        /* Connector Lines */
+        .connector-lines {
+            top: 140px;
+            left: 50%;
+            width: 600px;
+            height: 200px;
+            transform: translateX(-50%);
+            pointer-events: none;
+        }
+
+        .connector-lines::before,
+        .connector-lines::after {
+            content: "";
+            width: 45%;
+            height: 100%;
+            border-top: 2px solid rgba(255, 80, 80, 0.6);
+            border-radius: 20px;
+        }
+
+        .connector-lines::before {
+            left: 0;
+            border-left: 2px solid rgba(255, 80, 80, 0.6);
+        }
+
+        .connector-lines::after {
+            right: 0;
+            border-right: 2px solid rgba(255, 80, 80, 0.6);
+        }
+
+        /* Optional grid background */
+        .tsr-section::after {
+            content: "";
+            inset: 0;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.2;
+        }
+
+        .tsr-card,
+        .main-title,
+        .sub-text {
+            /* position: relative; */
+            z-index: 2;
+        }
+
+        .tsr-visual-wrapper {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            /* adjust based on your design */
+            display: flex;
+            justify-content: center;
+            margin-bottom: -100px;
+        }
+
+        .tsr-visual-wrapper svg {
+            position: absolute;
+        }
+
+        .svg-1 {
+            top: 10%;
+            left: 10%;
+        }
+
+        .svg-2 {
+            top: 10%;
+            right: 14%;
+        }
+
+        .svg-3 {
+            bottom: 30%;
+            left: 22%;
+        }
+
+        .svg-4 {
+            bottom: 30%;
+            right: 22%;
+        }
+
+        .benefit-card {
+            --r: 0deg;
+            transform: rotate(var(--r));
+            transition: transform 0.3s ease;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .benefit-card:hover {
+            transform: rotate(0deg) scale(1.05);
+            z-index: 10;
+        }
+
+        .samay1,
+        .samay2 {
+            width: 100%;
+            max-width: 200px !important;
+            height: 400px !important;
+            object-fit: contain;
+        }
+
+        .Process-section-wrapper-02 {
+            position: relative;
+
+            background-image:
+                url(./assets/images/sidenet.png),
+                /* left net */
+                url(./assets/images/sidenet.png),
+                /* right net */
+                url(./assets/images/sideglow.png);
+            /* glow */
+
+            background-repeat: no-repeat, no-repeat, no-repeat;
+
+            background-position:
+                left center,
+                /* left net */
+                right bottom,
+                /* right net */
+                right center;
+            /* glow (adjust if needed) */
+
+            background-size:
+                300px,
+                300px,
+                300px;
+        }
+
+        .circle-img {
+            position: absolute;
+            right: -7%;
+            top: 10%;
+            transform: translateY(-50%);
+            width: 180px;
+            height: auto;
+        }
+
+        .aeps-section {
+            background-image: url(assets/images/Rectangle\ 2\ \(4\).webp);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: 280px;
+            align-items: center;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 991px) {
+            #next-section {
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .hero-watermark {
+                font-size: 72px;
+                left: 20px;
+            }
+        }
+
+        /* Hide SVG connectors and decorative elements up to 1199px (below xl) */
+        @media (max-width: 1199px) {
+            .tsr-visual-wrapper {
+                display: none;
+            }
+
+            .circle-img {
+                display: none;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .hero-watermark {
+                font-size: 72px;
+                margin-left: 25%;
+            }
+
+            .glass-card {
+                padding: 40px 30px;
+                border-radius: 24px;
+            }
+
+            .main-heading {
+                font-size: 28px;
+            }
+
+            .main-title {
+                font-size: 28px;
+            }
+
+            .Process-section-wrapper-02 {
+                background-image: none;
+            }
+
+            .aeps-section {
+                background-image: none;
+            }
+
+            .samay1,
+            .samay2 {
+                max-width: 160px !important;
+                height: 320px !important;
+            }
+
+            .footer_title {
+                font-size: 26px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            #next-section {
+                margin-top: 10px;
+            }
+
+            .bgadge-section-main-wrapper .main-content p {
+                padding: 20px 20px;
+            }
+
+            .hero-watermark {
+                font-size: 48px;
+                /* margin: 80px 20px; */
+                /* padding: 20px; */
+            }
+
+            .bgadge-section-main-wrapper .wrapper-imagemainrotation {
+                width: clamp(180px, 25vw, 250px);
+                height: 100%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .glass-card {
+                padding: 30px 20px;
+                border-radius: 16px;
+            }
+
+            .main-heading {
+                font-size: 22px;
+            }
+
+            .main-title {
+                font-size: 24px;
+            }
+
+            .card-description {
+                font-size: 14px;
+            }
+
+            .sub-text {
+                font-size: 13px;
+            }
+
+            .tsr-card li {
+                font-size: 15px;
+            }
+
+            .aeps-content {
+                padding-left: 15px !important;
+                padding-right: 15px !important;
+            }
+
+            .benefit-card {
+                transform: rotate(0deg) !important;
+            }
+
+            .samay1,
+            .samay2 {
+                max-width: 140px !important;
+                height: 280px !important;
+            }
+
+            .footer_title {
+                font-size: 22px;
+                text-align: center;
+            }
+
+            .custom-glass-section {
+                background-size: 200px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .bgadge-section-main-wrapper .wrapper-container {
+                padding-left: 18%;
+                align-items: flex-start;
+            }
+
+            .hero-watermark {
+                margin-left: 35%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .footer ul {
+                display: flex;
+            }
+
+            .hero-watermark {
+                font-size: 45px;
+                margin-left: 50px;
+            }
+
+            .bgadge-section-main-wrapper .main-content p {
+                padding: 15px 10px;
+            }
+
+            .glass-card {
+                padding: 24px 16px;
+            }
+
+            .main-heading {
+                font-size: 20px;
+            }
+
+            .small-heading {
+                font-size: 16px;
+            }
+
+            .main-title {
+                font-size: 20px;
+            }
+
+            .flow-text {
+                font-size: 13px;
+                text-align: left;
+            }
+
+            .samay1,
+            .samay2 {
+                max-width: 120px !important;
+                height: 240px !important;
+            }
+
+            .tsr-card {
+                padding: 16px;
+            }
+
+            .tsr-card h5 {
+                font-size: 17px;
+            }
+
+            .tsr-card li {
+                font-size: 14px;
+            }
+
+            .nextGen-card {
+                padding: 30px 16px;
+            }
+        }
+
+        section.bgadge-ourcard-section01 {
+            background-image:
+                url(./assets/images/circle-2.webp),
+                url(./assets/images/sidenet.png);
+
+            background-repeat: no-repeat, no-repeat;
+            background-position:
+                right -80px top 80px,
+                /* circle */
+                left center;
+            /* sidenet */
+            background-size: auto, 300px;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start header section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand p-0" href="/">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+                <!-- Toggler (mobile only) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                    aria-controls="mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Desktop Menu -->
+                <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Our Product
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown">
+                                <li><a class="dropdown-item" href="bcedge.html">BC Edge</a></li>
+                                <li><a class="dropdown-item" href="openedge.html">Open Edge</a></li>
+                                <li><a class="dropdown-item" href="verifyedge.html">Verify Edge</a></li>
+                                <li><a class="dropdown-item" href="mobileBanking.html">Mobile Banking</a></li>
+                                <li><a class="dropdown-item" href="samay.html">Samay</a></li>
+                                <li><a class="dropdown-item" href="frms.html">FRMS</a></li>
+                                  <li><a class="dropdown-item" href="dpdp.html">DPDP</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="blogpage.html">Blog</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Desktop Contact Button -->
+                <div class="d-none d-lg-block">
+                    <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Mobile Offcanvas -->
+    <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title">
+                <a class="navbar-brand p-0" href="#">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div class="accordion" id="menuAccordion">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About</a>
+                <a href="blogpage.html" class="nav-link">Blog</a>
+                <div class="accordion-item border-0 bg-transparent">
+                    <h2 class="accordion-header" id="headingProduct">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">
+                            Our Product
+                        </button>
+                    </h2>
+                    <div id="collapseProduct" class="accordion-collapse collapse" aria-labelledby="headingProduct"
+                        data-bs-parent="#menuAccordion">
+                        <div class="accordion-body p-0">
+                            <a href="bcedge.html" class="d-block mb-2">BC Edge</a>
+                            <a href="openedge.html" class="d-block mb-2">Open Edge</a>
+                            <a href="verifyedge.html" class="d-block">Verify Edge</a>
+                            <a href="mobileBanking.html" class="d-block">Mobile banking</a>
+                            <a href="samay.html" class="d-block">Samay</a>
+                            <a href="frms.html" class="d-block">FRMS</a>
+                            <a href="frms.html" class="d-block">DPDP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="mt-4 text-center">
+                    <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header section -->
+    <!-- Hero Section -->
+    <main>
+        <section class="bgadge-section-main-wrapper">
+            <div class="container">
+                <div class="main-content">
+                    <h1 data-aos="zoom-in"> Digitalizing Station Master Operations in Real Time</h1>
+                    <p data-aos="zoom-in">Real-time train movement tracking, digital registers, and automated workflows
+                        — built to make railway operations faster, safer, and fully auditable.</p>
+                    <!-- <a href="#" class="btn" data-aos="zoom-out">Get Started</a> -->
+                    <a href="contact-us.html" class="btn-getstart-eadge aos-init aos-animate" data-aos="zoom-out">Get Started</a>
+                </div>
+                <div class="wrapper-container">
+
+                    <div class="wrapper-imagemainrotation">
+                        <div class="hero-watermark">SECUREDGE</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- second section create -->
+        <section id="next-section" class="aeps-section samay-second position-relative">
+            <div class="container position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6">
+                        <p class="title-bcedge-heading01" data-aos="zoom-in">Why Samay Rail</p>
+                        <h2 class="mb-4 mt-3 sub-title-bcedge-heading01" data-aos="zoom-out">SE Samay Rail – Digital
+                            Railway Operations Platform</h2>
+
+                        <p data-aos="zoom-in">SE Samay Rail is purpose-built for Indian Railway Station Masters. Every
+                            register that used to live in a bound ledger on the SM's desk — the Train Signal Register
+                            (TSR), the private-number booklet, the block demand slips, the caution order log, the key
+                            register — is now a live digital form that syncs instantly with the neighbouring station,
+                            the control room and the concerned engineer. The platform eliminates illegible handwriting,
+                            missing signatures and slow paper handovers. Every action is timestamped, signed, and
+                            auditable. Mistakes are caught at data-entry time through strict validation rules taken
+                            directly from railway operating procedure.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="whytochoose-right-image">
+                            <img src="assets/images/samaymockup.webp" loading="lazy" decoding="async" alt="Phone Image"
+                                class="phone-img" data-aos="zoom-out">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <!-- third section -->
+        <section class="bgadge-ourcard-section01">
+            <div class="container">
+                <div>
+                    <p class="title-bcedge-heading01 highlight-text aos-init aos-animate">Station Master Modules</p>
+                    <h2 class="description">Empowering Station Masters with Real-Time Control, Visibility, and
+                        Accountability</h2>
+                </div>
+                <div class="row g-4">
+                    <!-- Card Template -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+                        <div class="service-card-ourservicess">
+                            <svg width="16" height="19" viewBox="0 0 16 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 0C4 0 0 0.5 0 4V13.5C0 15.43 1.57 17 3.5 17L2 18.5V19H4L6 17H10L12 19H14V18.5L12.5 17C14.43 17 16 15.43 16 13.5V4C16 0.5 12 0 8 0ZM8 2C11.51 2 12.96 2.48 13.57 3H2.43C3.04 2.48 4.49 2 8 2ZM2 5H7V8H2V5ZM14 13.5C14 14.33 13.33 15 12.5 15H3.5C2.67 15 2 14.33 2 13.5V10H14V13.5ZM14 8H9V5H14V8Z"
+                                    fill="white" />
+                            </svg>
+
+                            <h5>Train Signal Register</h5>
+                            <p>Digital UP & DOWN TSR with advance, rear, custom-row and handover entries
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+                        <div class="service-card-ourservicess">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.75 16.75C10.2196 16.75 9.71086 16.9607 9.33579 17.3358C8.96071 17.7109 8.75 18.2196 8.75 18.75C8.75 19.2804 8.96071 19.7891 9.33579 20.1642C9.71086 20.5393 10.2196 20.75 10.75 20.75C11.2804 20.75 11.7891 20.5393 12.1642 20.1642C12.5393 19.7891 12.75 19.2804 12.75 18.75C12.75 18.2196 12.5393 17.7109 12.1642 17.3358C11.7891 16.9607 11.2804 16.75 10.75 16.75ZM10.75 16.75V4.75M10.75 4.75C11.2804 4.75 11.7891 4.53929 12.1642 4.16421C12.5393 3.78914 12.75 3.28043 12.75 2.75C12.75 2.21957 12.5393 1.71086 12.1642 1.33579C11.7891 0.960714 11.2804 0.75 10.75 0.75C10.2196 0.75 9.71086 0.960714 9.33579 1.33579C8.96071 1.71086 8.75 2.21957 8.75 2.75C8.75 3.28043 8.96071 3.78914 9.33579 4.16421C9.71086 4.53929 10.2196 4.75 10.75 4.75ZM18.75 16.75C18.2196 16.75 17.7109 16.9607 17.3358 17.3358C16.9607 17.7109 16.75 18.2196 16.75 18.75C16.75 19.2804 16.9607 19.7891 17.3358 20.1642C17.7109 20.5393 18.2196 20.75 18.75 20.75C19.2804 20.75 19.7891 20.5393 20.1642 20.1642C20.5393 19.7891 20.75 19.2804 20.75 18.75C20.75 18.2196 20.5393 17.7109 20.1642 17.3358C19.7891 16.9607 19.2804 16.75 18.75 16.75ZM18.75 16.75V13.457C18.75 11.968 17.55 10.75 16.083 10.75H5.417C3.95 10.75 2.75 11.968 2.75 13.457V16.75M2.75 16.75C2.21957 16.75 1.71086 16.9607 1.33579 17.3358C0.960714 17.7109 0.75 18.2196 0.75 18.75C0.75 19.2804 0.960714 19.7891 1.33579 20.1642C1.71086 20.5393 2.21957 20.75 2.75 20.75C3.28043 20.75 3.78914 20.5393 4.16421 20.1642C4.53929 19.7891 4.75 19.2804 4.75 18.75C4.75 18.2196 4.53929 17.7109 4.16421 17.3358C3.78914 16.9607 3.28043 16.75 2.75 16.75Z"
+                                    stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                            <h5>Line Clear Workflow</h5>
+                            <p>Issue and receive line clear with token, private number and entering-section times.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+                        <div class="service-card-ourservicess">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.8542 10.974L15.2692 9.56002L11.0262 5.31702L6.7832 9.56002L8.1972 10.974L10.0262 9.14602V16.683H12.0262V9.14602L13.8542 10.974Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 18C0 19.0609 0.421427 20.0783 1.17157 20.8284C1.92172 21.5786 2.93913 22 4 22H18C19.0609 22 20.0783 21.5786 20.8284 20.8284C21.5786 20.0783 22 19.0609 22 18V4C22 2.93913 21.5786 1.92172 20.8284 1.17157C20.0783 0.421427 19.0609 0 18 0H4C2.93913 0 1.92172 0.421427 1.17157 1.17157C0.421427 1.92172 0 2.93913 0 4V18ZM4 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V4C20 3.46957 19.7893 2.96086 19.4142 2.58579C19.0391 2.21071 18.5304 2 18 2H4C3.46957 2 2.96086 2.21071 2.58579 2.58579C2.21071 2.96086 2 3.46957 2 4V18C2 18.5304 2.21071 19.0391 2.58579 19.4142C2.96086 19.7893 3.46957 20 4 20Z"
+                                    fill="white" />
+                            </svg>
+
+                            <h5>Blocks Demand & Grant</h5>
+                            <p>Receive demands from SSE/PWI/JE, grant blocks, mark cancellation or withdrawal.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+                        <div class="service-card-ourservicess">
+                            <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 18V15.2C0 14.65 0.141667 14.1333 0.425 13.65C0.708333 13.1667 1.1 12.8 1.6 12.55C2.45 12.1167 3.40833 11.75 4.475 11.45C5.54167 11.15 6.71667 11 8 11C9.28333 11 10.4583 11.15 11.525 11.45C12.5917 11.75 13.55 12.1167 14.4 12.55C14.9 12.8 15.2917 13.1667 15.575 13.65C15.8583 14.1333 16 14.65 16 15.2V18H0ZM2 16H14V15.2C14 15.0167 13.9543 14.85 13.863 14.7C13.7717 14.55 13.6507 14.4333 13.5 14.35C12.9 14.05 12.1293 13.75 11.188 13.45C10.2467 13.15 9.184 13 8 13C6.816 13 5.75367 13.15 4.813 13.45C3.87233 13.75 3.10133 14.05 2.5 14.35C2.35 14.4333 2.22933 14.55 2.138 14.7C2.04667 14.85 2.00067 15.0167 2 15.2V16ZM5.175 8.825C4.39167 8.04167 4 7.1 4 6H3.75C3.6 6 3.479 5.95433 3.387 5.863C3.295 5.77167 3.24933 5.65067 3.25 5.5C3.25067 5.34933 3.29667 5.22833 3.388 5.137C3.47933 5.04567 3.6 5 3.75 5H4C4 4.25 4.18333 3.575 4.55 2.975C4.91667 2.375 5.4 1.9 6 1.55V2.5C6 2.65 6.046 2.771 6.138 2.863C6.23 2.955 6.35067 3.00067 6.5 3C6.64933 2.99933 6.77033 2.95367 6.863 2.863C6.95567 2.77233 7.00133 2.65133 7 2.5V1.15C7.15 1.1 7.30833 1.06267 7.475 1.038C7.64167 1.01333 7.81667 1.00067 8 1C8.18333 0.999333 8.35833 1.012 8.525 1.038C8.69167 1.064 8.85 1.10133 9 1.15V2.5C9 2.65 9.046 2.771 9.138 2.863C9.23 2.955 9.35067 3.00067 9.5 3C9.64933 2.99933 9.77033 2.95367 9.863 2.863C9.95567 2.77233 10.0013 2.65133 10 2.5V1.55C10.6 1.9 11.0833 2.375 11.45 2.975C11.8167 3.575 12 4.25 12 5H12.25C12.4 5 12.521 5.046 12.613 5.138C12.705 5.23 12.7507 5.35067 12.75 5.5C12.7493 5.64933 12.7037 5.77033 12.613 5.863C12.5223 5.95567 12.4013 6.00133 12.25 6H12C12 7.1 11.6083 8.04167 10.825 8.825C10.0417 9.60833 9.1 10 8 10C6.9 10 5.95833 9.60833 5.175 8.825ZM9.413 7.413C9.80433 7.021 10 6.55 10 6H6C6 6.55 6.196 7.021 6.588 7.413C6.98 7.805 7.45067 8.00067 8 8C8.54933 7.99933 9.02033 7.80367 9.413 7.413ZM15.5 12L15.35 11.25C15.25 11.2167 15.1543 11.1793 15.063 11.138C14.9717 11.0967 14.884 11.034 14.8 10.95L14.1 11.2L13.6 10.3L14.15 9.8V9.2L13.6 8.7L14.1 7.8L14.8 8.05C14.8667 7.98333 14.95 7.925 15.05 7.875C15.15 7.825 15.25 7.78333 15.35 7.75L15.5 7H16.5L16.65 7.75C16.75 7.78333 16.85 7.825 16.95 7.875C17.05 7.925 17.1333 7.98333 17.2 8.05L17.9 7.8L18.4 8.7L17.85 9.2V9.8L18.4 10.3L17.9 11.2L17.2 10.95C17.1167 11.0333 17.0293 11.096 16.938 11.138C16.8467 11.18 16.7507 11.2173 16.65 11.25L16.5 12H15.5ZM16.525 10.025C16.675 9.875 16.75 9.7 16.75 9.5C16.75 9.3 16.675 9.125 16.525 8.975C16.375 8.825 16.2 8.75 16 8.75C15.8 8.75 15.625 8.825 15.475 8.975C15.325 9.125 15.25 9.3 15.25 9.5C15.25 9.7 15.325 9.875 15.475 10.025C15.625 10.175 15.8 10.25 16 10.25C16.2 10.25 16.375 10.175 16.525 10.025ZM17.8 7L17.6 5.95C17.45 5.9 17.3123 5.83767 17.187 5.763C17.0617 5.68833 16.9493 5.60067 16.85 5.5L15.8 5.85L15.1 4.65L15.95 3.9C15.9167 3.81667 15.9 3.75 15.9 3.7V3.3C15.9 3.25 15.9167 3.18333 15.95 3.1L15.1 2.35L15.8 1.15L16.85 1.5C16.95 1.4 17.0627 1.31233 17.188 1.237C17.3133 1.16167 17.4507 1.09933 17.6 1.05L17.8 0H19.2L19.4 1.05C19.55 1.1 19.6877 1.16267 19.813 1.238C19.9383 1.31333 20.0507 1.40067 20.15 1.5L21.2 1.15L21.9 2.35L21.05 3.1C21.0833 3.18333 21.1 3.25 21.1 3.3V3.7C21.1 3.75 21.0833 3.81667 21.05 3.9L21.9 4.65L21.2 5.85L20.15 5.5C20.05 5.6 19.9377 5.68767 19.813 5.763C19.6883 5.83833 19.5507 5.90067 19.4 5.95L19.2 7H17.8ZM19.387 4.387C19.629 4.14567 19.75 3.85 19.75 3.5C19.75 3.15 19.629 2.854 19.387 2.612C19.145 2.37 18.8493 2.24933 18.5 2.25C18.1507 2.25067 17.8547 2.37167 17.612 2.613C17.3693 2.85433 17.2487 3.15 17.25 3.5C17.2513 3.85 17.3723 4.146 17.613 4.388C17.8537 4.63 18.1493 4.75067 18.5 4.75C18.8507 4.74933 19.1457 4.62833 19.387 4.387Z"
+                                    fill="white" />
+                            </svg>
+
+                            <h5>Engineering Block</h5>
+                            <p>Complete Form 465-A / 465-B workflow with SM signature and ECR register entry.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+                        <div class="service-card-ourservicess">
+                            <svg width="22" height="14" viewBox="0 0 22 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 2C5.67392 2 4.40215 2.52678 3.46447 3.46447C2.52678 4.40215 2 5.67392 2 7C2 8.32608 2.52678 9.59785 3.46447 10.5355C4.40215 11.4732 5.67392 12 7 12H15C16.3261 12 17.5979 11.4732 18.5355 10.5355C19.4732 9.59785 20 8.32608 20 7C20 5.67392 19.4732 4.40215 18.5355 3.46447C17.5979 2.52678 16.3261 2 15 2H7ZM7 0H15C15.9193 -1.36979e-08 16.8295 0.18106 17.6788 0.532843C18.5281 0.884626 19.2997 1.40024 19.9497 2.05025C20.5998 2.70026 21.1154 3.47194 21.4672 4.32122C21.8189 5.17049 22 6.08075 22 7C22 7.91925 21.8189 8.8295 21.4672 9.67878C21.1154 10.5281 20.5998 11.2997 19.9497 11.9497C19.2997 12.5998 18.5281 13.1154 17.6788 13.4672C16.8295 13.8189 15.9193 14 15 14H7C6.08075 14 5.1705 13.8189 4.32122 13.4672C3.47194 13.1154 2.70026 12.5998 2.05025 11.9497C1.40024 11.2997 0.884626 10.5281 0.532843 9.67878C0.18106 8.8295 0 7.91925 0 7C0 6.08075 0.18106 5.17049 0.532843 4.32122C0.884626 3.47194 1.40024 2.70026 2.05025 2.05025C2.70026 1.40024 3.47194 0.884626 4.32122 0.532843C5.1705 0.18106 6.08075 -1.36979e-08 7 0ZM7 10C6.20435 10 5.44129 9.68393 4.87868 9.12132C4.31607 8.55871 4 7.79565 4 7C4 6.20435 4.31607 5.44129 4.87868 4.87868C5.44129 4.31607 6.20435 4 7 4C7.79565 4 8.55871 4.31607 9.12132 4.87868C9.68393 5.44129 10 6.20435 10 7C10 7.79565 9.68393 8.55871 9.12132 9.12132C8.55871 9.68393 7.79565 10 7 10Z"
+                                    fill="white" />
+                            </svg>
+
+                            <h5>Power Block</h5>
+                            <p>Traction power block, disconnection and reconnection entries with live OHE status.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+                        <div class="service-card-ourservicess">
+                            <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8 0V2H6V0H4V2H2V0H0V12H2V10H4V12H6V10H8V12H10V10H12V12H14V10H16V12H18V10H20V12H22V0H20V2H18V0H16V2H14V0H12V2H10V0H8ZM2 4H4V8H2V4ZM6 4H8V8H6V4ZM10 4H12V8H10V4ZM14 4H16V8H14V4ZM18 4H20V8H18V4Z"
+                                    fill="white" />
+                            </svg>
+
+                            <h5>LC Gate</h5>
+                            <p>Sync level-crossing gate status to train movement; auto-skip at notified stations.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+                        <div class="service-card-ourservicess">
+                            <svg width="16" height="22" viewBox="0 0 16 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 0C11.683 0 12.287 0.343 12.647 0.866L12.732 1H14C14.5046 0.99984 14.9906 1.19041 15.3605 1.5335C15.7305 1.87659 15.9572 2.34684 15.995 2.85L16 3V15C15.9999 16.2885 15.5025 17.5272 14.6113 18.4578C13.7202 19.3884 12.5042 19.9391 11.217 19.995L11 20H2C1.49542 20.0002 1.00943 19.8096 0.639452 19.4665C0.269471 19.1234 0.0428434 18.6532 0.00500021 18.15L1.00268e-07 18V3C-0.000159579 2.49542 0.190406 2.00943 0.533497 1.63945C0.876588 1.26947 1.34684 1.04284 1.85 1.005L2 1H3.268C3.42919 0.720752 3.6555 0.484614 3.92765 0.311712C4.1998 0.138809 4.50973 0.0342689 4.831 0.00699997L5 0H11ZM3 3H2V18H11C11.7956 18 12.5587 17.6839 13.1213 17.1213C13.6839 16.5587 14 15.7956 14 15V3H13C13 3.53043 12.7893 4.03914 12.4142 4.41421C12.0391 4.78929 11.5304 5 11 5H5C4.46957 5 3.96086 4.78929 3.58579 4.41421C3.21071 4.03914 3 3.53043 3 3ZM8 12C8.25488 12.0003 8.50003 12.0979 8.68537 12.2728C8.8707 12.4478 8.98223 12.687 8.99717 12.9414C9.01211 13.1958 8.92933 13.4464 8.76574 13.6418C8.60215 13.8373 8.3701 13.9629 8.117 13.993L8 14H5C4.74512 13.9997 4.49997 13.9021 4.31463 13.7272C4.1293 13.5522 4.01776 13.313 4.00283 13.0586C3.98789 12.8042 4.07067 12.5536 4.23426 12.3582C4.39785 12.1627 4.6299 12.0371 4.883 12.007L5 12H8ZM11 8C11.2652 8 11.5196 8.10536 11.7071 8.29289C11.8946 8.48043 12 8.73478 12 9C12 9.26522 11.8946 9.51957 11.7071 9.70711C11.5196 9.89464 11.2652 10 11 10H5C4.73478 10 4.48043 9.89464 4.29289 9.70711C4.10536 9.51957 4 9.26522 4 9C4 8.73478 4.10536 8.48043 4.29289 8.29289C4.48043 8.10536 4.73478 8 5 8H11ZM11 2H5V3H11V2Z"
+                                    fill="white" />
+                            </svg>
+
+                            <h5>Signal Failure</h5>
+                            <p>Raise failure reports, record SE/JE response, attach SM's message and resolution.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-aos="zoom-in">
+                        <div class="service-card-ourservicess">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.2194 18.9V12.7652L19.1279 11.3876C19.5868 11.0563 19.892 10.5607 19.9764 10.0099C20.0607 9.45907 19.9174 8.8981 19.5778 8.4504L18.5037 7.035C18.1908 6.6226 17.734 6.33625 17.2194 6.23V5.6C17.2194 5.41436 17.1438 5.23634 17.0092 5.1051L11.9869 0.2051C11.8524 0.0738154 11.6699 3.96462e-05 11.4796 0H2.15243C1.58157 0 1.03409 0.221249 0.630432 0.615076C0.226773 1.0089 0 1.54305 0 2.1V18.9C0 19.457 0.226773 19.9911 0.630432 20.3849C1.03409 20.7788 1.58157 21 2.15243 21H15.067C15.6379 21 16.1854 20.7788 16.589 20.3849C16.9927 19.9911 17.2194 19.457 17.2194 18.9ZM1.43495 18.9V2.1C1.43495 1.91435 1.51055 1.7363 1.6451 1.60503C1.77965 1.47375 1.96214 1.4 2.15243 1.4H10.7622V5.2549C10.7622 5.8324 11.2421 6.3 11.8333 6.3H15.7845V6.419C15.684 6.4694 15.5869 6.52843 15.4932 6.5961L13.617 7.9506C13.595 7.87827 13.5497 7.81481 13.4878 7.76965C13.4259 7.72449 13.3506 7.70006 13.2733 7.7H3.94612C3.85098 7.7 3.75973 7.73687 3.69246 7.80251C3.62518 7.86815 3.58738 7.95717 3.58738 8.05C3.58738 8.14283 3.62518 8.23185 3.69246 8.29749C3.75973 8.36312 3.85098 8.4 3.94612 8.4H12.9942L11.0549 9.8H3.94612C3.85098 9.8 3.75973 9.83687 3.69246 9.90251C3.62518 9.96815 3.58738 10.0572 3.58738 10.15C3.58738 10.2428 3.62518 10.3319 3.69246 10.3975C3.75973 10.4631 3.85098 10.5 3.94612 10.5H10.0856L8.14623 11.9H3.94612C3.85098 11.9 3.75973 11.9369 3.69246 12.0025C3.62518 12.0681 3.58738 12.1572 3.58738 12.25C3.58738 12.3428 3.62518 12.4318 3.69246 12.4975C3.75973 12.5631 3.85098 12.6 3.94612 12.6H7.17692L5.27776 13.9706L5.24045 14H3.94612C3.85098 14 3.75973 14.0369 3.69246 14.1025C3.62518 14.1681 3.58738 14.2572 3.58738 14.35C3.58738 14.4428 3.62518 14.5318 3.69246 14.5975C3.75973 14.6631 3.85098 14.7 3.94612 14.7H4.90252L3.87294 17.9928C3.8402 18.0974 3.83305 18.2081 3.85206 18.3159C3.87107 18.4237 3.9157 18.5256 3.98239 18.6136C4.04908 18.7015 4.13597 18.773 4.23607 18.8222C4.33618 18.8715 4.44673 18.8972 4.55885 18.8972L8.48488 18.9C8.63882 18.9002 8.78874 18.8521 8.9125 18.7628L15.7845 13.8012V18.9C15.7845 19.0857 15.7089 19.2637 15.5743 19.395C15.4398 19.5263 15.2573 19.6 15.067 19.6H2.15243C1.96214 19.6 1.77965 19.5263 1.6451 19.395C1.51055 19.2637 1.43495 19.0857 1.43495 18.9ZM11.8333 5.6C11.7869 5.6 11.7409 5.59107 11.698 5.57373C11.6551 5.55639 11.6161 5.53097 11.5832 5.49892C11.5504 5.46688 11.5243 5.42883 11.5066 5.38696C11.4888 5.34509 11.4796 5.30022 11.4796 5.2549V1.6898L15.4875 5.6H11.8333ZM15.9538 11.9378L14.0303 9.394L14.8697 8.7878L16.7969 11.3288L15.9538 11.9378ZM6.86769 14.5649L13.4534 9.8105L15.3762 12.3543L8.86012 17.0583L6.86769 14.5649ZM6.30806 15.0024L8.28255 17.4755L8.24883 17.5L6.37335 17.4986L5.77497 16.709L6.30806 15.0024Z"
+                                    fill="white" />
+                            </svg>
+
+                            <h5>Memo Register</h5>
+                            <p>TI-602 memo, memo forms, acknowledgement and historical memo search</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="whyto-chooseus-oursection03 custom-glass-section">
+            <div class="container">
+                <div class="glass-card text-center">
+                    <p class="small-heading">How it’s work</p>
+                    <h2 class="main-heading">
+                        Seamless Coordination of Train Movements Across Stations
+                    </h2>
+                    <p class="card-description">
+                        SE Samay enables a seamless, real-time workflow for recording train movements across stations.
+                        From the moment a train is proposed by the rear station to its final arrival at the advance
+                        station, every step is digitally captured and synchronized between both Station Masters. Line
+                        clear exchanges, private numbers, train start, section entry, and arrival are all updated
+                        instantly on a shared record, ensuring complete visibility and coordination. Each action is
+                        time-stamped and validated, eliminating manual errors and delays. Once the train arrives, the
+                        entry is automatically completed and securely locked, with the full Train Signal Register
+                        available for export at any time. </p>
+
+                    <p class="flow-text">
+                        Rear SM proposes train → Advance SM acknowledges → Train starts & enters section → Train arrives
+                        → TSR complete
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="Process-section-wrapper-02 tsr-section">
+
+            <div class="container text-center">
+
+                <p class="top-label">Core Module</p>
+                <h2 class="main-title">Train Signal Register (TSR)</h2>
+                <p class="sub-text">
+                    The TSR is the heart of the Station Master's day. SE Samay's TSR is a live grid that shows every
+                    train in UP and DOWN direction, with each row covering the full life of one train through the
+                    section.
+                </p>
+                <div class="tsr-visual-wrapper">
+                    <svg class="svg-1" width="454" height="100" viewBox="0 0 454 127" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M453.404 0V47.3222C453.404 57.8156 444.898 66.3222 434.404 66.3222H19.5C9.0066 66.3222 0.5 74.8288 0.5 85.3222V127"
+                            stroke="url(#paint0_linear_2169_5855)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_2169_5855" x1="226.952" y1="0" x2="226.952" y2="127"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0528846" stop-color="#2D2D2D" stop-opacity="0.44" />
+                                <stop offset="0.442308" stop-color="#FF6E6E" />
+                                <stop offset="0.884615" stop-color="#2D2D2D" stop-opacity="0.56" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <svg class="svg-2" width="385" height="107" viewBox="0 0 385 127" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.499291 0V47.3222C0.499291 57.8156 9.00588 66.3222 19.4993 66.3222H364.879C375.372 66.3222 383.879 74.8288 383.879 85.3222V127"
+                            stroke="url(#paint0_linear_2169_5857)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_2169_5857" x1="192.189" y1="0" x2="192.189" y2="127"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0528846" stop-color="#2D2D2D" stop-opacity="0.44" />
+                                <stop offset="0.442308" stop-color="#FF6E6E" />
+                                <stop offset="0.884615" stop-color="#2D2D2D" stop-opacity="0.56" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <svg class="svg-3" width="300" height="126" viewBox="0 0 339 146" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.5 146V125.69C0.5 115.197 9.00662 106.69 19.5 106.69H319.192C329.685 106.69 338.192 98.1836 338.192 87.6902V63.7238V0"
+                            stroke="url(#paint0_linear_2169_5856)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_2169_5856" x1="169.346" y1="0" x2="169.346" y2="146"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0528846" stop-color="#2D2D2D" stop-opacity="0.44" />
+                                <stop offset="0.442308" stop-color="#FF6E6E" />
+                                <stop offset="0.884615" stop-color="#2D2D2D" stop-opacity="0.56" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                    <svg class="svg-4" width="300" height="125" viewBox="0 0 339 145" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M338.191 145V124.523C338.191 114.03 329.685 105.523 319.191 105.523H19.4995C9.00613 105.523 0.499543 97.0167 0.499543 86.5233V62.3743V0"
+                            stroke="url(#paint0_linear_2169_5858)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_2169_5858" x1="169.345" y1="0" x2="169.345" y2="145"
+                                gradientUnits="userSpaceOnUse">
+                                <stop offset="0.0528846" stop-color="#2D2D2D" stop-opacity="0.44" />
+                                <stop offset="0.442308" stop-color="#FF6E6E" />
+                                <stop offset="0.884615" stop-color="#2D2D2D" stop-opacity="0.56" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-5">
+                        <div class="tsr-card">
+
+                            <h5>Advance form — to the next station</h5>
+                            <ul>
+                                <li>Issue line clear with auto-suggested next station</li>
+                                <li>Capture advance private number (numeric, validated)</li>
+                                <li>Capture advance token number at manual stations</li>
+                                <li>Auto-block submission if a previous train is still in the section</li>
+                                <li>Auto-skip LC gate prompt at notified stations (CKRD, BPGJ)</li>
+                                <li>Log train-started and entering-section-sent times</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="tsr-card">
+                            <h5>Rear form — from the previous station</h5>
+                            <ul>
+                                <li>Receive rear line clear and acknowledge private number</li>
+                                <li>Log entering-section-received and out-of-section-sent</li>
+                                <li>Record train arrival on a specific line / platform</li>
+                                <li>Auto-sync with the rear station's advance row</li>
+                                <li>Cancel train, terminate or mark originating when required</li>
+                                <li>Add a remarks row for unusual occurrences</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="nextGen-section">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="nextGen-card">
+                    <div class="bottom-left-img">
+                        <img src="./assets/images/circle-2.webp" loading="lazy" alt="Next Gen"
+                            class="img-fluid rorate-spin" />
+                    </div>
+                    <span class="text-center relative z-3 footer_title" data-aos="zoom-in">
+                        Take the Next Step Toward Digitized Station Master Operations
+                    </span>
+                    <!-- <p class="next-gen-text">Take the first step toward digital modernization with SecureEdge.
+                        Schedule a 15-minute consultation to discover how our secure, scalable, and
+                        compliant solutions can be quickly deployed and customized to meet your
+                        institution’s unique needs, accelerate transformation, and drive long-term
+                        operational efficiency.</p> -->
+                    <a href="contact-us.html" class="btn btn-contact relative z-3" data-aos="zoom-in">Contact Us</a>
+                    <div class="top-right-img">
+                        <img src="./assets/images/circle-2.webp" loading="lazy" alt="Next Gen"
+                            class="img-fluid rorate-spin bottom" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- fourth section start -->
+        <section class="Process-section-wrapper-02">
+            <img src="./assets/images/circle-2.webp" alt="Phone Image" class="samay1 circle-img" data-aos="zoom-in">
+
+            <div class="container position-relative" data-aos="zoom-in">
+                <div class="row align-items-center gy-4">
+                    <div class="aeps-content flex-grow-1 px-4 col-md-3 col-12">
+                        <div class=" mb-4 ">
+                            <p class="title-bcedge-heading01 mb-3" data-aos="fade-up">Benefits</p>
+                            <h2 class="sub-title-bcedge-heading01" data-aos="fade-down">What the Station Master gets
+                            </h2>
+                        </div>
+                        <div class="d-flex flex-column mt-5" data-aos="zoom-out">
+                            <div class="benefit-card mb-2" style="--r: -6deg;">
+                                No more paper TSR — digital, searchable, auditable
+                            </div>
+
+                            <div class="benefit-card mb-2" style="--r: -3deg;">
+                                Auto-validated private numbers and tokens
+                            </div>
+
+                            <div class="benefit-card mb-2" style="--r: 0deg;">
+                                One-click PDF / ECR exports ready for inspection
+                            </div>
+
+                            <div class="benefit-card mb-2" style="--r: 3deg;">
+                                Live block-status visibility before any advance form
+                            </div>
+
+                            <div class="benefit-card mb-2" style="--r: 6deg;">
+                                Safer, faster handover between SM shifts
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 d-flex justify-content-center">
+                        <div class="how-bcedge-right-image02">
+                            <img src="./assets/images/samay1.png" alt="Phone Image" class="samay1" data-aos="zoom-in">
+                        </div>
+                        <div class="how-bcedge-right-image02">
+                            <img src="./assets/images/samay2.png" alt="Phone Image" class="samay2" data-aos="zoom-in">
+                        </div>
+                    </div>
+                    <div class="col-md-1 d-none d-md-flex justify-content-center">
+
+                        <!-- <img src="./assets/images/circle-2.webp" alt="Phone Image" class="circle-img"
+                                data-aos="zoom-in"> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
+        <!-- Start Footer section -->
+        <footer class="footer" data-aos="zoom-in">
+            <div class="container footerContent">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 footer-logo">
+                        <img src="./assets/images/logo.svg" alt="Secure Edge Logo" class="mb-3" />
+                        <p>At Secure Edge Fintech, we are shaping the future of finance: Secure and Seamless. Driven by
+                            Innovation and
+                            built on Trust</p>
+                        <div
+                            class="social-iconsblock mt-3 mb-lg-0 mb-md-5 mb-4 d-flex align-items-center justify-content-md-start justify-content-center">
+                            <a href="https://www.facebook.com/SecureEdgeFintech/" class="social-icons"
+                                aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/secureedgefintech/" class="social-icons"
+                                aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/secureedgefintech" class="social-icons"
+                                aria-label="Follow us on Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.youtube.com/@Secureedgefintech" class="social-icons"
+                                aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://x.com/secureedgefin" class="social-icons" aria-label="X-twitter"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5>Products</h5>
+                        <ul>
+                            <li><a href="openedge.html">Open Edge</a></li>
+                            <li><a href="verifyedge.html">Verify Edge</a></li>
+                            <li><a href="bcedge.html">BC Edge</a></li>
+                            <li><a href="mobileBanking.html">Mobile Banking</a></li>
+                            <li><a href="samay.html">Samay</a></li>
+                             <li><a href="frms.html">FRMS</a></li>
+                               <li><a href="dpdp.html">DPDP</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <!-- <h5>Know US</h5> -->
+                        <h5>Important Link</h5>
+                        <ul>
+                            <li><a href="Terms&C.html"> Terms & Conditions</a></li>
+                            <li><a href="privacy_policy.html"> Privacy Policy</a></li>
+                            <li><a href="career">Career</a></li>
+                            <li><a href="about.html">About</a></li>
+
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5>Contact</h5>
+                        <p class="mb-3">
+                            204, 2nd Floor, Cyber Heights,<br />
+                            Vibhuti Khand, Gomti Nagar,<br />
+                            Lucknow, U.P. 226010
+                        </p>
+                         <p class="mb-3">9793853777</p>
+                        <!--<p class="mb-3">0522-3692505</p>-->
+                        <p><a href="mailto:sales@secureedge.in" class="nav-link m-0">sales@secureedge.in</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer-bottom">
+                    <p class="mb-0">Copyright @ <a href="#">Secureedge Fintech</a> Pvt. Ltd.</p>
+                    <p class="mb-0">Designed By <a href="#">Goforad Technology</a> Pvt. Ltd.</p>
+                </div>
+            </div>
+        </footer>
+        <a
+          href="https://wa.me/919793853777"
+          class="whatsapp-sticky-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <!-- End Footer section -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script src="./assets/js/custom.js"></script>
+        <script>
+            AOS.init({
+                duration: 1400,
+                easing: "ease-in-out",
+                once: true,
+            });
+        </script>
+</body>
+
+</html>

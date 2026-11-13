@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KHJNDC6Z');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- meta -->
+  <title>Contact Secureedge Fintech | Fintech Solutions for Banks
+  </title>
+  <meta name="description" content=" Get in touch with Secureedge
+Fintech to book a demo or discuss digital banking solutions. We
+help banks innovate with secure fintech technology. ">
+  <meta name="keywords" content="SecureEdge Fintech, Banking
+Technology Partner, ">
+  <link rel="canonical" href="https://secureedgefintech.com/contact-us.html" />
+
+  <link rel="icon" type="image/png" href="./assets/images/se-logo-favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://db.onlinewebfonts.com/c/2cf31cbaf98b296b692adb4ed0483799?family=Qurova+DEMO" rel="stylesheet" />
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+  <!-- <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/contact-us.css" />
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHJNDC6Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- Start header section -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark transparent">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand p-0" href="/">
+          <img src="./assets/images/logo.svg" alt="Logo" />
+        </a>
+        <!-- Toggler (mobile only) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Desktop Menu -->
+        <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Our Product
+              </a>
+              <ul class="dropdown-menu custom-dropdown">
+                <li><a class="dropdown-item" href="bcedge.html">BC Edge</a></li>
+                <li><a class="dropdown-item" href="openedge.html">Open Edge</a></li>
+                <li><a class="dropdown-item" href="verifyedge.html">Verify Edge</a></li>
+                <li><a class="dropdown-item" href="mobileBanking.html">Mobile Banking</a></li>
+                <li><a class="dropdown-item" href="samay.html">Samay</a></li>
+              </ul>
+            <li class="nav-item"><a class="nav-link" href="blogpage.html">Blog</a></li>
+            </li>
+          </ul>
+        </div>
+        <!-- Desktop Contact Button -->
+        <div class="d-none d-lg-block">
+          <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Mobile Offcanvas -->
+  <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h5 class="offcanvas-title">
+        <a class="navbar-brand p-0" href="/">
+          <img src="./assets/images/logo.svg" alt="Logo" />
+        </a>
+      </h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column justify-content-between">
+      <div class="accordion" id="menuAccordion">
+        <a href="/" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blogpage.html" class="nav-link">Blog</a>
+        <div class="accordion-item border-0 bg-transparent">
+          <h2 class="accordion-header" id="headingProduct">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">
+              Our Product
+            </button>
+          </h2>
+          <div id="collapseProduct" class="accordion-collapse collapse" aria-labelledby="headingProduct"
+            data-bs-parent="#menuAccordion">
+            <div class="accordion-body p-0">
+              <a href="bcedge.html" class="d-block mb-2">BC Edge</a>
+              <a href="openedge.html" class="d-block mb-2">Open Edge</a>
+              <a href="verifyedge.html" class="d-block">Verify Edge</a>
+              <a href="mobileBanking.html" class="d-block">Mobile banking</a>
+               <a href="samay.html" class="d-block">Samay</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="mt-4 text-center">
+          <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End header section -->
+  <div class="contact-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-7">
+          <div class="contact-content">
+            <h1 data-aos="fade-right">Book Your Demo With Secureedge Fintech
+            </h1>
+            <p data-aos="fade-right">At Secureedge Fintech, we’re here to help banks and financial institutions
+              accelerate digital
+              transformation with secure, scalable, and next-generation fintech solutions. Whether you
+              have a product inquiry, partnership request, or need expert guidance, our team is ready to
+              assist you.
+              Connect with us to discover how our innovation-driven, reliable technology can empower
+              your institution and drive sustainable growth. </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5">
+          <div class="contact-img">
+            <svg width="314" height="314" viewBox="0 0 314 314" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Rotating Group -->
+              <g filter="url(#filter0_i_4646_7693)" class="rotating-circle">
+                <circle cx="157" cy="157" r="157" fill="url(#paint0_radial_4646_7693)" />
+              </g>
+
+              <!-- ✅ Fixed Text in the center -->
+              <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" style="
+      font-family: 'Qurova DEMO', sans-serif;
+      font-weight: 700;
+      font-size: 48px;
+      letter-spacing: 4%;
+      fill: white;
+      pointer-events: none;
+    ">
+                Contact Us
+              </text>
+
+              <defs>
+                <filter id="filter0_i_4646_7693" x="0" y="0" width="315" height="315" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset dx="1" dy="1" />
+                  <feGaussianBlur stdDeviation="11.05" />
+                  <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                  <feColorMatrix type="matrix"
+                    values="0 0 0 0 0.0977563 0 0 0 0 0.0977563 0 0 0 0 0.0977563 0 0 0 0.92 0" />
+                  <feBlend mode="normal" in2="shape" result="effect1_innerShadow_4646_7693" />
+                </filter>
+                <radialGradient id="paint0_radial_4646_7693" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                  gradientTransform="translate(243.551 56.359) rotate(108.569) scale(271.79)">
+                  <stop stop-color="#FF9696" />
+                  <stop offset="0.193692" stop-color="#FF3131" />
+                  <stop offset="0.857318" stop-color="#530606" />
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="divider"></div>
+          <div class="getinTouch">
+            <!-- GET IN TOUCH -->
+            <img src="./assets/images/contact/gen-in-touch.png" alt="gen-in-touch" class="img-fluid"
+              data-aos="fade-left">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="contact-section pt-0 pb-md-auto pb-0" data-aos="fade-up">
+    <div class="container">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-7">
+          <div class="contact-box contact-form h-100">
+            <form id="contactForm" action="https://formspree.io/f/xblpgqye" method="POST">
+              <!-- Required hidden reply-to for some endpoints and to support the JS fallback -->
+              <input type="hidden" name="_replyto" id="_replyto" />
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="mb-md-4 mb-3 position-relative">
+                    <label>Your Name</label>
+                    <img src="./assets/images/contact/user.svg" alt="user" class="form-icon">
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"
+                      required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-md-4 mb-3 position-relative">
+                    <label>Email</label>
+                    <img src="./assets/images/contact/email.svg" alt="email" class="form-icon">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email"
+                      required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-md-4 mb-3 position-relative">
+                    <label>Phone Number</label>
+                    <img src="./assets/images/contact/call.svg" alt="user" class="form-icon">
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter phone number"
+                      oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10)" pattern="\d{10}"
+                      title="Phone number must contain exactly 10 digits" maxlength="10" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-md-4 mb-3 position-relative">
+                    <label>Select Product</label>
+                    <select id="product" name="product" class="form-select" required>
+                      <option value="" disabled selected hidden>Select</option>
+                      <option value="open">Open Edge</option>
+                      <option value="verify">Verify Edge</option>
+                      <option value="bc">BC Edge</option>
+                    </select>
+                    <ul class="dropdown-menu custom-dropdown">
+                      <li><a class="dropdown-item" href="bcedge.html">BC Edge</a></li>
+                      <li><a class="dropdown-item" href="openedge.html">Open Edge</a></li>
+                      <li><a class="dropdown-item" href="verifyedge.html">Verify Edge</a></li>
+                      <li><a class="dropdown-item" href="samay.html">Samay</a></li>
+                      <li><a class="dropdown-item" href="mobileBanking.html">Mobile Banking</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-submit">Submit</button>
+                </div>
+              </div>
+            </form>
+            <!-- <p id="responseMessage" style="color: rgb(52, 221, 22); font-weight: bold; display: none; margin-top:10px;">
+              Thankyou for contacting us, Our Team will get back to you shortly.
+            </p> -->
+            <img src="./assets/images/contact/ring.png" alt="ring" class="ring-join img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="contact-box h-100 d-flex flex-column justify-content-center">
+            <div class="contact-info d-flex align-items-start mb-4">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Secure Edge Fintech Private Limited<br>
+                Secureedge, 204, 2nd Floor, Cyber Heights, Vibhuti Khand, Gomti Nagar,<br>
+                Lucknow, Uttar Pradesh 226010
+              </p>
+            </div>
+            <div class="contact-info d-flex align-items-center mb-4">
+              <i class="fas fa-phone"></i>
+              <p>9793853777</p>
+            </div>
+            <div class="contact-info d-flex align-items-center">
+              <i class="fas fa-envelope"></i>
+              <p>sales@secureedge.in</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Start Footer section -->
+  <footer class="footer" data-aos="zoom-in">
+    <div class="container footerContent">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 footer-logo">
+          <img src="./assets/images/logo.svg" alt="Secure Edge Logo" class="mb-3">
+          <p>At Secure Edge Fintech, we are shaping the future of finance: Secure and Seamless. Driven by Innovation and
+            built on Trust</p>
+          <div
+            class="social-iconsblock mt-3 mb-lg-0 mb-md-5 mb-4 d-flex align-items-center justify-content-md-start justify-content-center">
+            <a href="https://www.facebook.com/SecureEdgeFintech/" class="social-icons" aria-label="facebook"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/secureedgefintech/" class="social-icons" aria-label="instagram"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/secureedgefintech" class="social-icons" aria-label="linkedin"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@Secureedgefintech" class="social-icons" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://x.com/secureedgefin" class="social-icons" aria-label="X-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5>Products</h5>
+          <ul>
+            <li><a href="openedge.html">Open Edge</a></li>
+            <li><a href="verifyedge.html">Verify Edge</a></li>
+            <li><a href="bcedge.html">BC Edge</a></li>
+            <li><a href="mobileBanking.html">Mobile Banking</a></li>
+             <li><a href="samay.html">Samay</a></li>
+          </ul>
+        </div>
+         <div class="col-lg-2 col-md-6">
+                    <!-- <h5>Know US</h5> -->
+                    <h5>Important Link</h5>
+                    <ul>
+                        <li><a href="Terms&C.html"> Terms & Conditions</a></li>
+                        <li><a href="privacy_policy.html"> Privacy Policy</a></li>
+                        <li><a href="/career">Career</a></li>
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+        <div class="col-lg-4 col-md-6">
+          <h5>Contact</h5>
+          <p class="mb-3">204, 2nd Floor, Cyber Heights,<br>
+            Vibhuti Khand, Gomti Nagar,<br>
+            Lucknow, U.P. 226010
+          </p>
+           <p class="mb-3">9793853777</p>
+          <!--<p class="mb-3">0522-3692505</p>-->
+          <p><a href="mailto:sales1@secureedge.in" class="nav-link m-0">sales@secureedge.in</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p class="mb-0">Copyright @ <a href="#">Secureedge Fintech</a> Pvt. Ltd.</p>
+        <p class="mb-0">Designed By <a href="#">Goforad Technology</a> Pvt. Ltd.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a
+  href="https://wa.me/919793853777"
+  class="whatsapp-sticky-btn"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat on WhatsApp"
+>
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+  <!-- End Footer section -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="./assets/js/custom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <style>
+    .swal-small-popup {
+      width: 320px !important;
+      font-size: 14px !important;
+      padding: 1em !important;
+      background-color: rgb(14, 13, 13);
+      border: 1px solid red;
+      border-radius: 24px;
+      color: rgb(203, 205, 203);
+    }
+
+    .swal-small-title {
+      font-size: 20px !important;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .swal-small-content {
+      font-size: 14px !important;
+    }
+  </style>
+
+  <script>
+    AOS.init({
+      duration: 1400,
+      easing: 'ease-in-out',
+      once: true
+    });
+
+  </script>
+
+  <script>
+    (function () {
+      var form = document.getElementById('contactForm');
+      if (!form) return;
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var responseEl = document.getElementById('responseMessage');
+        var emailInput = document.getElementById('email');
+        var replyto = document.getElementById('_replyto');
+        if (emailInput && replyto) replyto.value = emailInput.value || '';
+
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          var originalText = submitBtn.innerHTML;
+          submitBtn.innerHTML = 'Sending...';
+        }
+
+        var formData = new FormData(form);
+
+        fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(function (response) {
+          if (response.ok) {
+            if (window.Swal) {
+              Swal.fire({ icon: 'success', title: 'Thank you!', text: "We've received your request and will contact you soon.", timer: 3000, showConfirmButton: false, customClass: { popup: 'swal-small-popup', title: 'swal-small-title', content: 'swal-small-content' } });
+            }
+            if (responseEl) {
+              responseEl.style.display = 'block';
+              responseEl.style.color = 'rgb(52, 221, 22)';
+              responseEl.textContent = 'Thank you for contacting us. Our team will get back to you shortly.';
+            }
+            form.reset();
+          } else {
+            response.json().then(function (data) {
+              var errText = 'There was a problem submitting the form.';
+              if (data && data.errors) {
+                errText = data.errors.map(function (err) { return err.message; }).join(', ');
+              }
+              if (window.Swal) {
+                Swal.fire({ icon: 'error', title: 'Submission error', text: errText });
+              }
+              if (responseEl) {
+                responseEl.style.display = 'block';
+                responseEl.style.color = 'rgb(255, 80, 80)';
+                responseEl.textContent = errText;
+              }
+            }).catch(function () {
+              if (window.Swal) {
+                Swal.fire({ icon: 'error', title: 'Submission failed', text: 'Please try again.' });
+              }
+              if (responseEl) {
+                responseEl.style.display = 'block';
+                responseEl.style.color = 'rgb(255, 80, 80)';
+                responseEl.textContent = 'Submission failed. Please try again.';
+              }
+            });
+          }
+        }).catch(function () {
+          if (window.Swal) {
+            Swal.fire({ icon: 'error', title: 'Network error', text: 'Please check your connection and try again.' });
+          }
+          if (responseEl) {
+            responseEl.style.display = 'block';
+            responseEl.style.color = 'rgb(255, 80, 80)';
+            responseEl.textContent = 'Network error. Please check your connection and try again.';
+          }
+        }).finally(function () {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText || 'Get A Call Back';
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>

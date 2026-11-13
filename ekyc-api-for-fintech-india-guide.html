@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KHJNDC6Z');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eKYC API for Fintech India: How to Choose One</title>
+    <meta name="description" content="A practical guide to eKYC API for fintech India - what it covers, RBI KYC Master Direction rules, and how to evaluate providers.">
+    <link rel="canonical" href="https://secureedgefintech.com/ekyc-api-for-fintech-india-guide.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="eKYC API for Fintech India: How to Choose One" />
+    <meta property="og:description" content="A practical guide to eKYC API for fintech India - what it covers, RBI KYC Master Direction rules, and how to evaluate providers." />
+    <meta property="og:url" content="https://secureedgefintech.com/ekyc-api-for-fintech-india-guide.html" />
+    <meta property="og:image" content="https://secureedgefintech.com/assets/images/blogs/ekyc-api-for-fintech-india-guide-head.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="eKYC API for Fintech India: How to Choose One" />
+    <meta name="twitter:description" content="A practical guide to eKYC API for fintech India - what it covers, RBI KYC Master Direction rules, and how to evaluate providers." />
+
+    <link rel="icon" type="image/png" href="./assets/images/se-logo-favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/blogpage.css" />
+    <link rel="stylesheet" href="./assets/css/custome.css" />
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "eKYC API for Fintech in India: What It Is, How It Works & How to Choose One",
+  "description": "A practical guide to eKYC API for fintech India - what it covers, RBI KYC Master Direction rules, and how to evaluate providers.",
+  "image": "https://secureedgefintech.com/assets/images/blogs/ekyc-api-for-fintech-india-guide-head.webp",
+  "author": {
+    "@type": "Organization",
+    "name": "SecureEdge Fintech"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SecureEdge Fintech Pvt. Ltd.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://secureedgefintech.com/assets/images/se-logo-favicon.png"
+    }
+  },
+  "datePublished": "2026-09-05",
+  "dateModified": "2026-09-05",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://secureedgefintech.com/ekyc-api-for-fintech-india-guide.html"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Aadhaar-based e-KYC alone enough to be RBI-compliant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It can be a compliant starting point for lower-risk, non-face-to-face onboarding, but RBI's framework expects such accounts to be monitored more closely, and full Customer Due Diligence is generally expected to be completed within a defined window rather than relying on Aadhaar OTP verification indefinitely. It shouldn't be treated as a complete substitute for a proper risk-based CDD approach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do we need Video-based Customer Identification Process (V-CIP) if we already use Aadhaar and PAN verification?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not always - it depends on your risk categorisation and product type. Many fintechs use V-CIP selectively, as an escalation path for higher-risk accounts or as the route for converting Aadhaar OTP-based \"minimum KYC\" accounts into fully verified ones, rather than as the default flow for every customer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between an eKYC API and a KYC verification platform?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An eKYC API typically refers to a single verification capability - say, PAN validation or Aadhaar OTP verification - exposed as an endpoint. A KYC verification platform usually bundles multiple such APIs with orchestration logic, fallback handling, and audit trail management around them. Most growing fintechs eventually need the latter, even if they start by integrating individual APIs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long do we need to retain eKYC verification records?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Retention obligations sit within India's broader PMLA and RBI KYC framework and require identification records and related data to be preserved for a defined period after the account relationship ends or the transaction occurs. Exact retention periods should be confirmed with your compliance counsel for your specific licence category, but the operational point is the same regardless: your eKYC provider's response and consent data need to be retrievable in full, not just summarised as a pass/fail outcome."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a non-bank fintech directly access Aadhaar biometric authentication?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Direct Aadhaar biometric/demographic authentication access is restricted and requires specific UIDAI authorisation, which most non-bank entities don't hold. Most fintechs instead rely on Aadhaar OTP-based e-KYC, Offline Aadhaar (XML/QR), or DigiLocker-based document pulls, which don't require that authorisation and are the practical route for the majority of regulated entities outside banks."
+      }
+    }
+  ]
+}
+    </script>
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHJNDC6Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Start header section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand p-0" href="/">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                    aria-controls="mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Our Product
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown">
+                                <li><a class="dropdown-item" href="bcedge.html">BC Edge</a></li>
+                                <li><a class="dropdown-item" href="openedge.html">Open Edge</a></li>
+                                <li><a class="dropdown-item" href="verifyedge.html">Verify Edge</a></li>
+                                <li><a class="dropdown-item" href="mobileBanking.html">Mobile Banking</a></li>
+                                <li><a class="dropdown-item" href="samay.html">Samay</a></li>
+                                 <li><a class="dropdown-item" href="frms.html">FRMS</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="blogpage.html">Blog</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-none d-lg-block">
+                    <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Mobile Offcanvas -->
+    <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title">
+                <a class="navbar-brand p-0" href="/">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div class="accordion" id="menuAccordion">
+                <a href="/" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blogpage.html" class="nav-link">Blog</a>
+                <div class="accordion-item border-0 bg-transparent">
+                    <h2 class="accordion-header" id="headingProduct">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">
+                            Our Product
+                        </button>
+                    </h2>
+                    <div id="collapseProduct" class="accordion-collapse collapse" aria-labelledby="headingProduct"
+                        data-bs-parent="#menuAccordion">
+                        <div class="accordion-body p-0">
+                            <a href="bcedge.html" class="d-block mb-2">BC Edge</a>
+                            <a href="openedge.html" class="d-block mb-2">Open Edge</a>
+                            <a href="verifyedge.html" class="d-block">Verify Edge</a>
+                            <a href="mobileBanking.html" class="d-block">Mobile banking</a>
+                           <a href="samay.html" class="d-block">Samay</a>
+                             <a href="frms.html" class="d-block">FRMS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="mt-4 text-center">
+                    <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header section -->
+
+    <!-- hereo section start -->
+    <section class="hero-section-blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copy">
+                        <img src="assets/images/blogs/ekyc-api-for-fintech-india-guide-head.webp" alt="eKYC API for Fintech India: How to Choose One" height="80%" width="70%"
+                            style="border-radius: 15px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------- main section --------------------->
+    <main>
+        <section class="blog-content-section">
+            <div class="container">
+                <div class="blog-header">
+                    <span class="blog-category">Verify Edge</span>
+                    <h1>eKYC API for Fintech in India: What It Is, How It Works & How to Choose One</h1>
+                    <p class="blog-meta">Published on 5 September 2026 • by SecureEdge Team</p>
+                </div>
+
+<p>
+    Ask five people at a fintech what "eKYC API" means and you'll get five different answers. One person means Aadhaar OTP verification. Another means the whole onboarding stack including PAN, bank account checks, and a video call. A third just means "whatever lets us onboard a customer without a physical form." That confusion isn't a small thing - it's the reason so many fintechs either over-build (stitching together five vendors when two would do) or under-build (picking one verification method and discovering six months later it doesn't cover half their use cases or half of RBI's expectations).
+</p>
+<p>The term "eKYC" was originally a narrow, technical one - it referred specifically to Aadhaar-based electronic KYC under the UIDAI framework. But over the last few years, as RBI's KYC Master Direction has been amended repeatedly to recognise DigiLocker, Video-based Customer Identification Process (V-CIP), Aadhaar Face Authentication, and CKYCR record-sharing, "eKYC" has effectively become shorthand for the entire digital identity verification stack a regulated entity needs to onboard customers remotely and compliantly. That's a much bigger, much more consequential decision than picking one API.</p>
+<p>This guide is written for the person at a fintech, NBFC, or lending platform who has been asked to "sort out our eKYC" and is realising it's not a single checkbox - it's an architecture decision with compliance, cost, and user-experience trade-offs baked in. We'll walk through what actually counts as eKYC today, what RBI requires any approach to satisfy, how to think about combining methods rather than picking just one, and a practical framework for evaluating providers - including where a product like <a href="verifyedge.html" class="interlink">Verify Edge</a> fits into that stack.</p>
+
+<div class="blog-header">
+    <h2>What "eKYC API" Actually Covers</h2>
+</div>
+<div class="blog-body">
+    <p>If you search for "eKYC API" today, you'll find vendors offering everything from a single Aadhaar OTP verification endpoint to full onboarding orchestration platforms. Both get called "eKYC API." Neither description is wrong - the term has simply stretched to cover the whole category. It helps to think of it as three layers stacked on top of each other.</p>
+    <p>The first layer is <strong class="high-text">identity document verification</strong> - confirming that a PAN, Aadhaar, voter ID, driving licence, or passport is genuine and belongs to the person presenting it. The second layer is <strong class="high-text">identity-to-person matching</strong> - proving the person applying is actually who the documents say, through OTP possession, biometric authentication, or a face-match against a photo ID. The third layer is <strong class="high-text">financial identity verification</strong> - confirming the bank account or UPI handle the customer wants to use actually belongs to them, which matters just as much for KYC as it does for fraud prevention.</p>
+    <p>A single API call rarely does all three. What most fintechs actually need is a coordinated flow: <span class="key-text">Document verification → Identity matching → Bank/UPI validation</span>, with a fallback path at each stage for the customers who fail the primary check. Understanding this layered structure is the first step to not over-simplifying the buying decision down to "which vendor has the cheapest Aadhaar API."</p>
+</div>
+
+<div class="blog-header">
+    <h2>The Building Blocks of a Modern eKYC Stack</h2>
+</div>
+<div class="blog-body">
+    <p>Rather than treating eKYC as one API, it's more useful to think of it as a set of interchangeable building blocks that get assembled differently depending on your product, your customer segment, and your risk appetite.</p>
+    <h3>Aadhaar-based verification</h3>
+    <p>This includes OTP-based e-KYC, Offline Aadhaar (XML/QR-based, which doesn't require UIDAI authentication access), and Aadhaar Face Authentication. It's the fastest and most familiar route for Indian customers and works well for consumer-facing apps where speed matters.</p>
+    <h3>PAN-based verification</h3>
+    <p>Validating PAN against the Income Tax database confirms the number is genuine and often returns the name for cross-matching. It's a near-universal requirement for financial products and pairs naturally with Aadhaar checks for name-matching accuracy.</p>
+    <h3>Bank account and UPI verification</h3>
+    <p>Penny-drop verification, reverse penny-drop, and UPI VPA validation confirm that a bank account or UPI ID belongs to the applicant - critical for loan disbursal, payout products, and any flow where money will eventually move to that account.</p>
+    <h3>DigiLocker-based document pulls</h3>
+    <p>DigiLocker gives you a government-issued, digitally signed document directly from the source, which is useful both as a primary verification path and as a high-trust fallback when other checks are ambiguous.</p>
+    <h3>Video-based Customer Identification Process (V-CIP)</h3>
+    <p>V-CIP is RBI's digital equivalent of in-person verification - a live, audio-visual interaction that can carry the same regulatory weight as a physical KYC. It's heavier to build and operate than the other methods, but it's often the only compliant option for higher-risk accounts or when other checks fail.</p>
+    <p>None of these building blocks is "better" in isolation - they're better or worse depending on the use case, the risk profile of the customer, and what happens when the primary method doesn't work. A well-designed eKYC stack usually combines two or three of these with clear rules for when each one triggers.</p>
+</div>
+
+<div class="blog-header">
+    <h2>What RBI's KYC Master Direction Requires</h2>
+</div>
+<div class="blog-body">
+    <p>Whatever combination of methods you choose, it has to satisfy RBI's KYC Master Direction - and this is where a lot of fintechs get their eKYC buying decision wrong, because they evaluate vendors purely on speed and price without checking whether the underlying method actually holds up against the compliance requirements.</p>
+    <p>A few things every fintech building or buying an eKYC stack needs to know:</p>
+    <ul>
+        <li><p><strong class="high-text">Risk-based Customer Due Diligence (CDD) is mandatory:</strong> RBI expects regulated entities to categorise customers by risk and apply proportionate verification depth - a low-value wallet doesn't need the same rigour as a high-ticket lending relationship, but every category needs a defined, documented approach.</p></li>
+        <li><p><strong class="high-text">Aadhaar OTP-based e-KYC is non-face-to-face and comes with conditions:</strong> accounts opened this way are expected to be placed under closer monitoring, and full CDD generally needs to be completed within a defined window - it isn't meant to be a permanent substitute for stronger verification on higher-risk accounts.</p></li>
+        <li><p><strong class="high-text">V-CIP has been given explicit regulatory equivalence to in-person verification</strong> - but only when it meets specific technical conditions: end-to-end encryption, detection of IP addresses or spoofing attempts originating outside India, geo-tagging with timestamps, liveness detection that also doesn't exclude persons with special needs, and secure data storage within India. A "video call KYC" that doesn't meet these conditions doesn't count as V-CIP in RBI's eyes.</p></li>
+        <li><p><strong class="high-text">Central KYC Records Registry (CKYCR) integration matters:</strong> regulated entities are expected to check and download existing KYC records from CKYCR with customer consent before asking them to resubmit documents, which reduces friction but also means your stack needs to talk to CKYCR, not just to identity data sources.</p></li>
+        <li><p><strong class="high-text">Periodic KYC updation is a recurring obligation, not a one-time event:</strong> RBI's framework increasingly recognises digital channels - Aadhaar OTP, V-CIP, registered email/mobile self-declarations - for periodic updates, which is good news for reducing branch-visit friction, but it still needs to be built into your product, not bolted on later.</p></li>
+        <li><p><strong class="high-text">Records need to be retained and auditable:</strong> under PMLA rules that KYC Master Direction compliance sits alongside, identification records and transaction data need to be preserved for a defined retention period, in a form that can be produced for a regulator or auditor on demand - which means your eKYC vendor's response logs, consent artefacts, and verification proofs all need to be retrievable, not just "yes/no" outcomes.</p></li>
+    </ul>
+    <p>The practical takeaway: don't pick an eKYC method because it's the fastest to integrate. Pick it because you can show, on audit, exactly which RBI requirement it satisfies and how.</p>
+</div>
+
+<div class="blog-header">
+    <h2>Aadhaar-Based vs PAN-Based vs Bank-Based Verification - When to Use Which</h2>
+</div>
+<div class="blog-body">
+    <p>This is usually where the buying conversation gets stuck, because teams try to find the "best" single method instead of mapping methods to moments in the customer journey.</p>
+    <h3>Use Aadhaar-based verification when...</h3>
+    <p>...you need fast, low-friction identity confirmation at the top of the funnel - account opening, wallet KYC, or any consumer flow where drop-off is your biggest enemy. It's the closest thing to a universal ID in India and gives the best conversion rates for digitally-savvy customers.</p>
+    <h3>Use PAN-based verification when...</h3>
+    <p>...the product has a lending, investment, or tax-reporting dimension, or when you need a reliable secondary data point to cross-check the name and details captured through Aadhaar. Most credit products require PAN verification regardless of what else is in the stack, so it's rarely optional rather than a choice.</p>
+    <h3>Use bank/UPI-based verification when...</h3>
+    <p>...money is going to move - loan disbursal, payouts, refunds, or any flow where you need certainty that the account belongs to the verified person, not just that the person is who they say they are. This is as much a fraud control as a KYC control, and skipping it is one of the more expensive mistakes fintechs make.</p>
+    <h3>Use DigiLocker or V-CIP when...</h3>
+    <p>...the customer fails a primary check, the product is higher-risk (larger loan amounts, higher-risk customer segments), or you specifically need a method that carries in-person-equivalent regulatory weight. These are usually fallback or escalation paths rather than the default flow, because they add friction and, in V-CIP's case, real operational cost.</p>
+    <p>The honest answer to "which one should we use" is almost always: more than one, in a defined sequence, with clear rules for when the flow escalates from a lightweight check to a heavier one.</p>
+</div>
+
+<div class="blog-header">
+    <h2>Integration Considerations Most Teams Underestimate</h2>
+</div>
+<div class="blog-body">
+    <p>Compliance coverage gets most of the attention in eKYC buying decisions, but the engineering and operational realities are where a lot of good-on-paper choices fall apart in production.</p>
+    <h3>Response time and its effect on conversion</h3>
+    <p>Every extra second on an onboarding screen costs conversions - this is especially true for Aadhaar OTP and PAN verification, where customers expect near-instant confirmation. A provider that's compliant but slow under real load (not just in a sales demo) will quietly bleed sign-ups, and you often won't notice until you look at funnel drop-off data weeks later.</p>
+    <h3>Fallback flows for failed primary verification</h3>
+    <p>Verification fails for reasons that have nothing to do with fraud - a mismatched middle name, an Aadhaar linked to an outdated mobile number, a source registry that's temporarily down. Your integration needs a defined fallback (retry, alternate method, manual review queue) rather than a dead end that just rejects the customer. Building this after launch, once you see how often primary checks fail in the real world, is a common and avoidable scramble.</p>
+    <h3>Audit trail and evidentiary requirements</h3>
+    <p>A "verified: true" response isn't enough on its own. You need timestamped consent capture, the exact data returned by the verification source, which method was used, and who (or what system) approved any manual override - all retrievable in the format your auditor or regulator wants, not just logged somewhere in a vendor's dashboard you may lose access to later.</p>
+    <h3>Uptime and dependency risk</h3>
+    <p>Aadhaar, PAN, and bank-verification data ultimately come from source registries your eKYC provider doesn't control. A good provider is transparent about this and builds retry logic and status visibility around it; a provider that hides behind "the source was down" during an SLA conversation is a red flag worth noting during evaluation, not after a live incident.</p>
+</div>
+
+<div class="blog-header">
+    <h2>How to Evaluate an eKYC API Provider</h2>
+</div>
+<div class="blog-body">
+    <div class="table-responsive-wrapper">
+        <table class="comparison-table">
+            <thead>
+                <tr><th>Evaluation Criteria</th><th>What to Look For</th><th>Why It Matters</th></tr>
+            </thead>
+            <tbody>
+                <tr><td data-label="Evaluation Criteria">Method coverage</td><td data-label="What to Look For">Aadhaar, PAN, bank/UPI, DigiLocker, and V-CIP available under one integration, not five separate contracts</td><td data-label="Why It Matters">You will need more than one method eventually - assembling it later from scratch is slower and messier than starting with a provider who already covers the stack</td></tr>
+                <tr><td data-label="Evaluation Criteria">Compliance transparency</td><td data-label="What to Look For">Clear documentation of how each method maps to RBI Master Direction requirements, and how consent and audit data are captured</td><td data-label="Why It Matters">Your compliance team needs to defend this stack on audit, not just get a "yes it works" from engineering</td></tr>
+                <tr><td data-label="Evaluation Criteria">Response time and uptime SLA</td><td data-label="What to Look For">Published, contractual SLAs with real numbers, tested under your expected load, not just marketing claims</td><td data-label="Why It Matters">Onboarding conversion is directly sensitive to latency and downtime</td></tr>
+                <tr><td data-label="Evaluation Criteria">Fallback and orchestration support</td><td data-label="What to Look For">Built-in logic (or clear hooks) for retries, alternate methods, and manual review routing</td><td data-label="Why It Matters">Real-world verification failure rates are non-trivial - your flow needs a plan for them</td></tr>
+                <tr><td data-label="Evaluation Criteria">Developer experience</td><td data-label="What to Look For">Clear API docs, sandbox environments, predictable error codes, and responsive integration support</td><td data-label="Why It Matters">Integration speed and ongoing maintenance cost depend heavily on this, especially for lean engineering teams</td></tr>
+                <tr><td data-label="Evaluation Criteria">Pricing transparency</td><td data-label="What to Look For">Clear per-call or slab-based pricing without hidden minimums, retry charges, or bundling traps</td><td data-label="Why It Matters">eKYC costs scale directly with your user growth - opaque pricing becomes a real budget risk at scale</td></tr>
+                <tr><td data-label="Evaluation Criteria">Data security posture</td><td data-label="What to Look For">Encryption in transit and at rest, data residency within India, and clear data retention/deletion policies</td><td data-label="Why It Matters">You're handling some of the most sensitive personal data in the country - this isn't optional diligence</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="blog-header">
+    <h2>Common Mistakes Fintechs Make When Choosing an eKYC Solution</h2>
+</div>
+<div class="blog-body">
+    <p>A few patterns show up repeatedly in eKYC buying decisions that go wrong, and most of them are avoidable with a bit more upfront thinking.</p>
+    <ul>
+        <li><p><strong class="high-text">Optimising for the cheapest per-call price:</strong> the cheapest Aadhaar or PAN API call looks great in a spreadsheet and terrible six months later when it turns out the provider has no fallback support, patchy uptime, or thin documentation that costs your engineering team weeks to work around.</p></li>
+        <li><p><strong class="high-text">Picking one method and assuming it covers everything:</strong> Aadhaar-only stacks fail silently for the segment of customers whose Aadhaar isn't linked to a working mobile number - a meaningful chunk of any large user base - with no fallback in place.</p></li>
+        <li><p><strong class="high-text">Treating compliance as an engineering afterthought:</strong> building the integration first and asking "does this satisfy RBI's requirements" later almost always means expensive rework, because audit trail and consent capture are much harder to retrofit than to design in from day one.</p></li>
+        <li><p><strong class="high-text">Not testing for failure, only for success:</strong> demo environments are tuned to show clean, successful verifications. Real traffic includes typos, expired documents, and registry downtime - and that's exactly where a provider's real quality shows.</p></li>
+        <li><p><strong class="high-text">Underestimating V-CIP's operational cost:</strong> V-CIP looks like "just add a video call" in a vendor pitch, but running it compliantly needs trained agents, secure infrastructure, and ongoing monitoring - it's rarely a lightweight add-on, and treating it as one leads to under-resourced, non-compliant implementations.</p></li>
+    </ul>
+</div>
+
+<div class="blog-header">
+    <h2>Frequently Asked Questions</h2>
+</div>
+<div class="blog-body">
+    <div class="faq-item">
+        <h3>Is Aadhaar-based e-KYC alone enough to be RBI-compliant?</h3>
+        <p>It can be a compliant starting point for lower-risk, non-face-to-face onboarding, but RBI's framework expects such accounts to be monitored more closely, and full Customer Due Diligence is generally expected to be completed within a defined window rather than relying on Aadhaar OTP verification indefinitely. It shouldn't be treated as a complete substitute for a proper risk-based CDD approach.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Do we need Video-based Customer Identification Process (V-CIP) if we already use Aadhaar and PAN verification?</h3>
+        <p>Not always - it depends on your risk categorisation and product type. Many fintechs use V-CIP selectively, as an escalation path for higher-risk accounts or as the route for converting Aadhaar OTP-based "minimum KYC" accounts into fully verified ones, rather than as the default flow for every customer.</p>
+    </div>
+    <div class="faq-item">
+        <h3>What's the difference between an eKYC API and a KYC verification platform?</h3>
+        <p>An eKYC API typically refers to a single verification capability - say, PAN validation or Aadhaar OTP verification - exposed as an endpoint. A KYC verification platform usually bundles multiple such APIs with orchestration logic, fallback handling, and audit trail management around them. Most growing fintechs eventually need the latter, even if they start by integrating individual APIs.</p>
+    </div>
+    <div class="faq-item">
+        <h3>How long do we need to retain eKYC verification records?</h3>
+        <p>Retention obligations sit within India's broader PMLA and RBI KYC framework and require identification records and related data to be preserved for a defined period after the account relationship ends or the transaction occurs. Exact retention periods should be confirmed with your compliance counsel for your specific licence category, but the operational point is the same regardless: your eKYC provider's response and consent data need to be retrievable in full, not just summarised as a pass/fail outcome.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Can a non-bank fintech directly access Aadhaar biometric authentication?</h3>
+        <p>Direct Aadhaar biometric/demographic authentication access is restricted and requires specific UIDAI authorisation, which most non-bank entities don't hold. Most fintechs instead rely on Aadhaar OTP-based e-KYC, Offline Aadhaar (XML/QR), or DigiLocker-based document pulls, which don't require that authorisation and are the practical route for the majority of regulated entities outside banks.</p>
+    </div>
+</div>
+
+<div class="blog-header">
+    <h2>Conclusion</h2>
+</div>
+<div class="blog-body">
+    <p>"Ekyc API" was never meant to describe one product - it's a category, and treating the buying decision that way is what actually leads to a stack that holds up in production and on audit. Start by mapping your customer journey and risk segments, decide which verification methods need to sit where in that journey, confirm each one maps cleanly to RBI's KYC Master Direction requirements, and only then compare providers on speed, reliability, developer experience, and pricing. Get the sequencing right and the vendor comparison becomes much easier. If you're mapping out that stack for your own product, <a href="verifyedge.html" class="interlink">Verify Edge</a> is built to cover the identity verification layer of it, and the team at SecureEdge is happy to walk through where it fits for your specific use case - <a href="contact-us.html" class="interlink">reach out to SecureEdge</a> to talk it through.</p>
+</div>
+
+
+            </div>
+        </section>
+
+
+        <section class="fintech-ai  card-section">
+        <div class="border"></div>
+        <h1>Latest Blog</h1>
+        <section class="custom-blog-section">
+            <div class="custom-blog-grid">
+                <div class="custom-blog-card">
+                    <img src="assets/images/_Ai_400x215.webp" alt="Blog Image" class="custom-blog-image">
+                    <div class="custom-blog-text">
+                        <h3>Fintech x AI: How Artificial Intelligence is Reshaping Financial Services</h3>
+                    </div>
+                    <div class="card-button">
+                        <a href="fintech-ai-reshaping-financial-services.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="custom-blog-card">
+                    <img src="assets/images/india upi_400x215.webp" alt="Blog Image" class="custom-blog-image">
+                    <div class="custom-blog-text">
+                        <h3>India's UPI Goes Global: Redefining Cross-Border Finance</h3>
+                    </div>
+                    <div class="card-button">
+                        <a href="india-upi-global-cross-border-payments.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="custom-blog-card">
+                    <img src="assets/images/Blog 3_400x225.webp" alt="Blog Image" class="custom-blog-image">
+                    <div class="custom-blog-text">
+                        <h3>SEBI's Research Certification Rule: A New Era of Credibility in Indian Markets</h3>
+                    </div>
+                    <div class="card-button">
+                        <a href="sebi-research-certification-rule-india.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="custom-blog-card">
+                    <img src="assets/images/blogs/top-10card.webp" alt="Blog Image" class="custom-blog-image">
+                    <div class="custom-blog-text">
+                        <h3>Top Identity & Bank Verification APIs for Fintech Companies</h3>
+                    </div>
+                    <div class="card-button">
+                        <a href="top-10-apis-every-fintech-company-needs-2026.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="custom-blog-card">
+                    <img src="assets/images/blogs/bank-account-upi-verification-api-india-card.webp" alt="Blog Image" class="custom-blog-image">
+                    <div class="custom-blog-text">
+                        <h3>Real-Time Bank Account & UPI Verification API for Indian Fintechs</h3>
+                    </div>
+                    <div class="card-button">
+                        <a href="bank-account-upi-verification-api-india.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------ end of main section---------------------->
+        <footer class="footer" data-aos="zoom-in">
+            <div class="container footerContent">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 footer-logo">
+                        <img src="./assets/images/logo.svg" alt="Secure Edge Logo" class="mb-3">
+                        <p>At Secure Edge Fintech, we are shaping the future of finance: Secure and Seamless. Driven by
+                            Innovation and
+                            built on Trust</p>
+                        <div
+                            class="social-iconsblock mt-3 mb-lg-0 mb-md-5 mb-4 d-flex align-items-center justify-content-md-start justify-content-center">
+                            <a href="https://www.facebook.com/SecureEdgeFintech/" class="social-icons"
+                                aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/secureedgefintech/" class="social-icons"
+                                aria-label="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/secureedgefintech" class="social-icons"
+                                aria-label="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.youtube.com/@Secureedgefintech" class="social-icons" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://x.com/secureedgefin" class="social-icons" aria-label="X-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5>Products</h5>
+                        <ul>
+                            <li><a href="openedge.html">Open Edge</a></li>
+                            <li><a href="verifyedge.html">Verify Edge</a></li>
+                            <li><a href="bcedge.html">BC Edge</a></li>
+                            <li><a href="mobileBanking.html">Mobile Banking</a></li>
+                          <li><a href="samay.html">Samay</a></li>
+                          <li><a href="frms.html">FRMS</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5>Important Link</h5>
+                        <ul>
+                            <li><a href="Terms&C.html"> Terms & Conditions</a></li>
+                            <li><a href="privacy_policy.html"> Privacy Policy</a></li>
+                            <li><a href="/career">Career</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5>Contact</h5>
+                        <p class="mb-3">204, 2nd Floor, Cyber Heights,<br>
+                            Vibhuti Khand, Gomti Nagar,<br>
+                            Lucknow, U.P. 226010
+                        </p>
+                         <p class="mb-3">9793853777</p>
+                        <p><a href="mailto:sales@secureedge.in" class="nav-link m-0">sales@secureedge.in</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer-bottom">
+                    <p class="mb-0">Copyright @ <a href="#">Secureedge Fintech</a> Pvt. Ltd.</p>
+                    <p class="mb-0">Designed By <a href="#">Goforad Technology</a> Pvt. Ltd.</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    </main>
+    <a href="https://wa.me/919793853777" class="whatsapp-sticky-btn" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!-- End Footer section -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <style>
+        .interlink { color: #fff; font-weight: 600; }
+        .blog-body ul { list-style-type: disc; padding-left: 20px; margin-top: 10px; }
+        .blog-body ul li { display: list-item; color: #dcdcdc; }
+        .key-text { color: rgba(255, 85, 85, 1); }
+        .table-responsive-wrapper { width: 100%; overflow: auto; margin: 24px 0; -webkit-overflow-scrolling: touch; border: 1px solid #dcdcdc; border-radius: 12px; }
+        .comparison-table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        .comparison-table th, .comparison-table td { border: 1px solid #dcdcdc; padding: 12px 16px; text-align: left; vertical-align: top; color: #dcdcdc; }
+        .comparison-table tr:first-child th:first-child { border-top-left-radius: 12px; }
+        .comparison-table tr:first-child th:last-child { border-top-right-radius: 12px; }
+        .comparison-table tr:last-child td:first-child { border-bottom-left-radius: 12px; }
+        .comparison-table tr:last-child td:last-child { border-bottom-right-radius: 12px; }
+        .comparison-table thead th { background-color: #f5f5f5; font-weight: 700; white-space: nowrap; color: #FF5252; }
+        .faq-item { margin-bottom: 20px; }
+        .faq-item h3 { color: #fff; font-size: 20px; margin-bottom: 8px; }
+        @media (max-width: 600px) {
+            .table-responsive-wrapper { overflow-x: visible; }
+            .comparison-table { min-width: 0; border: 0; }
+            .comparison-table thead { display: none; }
+            .comparison-table tbody tr { display: block; margin-bottom: 16px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; }
+            .comparison-table tbody td { display: flex; justify-content: space-between; gap: 12px; border: none; border-bottom: 1px solid #e0e0e0; }
+            .comparison-table tbody td:last-child { border-bottom: none; }
+            .comparison-table tbody td::before { content: attr(data-label); font-weight: 700; margin-right: 12px; }
+        }
+    </style>
+
+</body>
+
+</html>

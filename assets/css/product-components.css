@@ -1,0 +1,66 @@
+/* Shared additions to the existing product components in bdadge.css.
+   Use .product-explore with .video-container-wrapperedge, and
+   .product-explore-link on its link. No page-specific content lives here. */
+.product-explore {
+  width: 240px;
+  height: 240px;
+}
+
+.product-explore .circular-text {
+  animation: spinText 15s linear infinite;
+}
+
+.product-explore .circular-text svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.product-explore .arrow {
+  bottom: -30px;
+}
+
+.product-explore .arrow img {
+  display: block;
+  width: 20px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.product-explore .hover-content {
+  font-family: 'Outfit', Arial, sans-serif;
+  line-height: 1.2;
+}
+
+.product-explore-link:focus-visible .video-container-wrapperedge::before,
+.product-explore-link:focus-visible .hover-content {
+  opacity: 1;
+}
+
+.product-explore-link:focus-visible .circle-wrapper {
+  transform: translateY(90px);
+  opacity: 0;
+}
+
+.product-explore-link:focus-visible .arrow {
+  opacity: 0;
+}
+
+/* Reference an icon with:
+   <svg class="product-icon" aria-hidden="true">
+     <use href="assets/images/components/consent-icons.svg#user"></use>
+   </svg> */
+.product-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .product-explore *,
+  .product-explore::before {
+    animation: none !important;
+    transition: none !important;
+  }
+}

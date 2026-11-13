@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KHJNDC6Z');</script>
+<!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fintech & Verification Insights Blog | SecureEdge Fintech</title>
+    <meta name="description" content="Practical insights on identity verification, KYC, AEPS, digital
+onboarding, and fintech infrastructure in India — from the SecureEdge Fintech team.">
+<link rel="canonical" href="https://secureedgefintech.com/blogpage.html" />
+
+    <link rel="icon" type="image/png" href="./assets/images/se-logo-favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Outfit" rel="stylesheet" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/blogpage.css" />
+    <link rel="stylesheet" href="./assets/css/custome.css" />
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHJNDC6Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Start header section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand p-0" href="/">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+                <!-- Toggler (mobile only) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                    aria-controls="mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Desktop Menu -->
+                <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Our Product
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown">
+                                <li><a class="dropdown-item" href="bcedge.html">BC Edge</a></li>
+                                <li><a class="dropdown-item" href="openedge.html">Open Edge</a></li>
+                                <li><a class="dropdown-item" href="verifyedge.html">Verify Edge</a></li>
+                                <li><a class="dropdown-item" href="mobileBanking.html">Mobile Banking</a></li>
+                                <li><a class="dropdown-item" href="samay.html">Samay</a></li>
+                                <li><a class="dropdown-item" href="frms.html">FRMS</a></li>
+                                 <li><a class="dropdown-item" href="dpdp.html">DPDP</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="blogpage.html">Blog</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Desktop Contact Button -->
+                <div class="d-none d-lg-block">
+                    <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Mobile Offcanvas -->
+    <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title">
+                <a class="navbar-brand p-0" href="#">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div class="accordion" id="menuAccordion">
+                <a href="/" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blogpage.html" class="nav-link">Blog</a>
+                <div class="accordion-item border-0 bg-transparent">
+                    <h2 class="accordion-header" id="headingProduct">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">
+                            Our Product
+                        </button>
+                    </h2>
+                    <div id="collapseProduct" class="accordion-collapse collapse" aria-labelledby="headingProduct"
+                        data-bs-parent="#menuAccordion">
+                        <div class="accordion-body p-0">
+                            <a href="bcedge.html" class="d-block mb-2">BC Edge</a>
+                            <a href="openedge.html" class="d-block mb-2">Open Edge</a>
+                            <a href="verifyedge.html" class="d-block">Verify Edge</a>
+                            <a href="mobileBanking.html" class="d-block">Mobile banking</a>
+                             <a href="samay.html" class="d-block">Samay</a>
+                              <a href="frms.html" class="d-block">FRMS</a>
+                              <a href="dpdp.html" class="d-block">DPDP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="mt-4 text-center">
+                    <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header section -->
+
+    <!-- hero section start -->
+
+    <section class="hero-section-blogpage">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copy">
+                        <h1 class="tilt-heading d-md-block d-none ">Blog
+                            <!-- <span>Blog</span> -->
+                        </h1>
+                        <div class="col-lg-7 ps-5">
+                            <div class="rotator" aria-hidden="true">
+                                <svg viewBox="0 0 200 200">
+                                    <defs>
+                                        <path id="circlePath"
+                                            d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0" />
+                                    </defs>
+                                    <text fill="#ffffff" font-size="17.5" font-weight="450" letter-spacing="2.6">
+                                        <textPath href="#circlePath">Secureedge Secureedge Secureedge Secureedge
+                                        </textPath>
+                                    </text>
+                                </svg>
+                                <img class="arrow" src="./assets/images/about/Arrow 2.webp" alt="banner-image"
+                                    class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hereo section End -->
+
+    <main>
+        <section class="fintech-ai-section">
+            <div class="card-container-horizontal">
+<div class="card-horizontal">
+    <div class="card-tag">DPDPA Compliance</div>
+    <div class="card-content-wrapper">
+        <div class="card-image-section"><a href="dpdp-compliance-banks-nbfcs-2027.html"><img src="assets/images/blogs/dpdp-compliance-banks-nbfcs-2027.png" alt="DPDP Compliance for Banks and NBFCs: Breach Notification, Penalties and a Readiness Checklist (2027)" class="card-thumbnail" width="5001" height="2626"></a></div>
+        <div class="card-text-section"><h2 class="card-title-horizontal"><a href="dpdp-compliance-banks-nbfcs-2027.html" style="color:inherit;text-decoration:none;">DPDP Compliance for Banks and NBFCs: Breach Notification, Penalties and a Readiness Checklist (2027)</a></h2><p class="card-description-horizontal">Understand DPDPA compliance for banks and NBFCs, breach notification rules, penalties, data minimisation and a practical 2027 readiness checklist.</p></div>
+    </div>
+    <div class="card-action-button"><a href="dpdp-compliance-banks-nbfcs-2027.html" aria-label="Read DPDP Compliance for Banks and NBFCs: Breach Notification, Penalties and a Readiness Checklist (2027)"><img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img"></a></div>
+</div>
+
+<div class="card-horizontal">
+    <div class="card-tag">Video KYC Security</div>
+    <div class="card-content-wrapper">
+        <div class="card-image-section"><a href="deepfakes-video-kyc-vcip-liveness-detection.html"><img src="assets/images/blogs/deepfakes-video-kyc-vcip-liveness-detection.png" alt="Deepfakes in Video KYC: How Fraudsters Bypass V-CIP and What Liveness Detection Must Catch" class="card-thumbnail" width="5000" height="2626"></a></div>
+        <div class="card-text-section"><h2 class="card-title-horizontal"><a href="deepfakes-video-kyc-vcip-liveness-detection.html" style="color:inherit;text-decoration:none;">Deepfakes in Video KYC: How Fraudsters Bypass V-CIP and What Liveness Detection Must Catch</a></h2><p class="card-description-horizontal">Learn how deepfakes, replay attacks and identity fraud threaten Video KYC, and how liveness detection, face matching and secure V-CIP controls work together.</p></div>
+    </div>
+    <div class="card-action-button"><a href="deepfakes-video-kyc-vcip-liveness-detection.html" aria-label="Read Deepfakes in Video KYC: How Fraudsters Bypass V-CIP and What Liveness Detection Must Catch"><img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img"></a></div>
+</div>
+
+<div class="card-horizontal"><div class="card-tag">Merchant KYC</div><div class="card-content-wrapper"><div class="card-image-section"><a href="upi-mdr-india-merchant-kyc-onboarding.html"><img src="assets/images/blogs/upi-mdr-india-merchant-kyc-onboarding.jpeg" alt="UPI MDR in India: What Payment Aggregators Need to Know About Merchant KYC and Onboarding" class="card-thumbnail" width="1200" height="627"></a></div><div class="card-text-section"><h2 class="card-title-horizontal"><a href="upi-mdr-india-merchant-kyc-onboarding.html" style="color:inherit;text-decoration:none;">UPI MDR in India: What Payment Aggregators Need to Know About Merchant KYC and Onboarding</a></h2><p class="card-description-horizontal">Understand UPI MDR in India, merchant KYC, payment aggregator onboarding and how faster identity verification can improve onboarding efficiency.</p></div></div><div class="card-action-button"><a href="upi-mdr-india-merchant-kyc-onboarding.html" aria-label="Read UPI MDR in India: What Payment Aggregators Need to Know About Merchant KYC and Onboarding"><img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img"></a></div></div>
+
+                <div class="card-horizontal">
+                    <div class="card-tag">Background Verification</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/api-for-bank.jpeg"
+                                alt="Background Verification API Guide for Banks, NBFCs and Fintechs" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">The Complete Guide to Background Verification APIs for Banks, NBFCs and Fintechs in India
+                            </h2>
+                            <p class="card-description-horizontal">
+                                Customer KYC verifies who's coming in the front door. Background verification checks who
+                                you're letting behind the counter - employees, vendors and gig partners. Here's what a
+                                modern BGV stack actually covers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="background-verification-api-guide-bfsi-india.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">Background Verification</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/gig-worker.png"
+                                alt="Employee, vendor and gig-worker verification workflows for BFSI" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">Employee, Vendor and Gig-Worker Verification: Building the Right BGV Workflow for Each Risk Profile
+                            </h2>
+                            <p class="card-description-horizontal">
+                                A bank teller, a vendor's field staff and a gig-economy delivery partner don't need the
+                                same depth of screening. Here's how to build three distinct, API-driven BGV workflows
+                                instead of one-size-fits-all.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="bgv-workflows-employees-vendors-gig-workers-bfsi.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">Video KYC Security</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/secure-head.jpeg"
+                                alt="Deepfake and AI fraud detection in video KYC" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">Deepfake and AI-Generated Identity Fraud in Video KYC: How Indian Banks Can Stay Ahead
+                            </h2>
+                            <p class="card-description-horizontal">
+                                Generative AI has eroded the old assumption that a live face on camera is hard to fake.
+                                Here's what passive liveness detection actually defends against - and what it doesn't.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="deepfake-ai-fraud-detection-video-kyc-banks.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">Document Fraud</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/detect-tamperd.jpeg"
+                                alt="Document forgery detection for PAN, Aadhaar and salary slips" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">How to Detect Tampered PAN Cards, Aadhaar Documents and Salary Slips: A Forgery Detection Guide for Lenders
+                            </h2>
+                            <p class="card-description-horizontal">
+                                OCR reads a document's text. It doesn't tell you if that text was edited. Here's how
+                                forensic document analysis and database cross-verification catch what OCR alone misses.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="document-forgery-detection-api-lenders-pan-aadhaar.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">Vendor Comparison</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/VerifyEdge-vs-HyperVerge.jpeg"
+                                alt="VerifyEdge vs HyperVerge vs Karza vs Signzy comparison" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">VerifyEdge vs HyperVerge vs Karza vs Signzy: An Honest Comparison of Identity Verification APIs for Indian Banks
+                            </h2>
+                            <p class="card-description-horizontal">
+                                Every bank evaluating a KYC API vendor deserves a fair comparison, not a sales pitch.
+                                Here's how these four platforms actually differ - and the questions worth asking any of them.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="verifyedge-vs-hyperverge-karza-signzy-comparison.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">Aadhaar Verification</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/Adhaar-head.webp"
+                                alt="Another AI Topic for Financial Services" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">Aadhaar Verification API: QR, OTP & DigiLocker-Based
+                                Verification Explained
+                            </h2>
+                            <p class="card-description-horizontal">
+                                Verifying a customer's identity is an important part of any KYC process, but it can
+                                often take more time than expected. Collecting documents, entering details manually, and
+                                checking everything step by step can slow down onboarding and leave room for errors or
+                                fraudulent documents.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="aadhaar-verification-api-qr-otp-digilocker.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag"> MDR Proposal</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/what-head.webp"
+                                alt="Another AI Topic for Financial Services" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">What is the MDR Proposal? Understanding Its Impact on
+                                India's Digital Payment Ecosystem
+                            </h2>
+                            <p class="card-description-horizontal">
+                                India has become one of the largest markets in the world for digital payments. Millions
+                                of people use digital payment apps every day to pay bills, make online payments,
+                                transfer money, and buy local goods and Services.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="what-the-mdr-proposal-means-for-merchants-banks-fintech-companies.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                
+                
+                <div class="card-horizontal">
+                    <div class="card-tag">PAN Verification</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/how-head.webp"
+                                alt="How NBFCs Use PAN Verification to Speed Up Loan Processing" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">How NBFCs Use PAN Verification to Speed Up Loan Processing
+                            </h2>
+                            <p class="card-description-horizontal">
+                                Artificial Intelligence (AI) is changing industries at a rapid pace. Cybercriminals use the same technology as businesses to develop more sophisticated fraud schemes. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="how-nbfcs-use-pan-verification-to-speed-up-loan-processing.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card-horizontal">
+                    <div class="card-tag">Identity Fraud</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/identify-fraud.webp"
+                                alt="Another AI Topic for Financial Services" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">Synthetic Identity Fraud: How Criminals are Using AI To
+                                Beat Verification.
+                            </h2>
+                            <p class="card-description-horizontal">
+                                Artificial Intelligence (AI) is changing industries at a rapid pace. Cybercriminals use
+                                the same technology as businesses to develop more sophisticated fraud schemes. Synthetic
+                                Identity Fraud is one of today's fastest-growing threats.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="synthetic-identity-fraud-ai-verification.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                
+             <div class="card-horizontal">
+                    <div class="card-tag">Fintech Growth</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/blog_2.jpeg" alt="Another AI Topic for Financial Services"
+                                class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">Why Secure Digital Infrastructure Is Powering India's Next
+                                Wave of Fintech Growth
+                            </h2>
+                            <p class="card-description-horizontal">
+                                India's fintech story is often told through apps: a QR code at a tea stall, an instant
+                                loan on a phone or a bank account opened without a branch visit.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="secure-digital-infrastructure-india-fintech-growth.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                
+                
+                <div class="card-horizontal">
+                    <div class="card-tag">Top 10 APIs</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/top-10card.webp" alt="Another AI Topic for Financial Services"
+                                class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">The Future of Fintech Starts with the Right APIs
+                            </h2>
+                            <p class="card-description-horizontal">
+                               Looking for the best APIs for fintech companies? This guide covers the top 10 APIs—including Identity Verification API, Bank Verification API, PAN Verification API and more.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="top-10-apis-every-fintech-company-needs-2026.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                
+
+                    <div class="card-horizontal">
+                    <div class="card-tag">Embedded Payments</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                           <img src="assets/images/blogs/embedded-payment.webp" alt="Another AI Topic for Financial Services"
+                                class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">Embedded Payments: Why the Best Checkout Is No Checkout at All
+                            </h2>
+                            <p class="card-description-horizontal">
+                               Let's be honest. Nobody enjoys checking out online. You're in the middle of buying something, booking something, getting something done—and suddenly you're yanked out of the flow. Enter your card.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="embedded-payments-no-checkout-future-digital-payments.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    
+                    <div class="card-tag">AI for fintech</div>
+
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blog1.webp"
+                                alt="How Artificial Intelligence is Reshaping Financial Services"
+                                class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">Fintech x AI: How Artificial Intelligence is Reshaping
+                                Financial Services
+                            </h2>
+                            <p class="card-description-horizontal">
+                                In an age where digital transformation is no longer optional but essential, the
+                                convergence
+                                of AI for fintech is not just shaping the future - it's redefining the present. At
+                                Secure
+                                Edge Fintech
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card-action-button">
+                        <a href="fintech-ai-reshaping-financial-services.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-horizontal">
+                    <div class="card-tag">India's UPI</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/india upi_400x215.webp"
+                                alt="Another AI Topic for Financial Services" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">India's UPI Goes Global: Redefining Cross-Border Finance
+                            </h2>
+                            <p class="card-description-horizontal">
+                                The Unified Payments Interface (UPI), a homegrown real-time payment system that has
+                                redefined financial inclusion in India, is now stepping beyond borders, ushering in a
+                                new era of
+                                cross-border .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="india-upi-global-cross-border-payments.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card-horizontal">
+                    <div class="card-tag">Sebi guidelines</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/Blog 3_400x225.webp" alt="Another AI Topic for Financial Services"
+                                class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">SEBI's Research Certification Rule: A New Era of
+                                Credibility
+                                in Indian Markets
+                            </h2>
+                            <p class="card-description-horizontal">
+                                The future of credible research in India is about to change rapidly.
+                                The capital markets regulator - Securities and Exchange Board of India (SEBI) made a
+                                significant
+                                announcement.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="sebi-research-certification-rule-india.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">Indian financial literacy</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/card4_400x215.webp" alt="Another AI Topic for Financial Services"
+                                class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">Indian Financial Literacy is Broken. Can Fintechs Fix What
+                                Schools Never Taught?
+                            </h2>
+                            <p class="card-description-horizontal">
+                                Indian financial literacy has long been one of the weakest links in the country's growth
+                                story.Only 27% of Indians (as of 2019) understood
+                                basic financial concepts such as interest, investing, and risk.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="indian-financial-literacy-fintech-solution.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">India us trade</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/Blog 5_400x225.webp" alt="Another AI Topic for Financial Services"
+                                class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">Fintech in the India-US Trade Crossfire: What's at Play?
+                            </h2>
+                            <p class="card-description-horizontal">
+                                The current India us trade tensions are creating ripples across multiple sectors,
+                                including
+                                fintech. India and the U.S. are facing tariffs on imports, stricter regulations on tech
+                                hardware, and tighter cross-border policies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="india-us-fintech-trade-impact.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">Cashless India</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/Blog 6_400x225.webp" alt="Another AI Topic for Financial Services"
+                                class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">Cashless Isn't King Yet: What Fintechs Are Missing About
+                                Tier
+                                <span>2 & 3</span> India
+                            </h2>
+                            <p class="card-description-horizontal">
+                                The dream of a Cashless India dominates fintech conversations. With UPI crossing
+                                billions of
+                                transactions and startups scaling fast, it's easy to believe cash has been dethroned.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="cashless-india-fintech-tier-2-3.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">AEPS Compliance</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/rb-api.jpeg"
+                                alt="RBI, NPCI & UIDAI Compliance Guide for AEPS Providers" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">RBI, NPCI & UIDAI Compliance Guide for AEPS Providers
+                            </h2>
+                            <p class="card-description-horizontal">
+                                A clear breakdown of AEPS RBI guidelines, NPCI operating rules, UIDAI Aadhaar Act consent norms, and DPDP Act obligations for BC agents and providers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="rbi-npci-uidai-compliance-guide-aeps-service-providers.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">AEPS</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/aeps-vs-micro-atm-vs-bc-model-comparison-head.webp"
+                                alt="AEPS vs Micro-ATM vs BC Model: Key Differences Explained" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">AEPS vs Micro-ATM vs BC Model: Key Differences Explained
+                            </h2>
+                            <p class="card-description-horizontal">
+                                Confused between AEPS, Micro-ATM, and the BC model? Clear explanation of how they relate, differ, and which to choose for your retail counter.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="aeps-vs-micro-atm-vs-bc-model-comparison.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">Verify Edge</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/ekyc-api-for-fintech-india-guide-head.webp"
+                                alt="eKYC API for Fintech India: How to Choose One" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">eKYC API for Fintech India: How to Choose One
+                            </h2>
+                            <p class="card-description-horizontal">
+                                A practical guide to eKYC API for fintech India - what it covers, RBI KYC Master Direction rules, and how to evaluate providers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="ekyc-api-for-fintech-india-guide.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">Verify Edge</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/bank-account-upi-verification-api-india-head.webp"
+                                alt="Bank Account & UPI Verification API India | Verify Edge" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">Bank Account & UPI Verification API India | Verify Edge
+                            </h2>
+                            <p class="card-description-horizontal">
+                                How penny-drop, penny-less bank verification, and UPI VPA verification work in India, and why they matter for disbursements, payroll, and payouts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="bank-account-upi-verification-api-india.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">Verify Edge</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/identity-verification-api-pricing-india-budget-guide-head.webp"
+                                alt="Identity Verification API Pricing in India | SecureEdge" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">Identity Verification API Pricing in India | SecureEdge
+                            </h2>
+                            <p class="card-description-horizontal">
+                                Confused by identity verification API providers for fintech pricing? Here's how per-call, slab, and hidden costs actually work in India.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="identity-verification-api-pricing-india-budget-guide.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">Compliance</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/dpdp-act-compliance-fintech-apis-practical-guide-head.webp"
+                                alt="DPDP Act Compliance for Fintech APIs: A Practical Guide" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">DPDP Act Compliance for Fintech APIs: A Practical Guide
+                            </h2>
+                            <p class="card-description-horizontal">
+                                What DPDP Act 2023 compliance means for fintechs using KYC APIs, plus a practical checklist for consent, retention, and breach readiness.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="dpdp-act-compliance-fintech-apis-practical-guide.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">Verify Edge</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/video-kyc-vs-ekyc-vs-physical-kyc-comparison-head.webp"
+                                alt="Video KYC vs eKYC vs Physical KYC: RBI Rules Compared" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">Video KYC vs eKYC vs Physical KYC: RBI Rules Compared
+                            </h2>
+                            <p class="card-description-horizontal">
+                                Video KYC vs eKYC vs physical KYC compared: RBI's V-CIP rules, when each is required, cost, speed, fraud risk, and a decision framework for fintechs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="video-kyc-vs-ekyc-vs-physical-kyc-comparison.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="card-horizontal">
+                    <div class="card-tag">Verify Edge</div>
+                    <div class="card-content-wrapper">
+                        <div class="card-image-section">
+                            <img src="assets/images/blogs/gstin-business-verification-api-b2b-fintech-lending-head.webp"
+                                alt="GSTIN & Business Verification API for B2B Lending" class="card-thumbnail">
+                        </div>
+                        <div class="card-text-section">
+                            <h2 class="card-title-horizontal">GSTIN & Business Verification API for B2B Lending
+                            </h2>
+                            <p class="card-description-horizontal">
+                                How GSTIN verification, business PAN, and MCA/CIN checks work together as a business verification API stack for MSME and B2B lending.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-action-button">
+                        <a href="gstin-business-verification-api-b2b-fintech-lending.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+    </main>
+    
+    <!----------------- end of main section -------------------------------->
+    <footer class="footer" data-aos="zoom-in">
+        <div class="container footerContent">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer-logo">
+                    <img src="./assets/images/logo.svg" alt="Secure Edge Logo" class="mb-3">
+                    <p>At Secure Edge Fintech, we are shaping the future of finance: Secure and Seamless. Driven by
+                        Innovation and
+                        built on Trust</p>
+                    <div
+                        class="social-iconsblock mt-3 mb-lg-0 mb-md-5 mb-4 d-flex align-items-center justify-content-md-start justify-content-center">
+                        <a href="https://www.facebook.com/SecureEdgeFintech/" class="social-icons"
+                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/secureedgefintech/" class="social-icons"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/secureedgefintech" class="social-icons"
+                            aria-label="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/@Secureedgefintech" class="social-icons" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://x.com/secureedgefin" class="social-icons" aria-label="X-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="openedge.html">Open Edge</a></li>
+                        <li><a href="verifyedge.html">Verify Edge</a></li>
+                        <li><a href="bcedge.html">BC Edge</a></li>
+                        <li><a href="mobileBanking.html">Mobile Banking</a></li>
+                        <li><a href="samay.html">Samay</a></li>
+                        <li><a href="frms.html">FRMS</a></li>
+                         <li><a href="dpdp.html">DPDP</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <!-- <h5>Know US</h5> -->
+                    <h5>Important Link</h5>
+                    <ul>
+                        <li><a href="Terms&C.html"> Terms & Conditions</a></li>
+                        <li><a href="privacy_policy.html"> Privacy Policy</a></li>
+                        <li><a href="/career">Career</a></li>
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact</h5>
+                    <p class="mb-3">204, 2nd Floor, Cyber Heights,<br>
+                        Vibhuti Khand, Gomti Nagar,<br>
+                        Lucknow, U.P. 226010
+                    </p>
+                     <p class="mb-3">9793853777</p>
+                    <!--<p class="mb-3">0522-3692505</p>-->
+                    <p><a href="mailto:sales@secureedge.in" class="nav-link m-0">sales@secureedge.in</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="mb-0">Copyright @ <a href="#">Secureedge Fintech</a> Pvt. Ltd.</p>
+                <p class="mb-0">Designed By <a href="#">Goforad Technology</a> Pvt. Ltd.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <a
+  href="https://wa.me/919793853777"
+  class="whatsapp-sticky-btn"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat on WhatsApp"
+>
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+    <!-- End Footer section -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const startBtn = document.getElementById('start-btn');
+
+            // Show button after heading animation (only if exists)
+            if (startBtn) {
+                setTimeout(() => {
+                    startBtn.classList.add('show-btn');
+                }, 2000);
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const timeline = document.getElementById('timeline');
+            const steps = document.querySelectorAll('.timeline .step');
+
+            // If timeline or steps are missing, safely exit
+            if (!timeline || !steps.length) return;
+
+            // Default: only first active
+            steps.forEach((step, index) => {
+                step.classList.toggle('active', index === 0);
+            });
+
+            // Hover effect
+            timeline.addEventListener('mouseenter', () => {
+                timeline.classList.add('active');
+                steps.forEach(step => step.classList.add('active'));
+            });
+        });
+    </script>
+
+</body>
+
+</html>

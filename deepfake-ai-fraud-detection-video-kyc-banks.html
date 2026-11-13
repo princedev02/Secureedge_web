@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KHJNDC6Z');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepfake Fraud in Video KYC: A Guide for Indian Banks</title>
+    <meta name="description" content="How deepfakes and AI-generated identity fraud threaten video KYC, and what liveness detection Indian banks need to stay ahead in 2026.">
+    <link rel="canonical" href="https://secureedgefintech.com/deepfake-ai-fraud-detection-video-kyc-banks.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Deepfake Fraud in Video KYC: A Guide for Indian Banks" />
+    <meta property="og:description" content="How deepfakes and AI-generated identity fraud threaten video KYC, and what liveness detection Indian banks need to stay ahead in 2026." />
+    <meta property="og:url" content="https://secureedgefintech.com/deepfake-ai-fraud-detection-video-kyc-banks.html" />
+    <meta property="og:image" content="https://secureedgefintech.com/assets/images/blogs/secure-head.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Deepfake Fraud in Video KYC: A Guide for Indian Banks" />
+    <meta name="twitter:description" content="How deepfakes and AI-generated identity fraud threaten video KYC, and what liveness detection Indian banks need to stay ahead in 2026." />
+
+    <link rel="icon" type="image/png" href="./assets/images/se-logo-favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/blogpage.css" />
+    <link rel="stylesheet" href="./assets/css/custome.css" />
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Deepfake and AI-Generated Identity Fraud in Video KYC: How Indian Banks Can Stay Ahead",
+  "description": "How deepfakes and AI-generated identity fraud threaten video KYC, and what liveness detection Indian banks need to stay ahead in 2026.",
+  "image": "https://secureedgefintech.com/assets/images/blogs/secure-head.webp",
+  "author": {
+    "@type": "Organization",
+    "name": "SecureEdge Fintech"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SecureEdge Fintech Pvt. Ltd.",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://secureedgefintech.com/assets/images/se-logo-favicon.png"
+    }
+  },
+  "datePublished": "2026-09-05",
+  "dateModified": "2026-09-05",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://secureedgefintech.com/deepfake-ai-fraud-detection-video-kyc-banks.html"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can deepfakes really fool video KYC systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, against a system that relies only on a basic face-match between the live video and the ID photo. Modern face-swap and generative video tools can produce a convincing synthetic face in real time, good enough to pass a simple similarity check. What deepfakes struggle with - at least for now - is fooling a properly implemented liveness layer that looks at depth, texture, and sensor-level signals rather than just comparing two faces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between active and passive liveness detection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Active liveness asks the user to do something - blink, turn their head, smile, read a number aloud - and checks that the response matches the prompt. Passive liveness analyzes a single capture (or a few seconds of normal video) for texture, depth, and micro-movement cues without asking the user to do anything. Active is easier to explain to auditors and users, but response-time-optimized deepfakes can be trained against known prompts. Passive is harder to spoof and less disruptive to onboarding, but is more dependent on the vendor's underlying model and is less visibly explainable to a user."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does RBI's V-CIP framework require for remote video KYC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RBI's Video-based Customer Identification Process framework sets out how banks and other regulated entities can onboard customers remotely using a live video interaction instead of in-person verification. In general terms, it requires banks to put in place reasonable safeguards that the person on camera is a live, present individual actually undergoing the verification, not a recording, photo, or synthetic substitute. Exact operational requirements and any updates should be confirmed against the current RBI circulars and your compliance team rather than treated as fixed - this is a general explainer, not legal advice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is passive liveness detection alone enough, or do banks need active challenges too?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For most onboarding flows, a strong passive liveness layer covers the bulk of presentation and injection attacks with the least friction. Many banks still keep a lightweight active step - a single prompt, not a sequence - as a second layer for higher-risk accounts or when passive checks return a borderline confidence score. Think of it as defense in depth rather than an either/or choice: passive as the default, active as an escalation path."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does liveness detection fit alongside Aadhaar-based e-KYC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aadhaar-based e-KYC (OTP or biometric) confirms that a set of demographic details and a photograph are genuinely linked to a real Aadhaar record. It doesn't, on its own, confirm that the person currently on camera during video KYC is that same individual in real time. Liveness detection sits at the video capture step and answers a different question - is this a live person, right now, not a photo, video replay, or injected file. Banks running V-CIP alongside Aadhaar e-KYC typically need both: registry-level identity confirmation and capture-level liveness assurance."
+      }
+    }
+  ]
+}
+    </script>
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHJNDC6Z"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Start header section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand p-0" href="/">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+                    aria-controls="mobileMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center d-none d-lg-flex">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Our Product
+                            </a>
+                            <ul class="dropdown-menu custom-dropdown">
+                                <li><a class="dropdown-item" href="bcedge.html">BC Edge</a></li>
+                                <li><a class="dropdown-item" href="openedge.html">Open Edge</a></li>
+                                <li><a class="dropdown-item" href="verifyedge.html">Verify Edge</a></li>
+                                <li><a class="dropdown-item" href="mobileBanking.html">Mobile Banking</a></li>
+                                <li><a class="dropdown-item" href="samay.html">Samay</a></li>
+                                <li><a class="dropdown-item" href="frms.html">FRMS</a></li>
+                            </ul>
+                        <li class="nav-item"><a class="nav-link" href="blogpage.html">Blog</a></li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-none d-lg-block">
+                    <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Mobile Offcanvas -->
+    <div class="offcanvas offcanvas-start text-white" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title">
+                <a class="navbar-brand p-0" href="/">
+                    <img src="./assets/images/logo.svg" alt="Logo" />
+                </a>
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+            <div class="accordion" id="menuAccordion">
+                <a href="/" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="blogpage.html" class="nav-link">Blog</a>
+                <div class="accordion-item border-0 bg-transparent">
+                    <h2 class="accordion-header" id="headingProduct">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseProduct" aria-expanded="false" aria-controls="collapseProduct">
+                            Our Product
+                        </button>
+                    </h2>
+                    <div id="collapseProduct" class="accordion-collapse collapse" aria-labelledby="headingProduct"
+                        data-bs-parent="#menuAccordion">
+                        <div class="accordion-body p-0">
+                            <a href="bcedge.html" class="d-block mb-2">BC Edge</a>
+                            <a href="openedge.html" class="d-block mb-2">Open Edge</a>
+                            <a href="verifyedge.html" class="d-block">Verify Edge</a>
+                            <a href="mobileBanking.html" class="d-block">Mobile banking</a>
+                           <a href="samay.html" class="d-block">Samay</a>
+                            <a href="frms.html" class="d-block">FRMS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="mt-4 text-center">
+                    <a href="contact-us.html" class="btn animated-border-btn">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End header section -->
+
+    <!-- hereo section start -->
+    <section class="hero-section-blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copy">
+                        <img src="assets/images/blogs/secure-head.jpeg" alt="Deepfake and AI-generated identity fraud threatening video KYC verification" height="80%" width="70%"
+                            style="border-radius: 15px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------- main section --------------------->
+    <main>
+        <section class="blog-content-section">
+            <div class="container">
+                <div class="blog-header">
+                    <span class="blog-category">Verify Edge</span>
+                    <h1>Deepfake and AI-Generated Identity Fraud in Video KYC: How Indian Banks Can Stay Ahead</h1>
+                    <p class="blog-meta">Published on 5 September 2026 • by SecureEdge Team</p>
+                </div>
+
+<p>
+    Video KYC was built on a quiet assumption that held up for years without anyone having to think about it much: a live human face in front of a camera is hard to fake convincingly in real time. That assumption is the reason RBI's Video-based Customer Identification Process (V-CIP) and selfie-based e-KYC flows became acceptable substitutes for in-person verification in the first place - a person on camera, in the moment, is a strong enough signal of genuine presence. Generative AI has spent the last two years quietly eating away at that assumption, and most banks' fraud teams are only now catching up to how far it's gone.
+</p>
+<p>This isn't a theoretical risk you can file away for next year's roadmap. Face-swap tools that run in real time on consumer-grade hardware, voice cloning that needs a few seconds of sample audio, and injection tools that bypass a device's camera entirely are all available today, packaged for people with no deep technical background. If your video KYC stack still treats "a face showed up on the video call and it looked like the ID photo" as sufficient proof of a live, genuine applicant, you're underwriting risk you may not be pricing for.</p>
+<p>This post walks through how these attacks actually work, why liveness detection is the countermeasure that matters, the honest tradeoffs between active and passive liveness, and what to evaluate when you're choosing or auditing a liveness layer - the kind of verification layer our <a href="verifyedge.html" class="interlink">Verify Edge</a> platform is built to provide as part of a bank's face-match and liveness stack.</p>
+
+<div class="blog-header">
+    <h2>The Four Ways Video KYC Gets Attacked</h2>
+</div>
+<div class="blog-body">
+    <p>"Deepfake fraud" gets used as a catch-all term, but it actually covers a handful of distinct attack techniques, each of which needs a somewhat different defense. Lumping them together is exactly how gaps get left open.</p>
+    <h3>Presentation attacks</h3>
+    <p>The oldest category, and still the most common in practice because it's the cheapest to attempt: holding a printed photo, a phone or tablet playing a recorded video, or a mask up to the camera during the live session. These don't need AI at all - they rely on a poorly-lit call, a low-resolution camera, or a verification agent who's rushing through their tenth call of the hour. A presentation attack is defeated by checking whether the "face" in front of the camera has the depth, texture, and reflectivity of real skin rather than a printed surface or a screen.</p>
+    <h3>Face-swap and deepfake video</h3>
+    <p>This is where generative AI changes the picture. A face-swap tool overlays a synthetic face - built from a handful of reference photos of the target identity - onto a real person's live video feed, in real time, with the underlying person's expressions and head movements driving the fake face's motion. The attacker doesn't need to look like the identity they're impersonating; the model handles that. A few years ago this needed serious compute and expertise. Today it runs as a plugin on a mid-range laptop.</p>
+    <h3>Injection attacks</h3>
+    <p>Arguably the most dangerous category for banks, and the one that gets the least attention. An injection attack skips the camera entirely and feeds a synthetic video file directly into the KYC application's video stream, using a virtual camera driver or a compromised SDK integration. Because there's no physical camera in the loop, none of the depth or texture cues a good liveness system looks for in a presentation attack are even relevant - the attacker is handing the system a video file and telling it "this came from a camera." Detecting this requires checking the integrity of the capture pipeline itself, not just the content of the video.</p>
+    <h3>Voice cloning</h3>
+    <p>For any video KYC flow that includes a voice-based verification step - reading back an OTP, confirming a name, answering a security question out loud - voice cloning is the audio equivalent of face-swapping. A few seconds of sample audio, increasingly easy to scrape from social media or a prior call recording, is enough for current voice cloning tools to produce a passable synthetic voice matched to a target identity.</p>
+</div>
+
+<div class="blog-header">
+    <h2>Why "Selfie Matches ID Photo" Isn't Enough Anymore</h2>
+</div>
+<div class="blog-body">
+    <p>A basic face-match check answers one question: does the face in this frame look similar enough to the face on the ID document? That's a useful check, and it catches a lot of casual fraud - someone using a stolen ID with their own face, or a mismatched document. What it does not answer is whether the face in the frame belongs to a live, present human being in the first place. A well-made deepfake is specifically optimized to pass that similarity check, because that's the entire point of the attack. If your only gate is similarity scoring between two images, a good synthetic face sails through it.</p>
+    <p>This is the reason liveness detection exists as a separate, distinct check from face-matching, not a nice-to-have bolted onto it. Face-match answers "is this the same face as the ID." Liveness answers "is this face coming from a real, present person right now." You need both, and treating either one as a substitute for the other is where video KYC programs get exposed.</p>
+</div>
+
+<div class="blog-header">
+    <h2>Active vs. Passive Liveness Detection</h2>
+</div>
+<div class="blog-body">
+    <p>Liveness detection is the countermeasure, but it isn't one single technique - it splits into two approaches with genuinely different tradeoffs, and vendors aren't always upfront about which one they're selling you.</p>
+    <h3>Active liveness</h3>
+    <p>Active liveness asks the user to perform an action during the capture - blink, turn their head left then right, smile, or read a randomly generated number out loud - and checks that what the camera captured matches the prompt with the right timing. It's intuitive to explain to a compliance auditor or a customer ("we asked you to blink and you blinked"), and it's been the default approach for years because it's relatively simple to build and reason about.</p>
+    <p>The honest problem: active liveness challenges are, by definition, predictable in structure even if the specific prompt is randomized. Response-time-optimized deepfake tools are increasingly capable of reacting to a displayed prompt within the same real-time video feed - the synthetic face blinks when asked, turns when asked, because the underlying attack is puppeting a live face in real time and can be trained or tuned to respond to whatever the challenge asks for. Active liveness isn't worthless, but it's not the ceiling of protection it once was, and treating it as sufficient on its own is increasingly a gap.</p>
+    <h3>Passive liveness</h3>
+    <p>Passive liveness analyzes a single capture, or a few seconds of ordinary video, without asking the user to do anything - it looks at texture and depth cues (does the surface behave like skin, does it have the micro-variation real skin has under the camera's specific lighting), subtle involuntary micro-movements a synthetic overlay tends to smooth away, and often camera or sensor-level signals about how the capture was actually produced. Done well, passive liveness is harder to spoof because there's no known "challenge" for an attacker to optimize against, and it's far less disruptive to the onboarding experience - no waiting for prompts, no re-recording because the user blinked at the wrong moment.</p>
+    <p>The honest tradeoff here runs the other way: passive liveness quality depends entirely on the underlying model and the breadth of attack types it was trained against, and it's less visibly explainable - you can't point to a specific action the user took and say "see, they did the thing we asked." A weak passive liveness implementation can be just as exploitable as a weak active one; the label "passive" isn't itself a guarantee of strength.</p>
+    <p>In practice, most mature setups use passive liveness as the default layer for every session, with a lightweight active step reserved for higher-risk accounts or when the passive check returns a borderline confidence score - defense in depth rather than picking one over the other.</p>
+
+    <div class="table-responsive-wrapper">
+        <table class="comparison-table">
+            <thead>
+                <tr><th>Attack Type</th><th>How It Works</th><th>What Detects It</th></tr>
+            </thead>
+            <tbody>
+                <tr><td data-label="Attack Type">Presentation attack (photo, video replay, mask)</td><td data-label="How It Works">Physical printout, screen playback, or mask held up to the live camera</td><td data-label="What Detects It">Depth and texture analysis - passive liveness checking whether the surface behaves like real skin</td></tr>
+                <tr><td data-label="Attack Type">Face-swap / deepfake video</td><td data-label="How It Works">Synthetic face overlaid in real time onto an attacker's own live video feed</td><td data-label="What Detects It">Passive liveness texture and micro-movement analysis, plus active challenges the synthetic overlay struggles to render convincingly</td></tr>
+                <tr><td data-label="Attack Type">Injection attack</td><td data-label="How It Works">Synthetic video file fed directly into the KYC app's video stream, bypassing the physical camera entirely</td><td data-label="What Detects It">Capture-pipeline integrity checks - virtual camera detection, sensor/device signal verification - not content analysis alone</td></tr>
+                <tr><td data-label="Attack Type">Voice cloning</td><td data-label="How It Works">Synthetic voice generated from a short audio sample of the target identity</td><td data-label="What Detects It">Audio liveness and voice anti-spoofing checks alongside the video-based liveness layer</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="blog-header">
+    <h2>Where RBI's V-CIP Framework Fits In</h2>
+</div>
+<div class="blog-body">
+    <p>RBI's Video-based Customer Identification Process framework is what allows banks and other regulated entities to complete customer identification remotely, through a live video interaction, as an alternative to in-person verification. In general terms, the framework requires banks to put in place reasonable safeguards that the person appearing on camera during the video KYC session is a live, present individual actually undergoing verification in that moment - not a static photo, a recorded video, or some other substitute presented to the camera.</p>
+    <p>That's a deliberately general description, and it's worth being precise about why: the specific operational requirements, permitted exceptions, and any updates to the V-CIP framework are matters for your compliance and legal teams to confirm against the current RBI circulars, not something to take as fixed from a vendor blog post. What matters for this discussion is the underlying intent, which hasn't changed even as the threat landscape has - banks doing remote onboarding are expected to have a real, defensible basis for believing the person on camera is who and what they claim to be, live, at the time of verification. Deepfakes and injection attacks are precisely the kind of threat that intent is meant to guard against, and a liveness layer that hasn't kept pace with how those attacks have evolved is a compliance gap as much as a fraud one.</p>
+</div>
+
+<div class="blog-header">
+    <h2>What to Evaluate in a Liveness and Anti-Spoofing Layer</h2>
+</div>
+<div class="blog-body">
+    <p>If you're a bank or NBFC evaluating vendors for this layer - or auditing one you already have in production - a few things matter more than a demo reel or a glossy accuracy number.</p>
+    <ul>
+        <li><p><strong class="high-text">Real-time detection speed:</strong> liveness checks that add ten or fifteen seconds of visible lag to a video KYC call push customers to abandon the session, or push agents to rush through the check in a way that defeats its purpose. The check needs to run inside the flow of the call, not as a separate slow step bolted onto the end.</p></li>
+        <li><p><strong class="high-text">Injection-attack detection, not just presentation-attack detection:</strong> this is the gap most vendor pitches gloss over. A system that only checks whether the face in the video has real depth and texture will pass an injected synthetic file just fine, because the injected content can be built to have those cues too. Ask specifically whether the vendor detects virtual camera drivers, SDK tampering, and other signs the capture didn't come from a genuine device sensor.</p></li>
+        <li><p><strong class="high-text">Independence from ambient lighting and device quality:</strong> your customer base is verifying from a huge range of devices, network conditions, and lighting - a badly lit room, an older phone's camera, a shaky connection in a smaller town. A liveness model tuned mainly on studio-quality test data tends to perform worse exactly where you need it most.</p></li>
+        <li><p><strong class="high-text">False-rejection rate for genuine users:</strong> a system tuned aggressively against fraud but that also rejects a meaningful share of real customers isn't actually a win - it pushes genuine applicants into manual review queues, frustrates onboarding, and quietly pressures your operations team to loosen thresholds, which undoes the fraud protection you paid for. Ask for false-rejection numbers, not just detection rates, and ask what they were measured against.</p></li>
+        <li><p><strong class="high-text">Vendor transparency about testing and certification methodology:</strong> what dataset and attack types was the model tested against, how recently was it updated to account for newer generative tools, and is there any independent testing or certification behind the claimed numbers. A vendor that can't answer this clearly, or answers only in marketing language, is a harder one to defend to your own risk committee later.</p></li>
+    </ul>
+    <p>None of these are exotic asks - they're the kind of due diligence questions a bank's risk and compliance teams should already be running through for any fraud-prevention vendor, and liveness detection deserves the same rigor as any other control that sits directly in your onboarding decision path.</p>
+</div>
+
+<div class="blog-header">
+    <h2>Frequently Asked Questions</h2>
+</div>
+<div class="blog-body">
+    <div class="faq-item">
+        <h3>Can deepfakes really fool video KYC systems?</h3>
+        <p>Yes, against a system that relies only on a basic face-match between the live video and the ID photo. Modern face-swap and generative video tools can produce a convincing synthetic face in real time, good enough to pass a simple similarity check. What deepfakes struggle with - at least for now - is fooling a properly implemented liveness layer that looks at depth, texture, and sensor-level signals rather than just comparing two faces.</p>
+    </div>
+    <div class="faq-item">
+        <h3>What's the difference between active and passive liveness detection?</h3>
+        <p>Active liveness asks the user to do something - blink, turn their head, smile, read a number aloud - and checks that the response matches the prompt. Passive liveness analyzes a single capture (or a few seconds of normal video) for texture, depth, and micro-movement cues without asking the user to do anything. Active is easier to explain to auditors and users, but response-time-optimized deepfakes can be trained against known prompts. Passive is harder to spoof and less disruptive to onboarding, but is more dependent on the vendor's underlying model and is less visibly explainable to a user.</p>
+    </div>
+    <div class="faq-item">
+        <h3>What does RBI's V-CIP framework require for remote video KYC?</h3>
+        <p>RBI's Video-based Customer Identification Process framework sets out how banks and other regulated entities can onboard customers remotely using a live video interaction instead of in-person verification. In general terms, it requires banks to put in place reasonable safeguards that the person on camera is a live, present individual actually undergoing the verification, not a recording, photo, or synthetic substitute. Exact operational requirements and any updates should be confirmed against the current RBI circulars and your compliance team rather than treated as fixed - this is a general explainer, not legal advice.</p>
+    </div>
+    <div class="faq-item">
+        <h3>Is passive liveness detection alone enough, or do banks need active challenges too?</h3>
+        <p>For most onboarding flows, a strong passive liveness layer covers the bulk of presentation and injection attacks with the least friction. Many banks still keep a lightweight active step - a single prompt, not a sequence - as a second layer for higher-risk accounts or when passive checks return a borderline confidence score. Think of it as defense in depth rather than an either/or choice: passive as the default, active as an escalation path.</p>
+    </div>
+    <div class="faq-item">
+        <h3>How does liveness detection fit alongside Aadhaar-based e-KYC?</h3>
+        <p>Aadhaar-based e-KYC (OTP or biometric) confirms that a set of demographic details and a photograph are genuinely linked to a real Aadhaar record. It doesn't, on its own, confirm that the person currently on camera during video KYC is that same individual in real time. Liveness detection sits at the video capture step and answers a different question - is this a live person, right now, not a photo, video replay, or injected file. Banks running V-CIP alongside Aadhaar e-KYC typically need both: registry-level identity confirmation and capture-level liveness assurance.</p>
+    </div>
+</div>
+
+<div class="blog-header">
+    <h2>Conclusion</h2>
+</div>
+<div class="blog-body">
+    <p>Deepfake and injection attacks against video KYC aren't a distant risk banks can plan around for next year - the tools are already accessible, and the gap between "looks like a live person" and "is verifiably a live person" is exactly where fraud is finding room to operate. Closing that gap means treating liveness detection as its own distinct control, separate from face-matching, and being honest about what active versus passive approaches each do and don't cover. <a href="verifyedge.html" class="interlink">Verify Edge</a> is built around exactly this problem - face-match and liveness capabilities designed with passive liveness and injection-attack detection in mind, as one layer in a broader onboarding verification stack. If you're reviewing your video KYC setup against where deepfake techniques stand today, <a href="contact-us.html" class="interlink">get in touch with SecureEdge</a> to talk through your flow.</p>
+</div>
+
+
+            </div>
+        </section>
+
+
+        <section class="fintech-ai  card-section">
+        <div class="border"></div>
+        <h1>Latest Blog</h1>
+        <section class="custom-blog-section">
+            <div class="custom-blog-grid">
+                <div class="custom-blog-card">
+                    <img src="assets/images/_Ai_400x215.webp" alt="Blog Image" class="custom-blog-image">
+                    <div class="custom-blog-text">
+                        <h3>Synthetic Identity Fraud: Protect Your Business from AI</h3>
+                    </div>
+                    <div class="card-button">
+                        <a href="synthetic-identity-fraud-ai-verification.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="custom-blog-card">
+                    <img src="assets/images/Blog 3_400x225.webp" alt="Blog Image" class="custom-blog-image">
+                    <div class="custom-blog-text">
+                        <h3>How to Detect Tampered PAN Cards, Aadhaar Documents and Salary Slips: A Forgery Detection Guide for Lenders</h3>
+                    </div>
+                    <div class="card-button">
+                        <a href="document-forgery-detection-api-lenders-pan-aadhaar.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="custom-blog-card">
+                    <img src="assets/images/india upi_400x215.webp" alt="Blog Image" class="custom-blog-image">
+                    <div class="custom-blog-text">
+                        <h3>Fintech x AI: How Artificial Intelligence is Reshaping Financial Services</h3>
+                    </div>
+                    <div class="card-button">
+                        <a href="fintech-ai-reshaping-financial-services.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="custom-blog-card">
+                    <img src="assets/images/blogs/top-10card.webp" alt="Blog Image" class="custom-blog-image">
+                    <div class="custom-blog-text">
+                        <h3>eKYC API for Fintech in India</h3>
+                    </div>
+                    <div class="card-button">
+                        <a href="ekyc-api-for-fintech-india-guide.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="custom-blog-card">
+                    <img src="assets/images/blogs/rbi-npci-uidai-compliance-guide-aeps-service-providers-card.webp" alt="Blog Image" class="custom-blog-image">
+                    <div class="custom-blog-text">
+                        <h3>Aadhaar Verification API: QR, OTP & DigiLocker Guide</h3>
+                    </div>
+                    <div class="card-button">
+                        <a href="aadhaar-verification-api-qr-otp-digilocker.html">
+                            <img src="assets/images/Group 333.webp" alt="Read more" class="arrow-button-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------ end of main section---------------------->
+        <footer class="footer" data-aos="zoom-in">
+            <div class="container footerContent">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 footer-logo">
+                        <img src="./assets/images/logo.svg" alt="Secure Edge Logo" class="mb-3">
+                        <p>At Secure Edge Fintech, we are shaping the future of finance: Secure and Seamless. Driven by
+                            Innovation and
+                            built on Trust</p>
+                        <div
+                            class="social-iconsblock mt-3 mb-lg-0 mb-md-5 mb-4 d-flex align-items-center justify-content-md-start justify-content-center">
+                            <a href="https://www.facebook.com/SecureEdgeFintech/" class="social-icons"
+                                aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/secureedgefintech/" class="social-icons"
+                                aria-label="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/secureedgefintech" class="social-icons"
+                                aria-label="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.youtube.com/@Secureedgefintech" class="social-icons" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://x.com/secureedgefin" class="social-icons" aria-label="X-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5>Products</h5>
+                        <ul>
+                            <li><a href="openedge.html">Open Edge</a></li>
+                            <li><a href="verifyedge.html">Verify Edge</a></li>
+                            <li><a href="bcedge.html">BC Edge</a></li>
+                            <li><a href="mobileBanking.html">Mobile Banking</a></li>
+                          <li><a href="samay.html">Samay</a></li>
+                           <li><a href="frms.html">FRMS</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <h5>Important Link</h5>
+                        <ul>
+                            <li><a href="Terms&C.html"> Terms & Conditions</a></li>
+                            <li><a href="privacy_policy.html"> Privacy Policy</a></li>
+                            <li><a href="/career">Career</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h5>Contact</h5>
+                        <p class="mb-3">204, 2nd Floor, Cyber Heights,<br>
+                            Vibhuti Khand, Gomti Nagar,<br>
+                            Lucknow, U.P. 226010
+                        </p>
+                         <p class="mb-3">9793853777</p>
+                        <p><a href="mailto:sales@secureedge.in" class="nav-link m-0">sales@secureedge.in</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="footer-bottom">
+                    <p class="mb-0">Copyright @ <a href="#">Secureedge Fintech</a> Pvt. Ltd.</p>
+                    <p class="mb-0">Designed By <a href="#">Goforad Technology</a> Pvt. Ltd.</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+    </main>
+    <a href="https://wa.me/919793853777" class="whatsapp-sticky-btn" target="_blank" rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!-- End Footer section -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <style>
+        .interlink { color: #fff; font-weight: 600; }
+        .blog-body ul { list-style-type: disc; padding-left: 20px; margin-top: 10px; }
+        .blog-body ul li { display: list-item; color: #dcdcdc; }
+        .key-text { color: rgba(255, 85, 85, 1); }
+        .table-responsive-wrapper { width: 100%; overflow: auto; margin: 24px 0; -webkit-overflow-scrolling: touch; border: 1px solid #dcdcdc; border-radius: 12px; }
+        .comparison-table { width: 100%; border-collapse: collapse; min-width: 600px; }
+        .comparison-table th, .comparison-table td { border: 1px solid #dcdcdc; padding: 12px 16px; text-align: left; vertical-align: top; color: #dcdcdc; }
+        .comparison-table tr:first-child th:first-child { border-top-left-radius: 12px; }
+        .comparison-table tr:first-child th:last-child { border-top-right-radius: 12px; }
+        .comparison-table tr:last-child td:first-child { border-bottom-left-radius: 12px; }
+        .comparison-table tr:last-child td:last-child { border-bottom-right-radius: 12px; }
+        .comparison-table thead th { background-color: #f5f5f5; font-weight: 700; white-space: nowrap; color: #FF5252; }
+        .faq-item { margin-bottom: 20px; }
+        .faq-item h3 { color: #fff; font-size: 20px; margin-bottom: 8px; }
+        @media (max-width: 600px) {
+            .table-responsive-wrapper { overflow-x: visible; }
+            .comparison-table { min-width: 0; border: 0; }
+            .comparison-table thead { display: none; }
+            .comparison-table tbody tr { display: block; margin-bottom: 16px; border: 1px solid #e0e0e0; border-radius: 6px; overflow: hidden; }
+            .comparison-table tbody td { display: flex; justify-content: space-between; gap: 12px; border: none; border-bottom: 1px solid #e0e0e0; }
+            .comparison-table tbody td:last-child { border-bottom: none; }
+            .comparison-table tbody td::before { content: attr(data-label); font-weight: 700; margin-right: 12px; }
+        }
+    </style>
+
+</body>
+
+</html>

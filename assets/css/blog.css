@@ -1,0 +1,343 @@
+@font-face {
+    font-family: "Qurova DEMO";
+    src: url("https://db.onlinewebfonts.com/t/2cf31cbaf98b296b692adb4ed0483799.eot");
+    src: url("https://db.onlinewebfonts.com/t/2cf31cbaf98b296b692adb4ed0483799.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/2cf31cbaf98b296b692adb4ed0483799.woff2") format("woff2"),
+        url("https://db.onlinewebfonts.com/t/2cf31cbaf98b296b692adb4ed0483799.woff") format("woff"), url("https://db.onlinewebfonts.com/t/2cf31cbaf98b296b692adb4ed0483799.ttf") format("truetype"),
+        url("https://db.onlinewebfonts.com/t/2cf31cbaf98b296b692adb4ed0483799.svg#Qurova DEMO") format("svg");
+         font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik Trial';
+    src: url('../fonts/aeoniktrial-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aeonik Trial';
+    src: url('../fonts/aeoniktrial-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ---------- HERO Section Start ---------- */
+
+.blog-body {
+    color: rgba(228, 228, 228, 1);
+    text-align: left;
+    background-color: rgb(10, 10, 10);
+}
+
+.hero-section-blog {
+    width: 100%;
+    background-image:
+        url("../images/blogpageheader.webp"),
+        url("../images/blogpageglow.webp");
+
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, contain;
+    /* cover for main, contain for glow */
+    background-position: center top, left center;
+    /* second image moves to left */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-top: 176px;
+    text-align: center;
+    height: auto;
+    font-family: 'Aeonik Trial';
+}
+
+.blog-content-section {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #0a0a0a;
+    /* dark theme like your image */
+    color: #e5e5e5;
+    /* font-size: 16px; */
+    font-family: 'Aeonik Trial', sans-serif;
+}
+
+.blog-content-section .container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.blog-header {
+    text-align: left;
+    margin-bottom: 40px;
+    color: rgba(255, 85, 85, 1) !important;
+}
+
+.blog-category {
+    background: rgba(255, 85, 85, 1);
+    color: rgba(228, 228, 228, 1);
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.blog-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    color: rgba(255, 85, 85, 1);
+}
+
+.blog-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    color: rgba(228, 228, 228, 1);
+}
+
+
+.blog-meta {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.blog-body p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #dcdcdc;
+    /* font-size: 16px; */
+}
+
+.blog-body h3 {
+    color: rgba(255, 85, 85, 1);
+    font-size: 22px;
+    margin: 30px 0 15px;
+    padding-left: 10px;
+    width: webkit-fill-available;
+}
+
+.highlight-box {
+    background: #141414;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 30px 0;
+
+}
+
+.highlight-box h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.highlight-box ul {
+    margin: 0;
+    padding-left: 20px;
+
+}
+
+.highlight-box li {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.highlight-box.alt {
+    background: #191919;
+    border: 1px solid #333;
+    border-left: 4px solid rgba(255, 85, 85, 1);
+}
+
+.blog-body ol {
+    list-style-type: decimal !important;
+    padding-left: 25px;
+    margin: 20px 0;
+    color: #dcdcdc;
+}
+
+.blog-body ol li {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+/* -------------------card section ----------------------------------*/
+
+.fintech-ai h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+    color: rgba(228, 228, 228, 1);
+    margin-left: 100px;
+    margin: 50px;
+}
+
+
+.custom-blog-section {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    background: #0e0e0e;
+    border-radius: 12px;
+}
+
+.custom-blog-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    width: 96%;
+    padding: 20px;
+    max-width: 1400px;
+
+}
+
+.custom-blog-card {
+    background: #161616;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(243, 241, 241, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+
+}
+
+.custom-blog-card:hover {
+    transform: translateY(-5px);
+}
+
+.custom-blog-image {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 1px solid #2a2a2a;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.custom-blog-text h3 {
+    font-size: 1.02rem;
+    text-align: left;
+    margin-bottom: 10px;
+    color: rgba(255, 85, 85, 1);
+    font-family: 'Aeonik Trial';
+    padding: 10px;
+    letter-spacing: normal;
+    margin-bottom: 25px;
+    height: 120px;
+}
+
+.card-button {
+    position: absolute;
+    left: 30%;
+    align-items: left;
+    bottom: -50px;
+}
+
+.high-text {
+    color: rgba(255, 85, 85, 1);
+}
+
+/* ---------- Desktop (Large Screens ≥1200px) ---------- */
+@media (min-width: 1200px) {
+    .custom-blog-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+    }
+}
+
+/* ---------- Laptops / Tablets (≤1200px) ---------- */
+@media (max-width: 1200px) {
+    .custom-blog-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 25px;
+    }
+
+    .custom-blog-card {
+        margin-bottom: 40px;
+    }
+}
+
+/* ---------- Tablets (≤992px) ---------- */
+@media (max-width: 992px) {
+    .custom-blog-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .custom-blog-card {
+        margin-bottom: 40px;
+    }
+
+    .custom-blog-text h3 {
+        font-size: 1.02rem;
+        padding: 10px;
+    }
+
+    .blog-header h2 {
+        font-size: 24px;
+        letter-spacing: normal;
+    }
+}
+
+/* ---------- Mobile (≤600px) ---------- */
+@media (max-width: 600px) {
+    .custom-blog-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .custom-blog-section {
+        padding: 1px 0;
+    }
+
+    .fintech-ai-section h1 {
+        font-size: 24px;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .custom-blog-card {
+        width: 95%;
+        margin: 0 auto 50px;
+    }
+
+    .custom-blog-text h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 5px;
+        letter-spacing: 1px;
+    }
+
+    .blog-content-section .container {
+        font-size: 1rem;
+        width: 94%;
+    }
+
+    .blog-body h3 {
+        text-align: center;
+        font-size: 18px;
+        text-justify: inter-word;
+    }
+
+}
+
+/* ---------- Extra Small (≤400px) ---------- */
+@media (max-width: 400px) {
+    .custom-blog-card {
+        width: 95%;
+    }
+
+    .custom-blog-text h3 {
+        font-size: 1.3rem;
+    }
+
+    .card-button {
+        bottom: 0px;
+        width: 38px;
+        height: 38px;
+    }
+}

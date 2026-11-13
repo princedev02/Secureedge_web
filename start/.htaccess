@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Keep the relay route relative to this folder, including /secureedge/start/.
+# Internal rewrite preserves POST; the browser never follows a PHP redirect.
+RewriteRule ^lead-verification$ lead-verification.php [L]

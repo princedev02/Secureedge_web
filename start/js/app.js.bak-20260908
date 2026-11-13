@@ -1,0 +1,240 @@
+$(function () {
+  var formFallbackSelectors = 'iframe, form, input, textarea, select, button, .pipedriveWebForms__form';
+  var mobileNumberPattern = /^[6-9]\d{9}$/;
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  var showFormFallback = function ($container) {
+    if ($container.data('fallbackShown')) {
+      return;
+    }
+
+    $container.data('fallbackShown', true);
+    $container.empty().hide();
+    $container.siblings('.form-fallback').removeAttr('hidden');
+  };
+
+  var verifyEmbeddedForms = function () {
+    $('.pipedriveWebForms').each(function () {
+      var $container = $(this);
+      if (!$container.find(formFallbackSelectors).length) {
+        showFormFallback($container);
+      }
+    });
+  };
+
+  $('a[href^="#"]').on('click', function (e) {
+    var target = $($(this).attr('href'));
+    if (target.length) {
+      e.preventDefault();
+      $('html,body').animate({ scrollTop: target.offset().top - 70 }, 500);
+    }
+  });
+
+  var initMarqueeSlider = function ($track, options) {
+    if ($track.length && !$track.hasClass('slick-initialized')) {
+      $track.slick(options);
+    }
+  };
+
+  initMarqueeSlider($('.services-track'), {
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 2200,
+    cssEase: 'linear',
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    prevArrow: $('.services-marquee .marquee-btn-prev'),
+    nextArrow: $('.services-marquee .marquee-btn-next'),
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+  initMarqueeSlider($('.testimonials-track'), {
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 2200,
+    cssEase: 'linear',
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    adaptiveHeight: false,
+    prevArrow: $('.testimonials-marquee .marquee-btn-prev'),
+    nextArrow: $('.testimonials-marquee .marquee-btn-next'),
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
+  var resumeAfterDelay = function ($track) {
+    window.clearTimeout($track.data('resumeTimer'));
+    var timer = window.setTimeout(function () {
+      if ($track.hasClass('slick-initialized')) {
+        $track.slick('slickPlay');
+      }
+    }, 1000);
+    $track.data('resumeTimer', timer);
+  };
+
+  $('.services-track, .testimonials-track').on('mouseenter', function () {
+    if ($(this).hasClass('slick-initialized')) {
+      window.clearTimeout($(this).data('resumeTimer'));
+      $(this).slick('slickPause');
+    }
+  });
+
+  $('.services-track, .testimonials-track').on('mouseleave', function () {
+    if ($(this).hasClass('slick-initialized')) {
+      $(this).slick('slickPlay');
+    }
+  });
+
+  $('.services-track, .testimonials-track').on('touchstart pointerdown click', function (e) {
+    if (e.type === 'pointerdown' && e.pointerType && e.pointerType !== 'touch') {
+      return;
+    }
+
+    if ($(this).hasClass('slick-initialized')) {
+      $(this).slick('slickPause');
+      resumeAfterDelay($(this));
+    }
+  });
+
+  $('.marquee-btn').on('click', function () {
+    var target = $(this).data('target') === 'services' ? $('.services-track') : $('.testimonials-track');
+    if (target.hasClass('slick-initialized')) {
+      target.slick('slickPause');
+      resumeAfterDelay(target);
+    }
+  });
+
+  $('.lead-form').each(function (index) {
+    var form = this;
+    var $form = $(form);
+    var $numberInput = $form.find('input[name="number"]');
+    var $emailInput = $form.find('input[name="email"]');
+    var iframeName = 'lead-form-target-' + index;
+    var iframe = document.createElement('iframe');
+
+    iframe.name = iframeName;
+    iframe.title = iframeName;
+    iframe.hidden = true;
+    iframe.style.display = 'none';
+
+    document.body.appendChild(iframe);
+    form.target = iframeName;
+
+    if ($numberInput.length) {
+      $numberInput.attr({
+        required: true,
+        maxlength: 10,
+        inputmode: 'numeric',
+        pattern: '[0-9]{10}'
+      });
+
+      $numberInput.on('input', function () {
+        var digitsOnlyValue = this.value.replace(/\D/g, '').slice(0, 10);
+
+        if (this.value !== digitsOnlyValue) {
+          this.value = digitsOnlyValue;
+        }
+
+        this.setCustomValidity('');
+      });
+    }
+
+    if ($emailInput.length) {
+      $emailInput.attr({
+        required: true,
+        type: 'email',
+        autocomplete: 'email'
+      });
+
+      $emailInput.on('input', function () {
+        this.value = this.value.trimStart();
+        this.setCustomValidity('');
+      });
+    }
+  });
+
+  $('.lead-form').on('submit', function (e) {
+    var form = this;
+    var $form = $(form);
+    var $button = $form.find('button[type="submit"]');
+    var $status = $form.find('.form-status');
+    var $numberInput = $form.find('input[name="number"]');
+    var $emailInput = $form.find('input[name="email"]');
+    var defaultButtonText = $button.html();
+    var normalizedNumber = '';
+    var normalizedEmail = '';
+
+    if ($numberInput.length) {
+      normalizedNumber = ($numberInput.val() || '').replace(/\D/g, '');
+      $numberInput.val(normalizedNumber);
+
+      if (!mobileNumberPattern.test(normalizedNumber)) {
+        e.preventDefault();
+        $status.addClass('is-error').text('Please enter a valid 10-digit mobile number.');
+        $numberInput[0].setCustomValidity('Please enter a valid 10-digit mobile number.');
+        $numberInput[0].reportValidity();
+        $numberInput.trigger('focus');
+        return;
+      }
+
+      $numberInput[0].setCustomValidity('');
+    }
+
+    if ($emailInput.length) {
+      normalizedEmail = ($emailInput.val() || '').trim();
+      $emailInput.val(normalizedEmail);
+
+      if (!emailPattern.test(normalizedEmail)) {
+        e.preventDefault();
+        $status.addClass('is-error').text('Please enter a valid email address.');
+        $emailInput[0].setCustomValidity('Please enter a valid email address.');
+        $emailInput[0].reportValidity();
+        $emailInput.trigger('focus');
+        return;
+      }
+
+      $emailInput[0].setCustomValidity('');
+    }
+
+    $status.removeClass('is-error').text('Submitting...');
+    $button.prop('disabled', true).text('Submitting...');
+
+    window.setTimeout(function () {
+      form.reset();
+      $status.text("Thanks! Your request has been submitted successfully.");
+      $button.prop('disabled', false).html(defaultButtonText);
+    }, 900);
+  });
+
+  window.setTimeout(verifyEmbeddedForms, 2500);
+  window.setTimeout(verifyEmbeddedForms, 5000);
+});

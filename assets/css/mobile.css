@@ -1,0 +1,1251 @@
+.body {
+  background-color: rgba(7, 7, 7, 1);
+}
+
+.hero-section-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8% 8%;
+  position: relative;
+  height: auto;
+  margin-top: 70px;
+  overflow: hidden;
+  background: rgba(10, 10, 10, 1);
+  align-items: stretch;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  align-items: top center;
+  opacity: 0.9;
+  margin-top: -230px;
+}
+
+
+.left-content {
+  flex: 1;
+  z-index: 2;
+}
+
+.left-content h1 {
+  font-size: clamp(2.29rem, 3vw, 3rem);
+  font-weight: 700;
+  color: #f0eded;
+  line-height: 1.3;
+}
+
+
+.left-content p {
+  margin-top: 1.25rem;
+  margin-bottom: 1.875rem;
+  font-weight: 400;
+  font-size: 1.25em;
+  color: #efe6e6;
+  line-height: 1.6;
+}
+
+.btn-mob {
+  font-size: 1.125rem;
+  border-radius: 25px;
+  padding: 0.5rem 1.75rem;
+  box-shadow: 0 12px 12px rgba(255, 74, 74, 0.25);
+  font-weight: 600;
+  background-color: rgba(255, 39, 39, 1);
+  text-decoration: none;
+  color: #dddddd;
+}
+
+.right-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-img {
+  width: 35%;
+  height: auto;
+  max-height: 90%;
+  z-index: 3;
+  position: relative;
+  animation: tilt 1.5s infinite alternate;
+  transition: transform 0.5s ease;
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  100% {
+    transform: rotate(15deg) scale(1.15);
+  }
+}
+
+.circle-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, transparent 70%);
+  transform: scale(0);
+  opacity: 0;
+  animation: bloom 1.5s ease-out forwards;
+}
+
+.circle1 {
+  width: 20vw;
+  height: 20vw;
+  z-index: 3;
+  animation-delay: 0s;
+}
+
+.circle2 {
+  width: 30vw;
+  height: 30vw;
+  z-index: 2;
+  animation-delay: 1s;
+}
+
+.circle3 {
+  width: 40vw;
+  height: 40vw;
+  z-index: 1;
+  animation-delay: 2s;
+}
+
+@keyframes bloom {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+/*-------------------- mobile section 2-----------------------*/
+
+.mobile-banking-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 120px;
+  position: relative;
+  background: rgba(10, 10, 10, 1);
+  align-items: stretch;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.card {
+  display: flex;
+  border-radius: 72px;
+  border: 2px solid rgba(40, 40, 40, 1);
+  background: rgba(22, 22, 22, 0.78);
+  backdrop-filter: blur(37.5px);
+  color: #fff;
+  position: relative;
+  transition: all 0.8s ease;
+  width: 80%;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  isolation: isolate;
+
+}
+
+.mobile-left-card {
+  position: relative;
+  width: 39%;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  background: transparent;
+}
+
+.mobile-left-card::before {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(
+    circle,
+    rgba(245, 244, 244, 0.933) 30%,
+    rgba(246, 244, 244, 0.674) 30%,
+    rgba(249, 247, 247, 0.212) 40%
+  );
+  filter: blur(60px);
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.tilted-mobile {
+  position: absolute;
+  left: 30%;
+  top: 30%; 
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  transition: transform 0.8s ease-out, top 0.8s ease-out, opacity 0.8s ease-out;
+  z-index: 5;
+  opacity: 0; 
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  will-change: transform, opacity;
+}
+
+.mobile-banking-section.in-view .tilted-mobile {
+  top: -10%; /* moves upward */
+  opacity: 1; 
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.tilted-mobile:hover {
+  transform: translateY(100px);
+}
+
+.mobile-banking-section.in-view .tilted-mobile {
+  transform: translateY(0);
+}
+
+.right-card {
+  width: 58%;
+  max-width: 780px;
+  min-height: 350px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  
+}
+
+
+.right-card h2 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.right-card p {
+  font-size: 1rem;
+  letter-spacing: normal;
+  width: 100%;
+  color: #d1d1d1;
+  height: auto;
+  text-align: justify;
+
+}
+
+.mobile-banking-section {
+  overflow: visible;
+}
+
+
+
+/*-------------- why mobile section --------------- */
+
+.mobile-banking-wrapper {
+  position: relative;
+  width: 100%;
+  background: rgba(7, 7, 7, 1);
+  overflow: hidden;
+
+}
+.gridimg{
+  position: absolute;
+  left: -10%;
+  height: auto;
+  opacity: 1;
+  background-repeat: no-repeat;
+  z-index: 2;
+
+}
+.why-mobile-banking1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 120px;
+  position: relative;
+  background: rgba(7, 7, 7, 1);
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+.why-mobile-banking2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 120px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+  margin-top: -10px;
+  background-image: url("../images/gloweffmob.webp");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 20%;
+  opacity: 1;
+
+}
+
+.why-mobile-banking3 {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px 120px;
+  position: relative;
+  background: rgba(7, 7, 7, 1);
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  margin-top: -5px;
+}
+
+.line {
+  position: relative;
+  margin-left: 20%;
+  height: 100%;
+  width: 50%;
+  margin-top: -105px;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.why-card {
+  display: flex;
+  border-radius: 72px;
+  border: 2px solid rgba(40, 40, 40, 1);
+  background: rgba(22, 22, 22, 0.78);
+  backdrop-filter: blur(37.5px);
+  color: #fff;
+  position: relative;
+  transition: all 0.8s ease;
+  width: 60%;
+  margin-bottom: 100px;
+  opacity: 1;
+  z-index: 2;
+}
+
+.centertext {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.halfcard {
+  overflow: hidden;
+  width: 35%;
+  height: 65%;
+  align-items: center;
+}
+
+.rightCA {
+  text-align: left !important;
+  color: #f0eded !important
+}
+
+.half-card {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  align-items: end;
+  margin-left: 20px;
+  transition: transform 1s ease, opacity 1s ease;
+  position: relative;
+}
+
+.halfright {
+  border: none;
+  background: none;
+  text-align: start;
+  width: 60%;
+}
+
+.highlight {
+  color: rgba(255, 82, 82, 1);
+}
+
+.icon,
+.icon1 {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 100px;
+  height: auto;
+  z-index: 2;
+  transform-origin: center;
+  animation: walletZoomRotate 8s ease-in-out infinite;
+}
+
+@keyframes walletZoomRotate {
+  0% {
+    transform: translate(-50%, -50%) scale(1.15) rotate(0deg);
+  }
+
+  33.33% {
+    transform: translate(-50%, -50%) scale(1.45) rotate(60deg);
+  }
+
+  66.66% {
+    transform: translate(-50%, -50%) scale(1.75) rotate(-15deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1.15) rotate(0deg);
+  }
+}
+
+.icon2 {
+  animation: walletBounceRotate 6s ease-in-out infinite;
+}
+
+@keyframes walletBounceRotate {
+  0% {
+    transform: translate(-50%, -50%) scale(1.2) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(-50%, -50%) scale(1.2) rotate(-90deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.2) rotate(30deg);
+  }
+
+  75% {
+    transform: translate(-50%, -50%) scale(1.2) rotate(45deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1.2) rotate(0deg);
+  }
+}
+
+.icon3 {
+  animation: walletSpinZoom 5s ease-in-out infinite;
+}
+
+@keyframes walletSpinZoom {
+  0% {
+    transform: translate(-50%, -50%) scale(0.6) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1) rotate(25deg);
+  }
+
+  75% {
+    transform: translate(-50%, -50%) scale(1) rotate(-25deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0.6) rotate(0deg);
+  }
+}
+
+
+
+/* carousel part css */
+.mobile-banking-marquee {
+  background: #070707;
+  padding: 80px 100px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.marquee-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.mobile-display {
+  position: relative;
+  width: 50%;
+  height: 520px;
+}
+
+.phone-frame {
+  width: 100%;
+  transform: rotate(5deg);
+}
+
+.mobile-screen {
+  position: absolute;
+  top: 5%;
+  left: 35%;
+  width: 40%;
+  height: 50%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.5s ease;
+  rotate: -18deg;
+}
+
+.mobile-screen img {
+  width: 50%;
+  padding: 3px;
+  border-radius: 50%;
+  background-color: rgba(233, 70, 70, 0.3);;
+  rotate: 5deg;
+  /* border: 4px solid rgba(222, 141, 141, 0.055); */
+  box-shadow: 0 0 0 10px rgba(233, 70, 70, 0.3); /* outer ring */
+}
+
+.mobile-screen h4 {
+  color: #ff5252;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 10px;
+  word-wrap: break-word;
+  white-space: normal;
+  width: 100%;
+  max-width: 60%;
+  rotate: 8deg;
+  margin-top: 20px;
+}
+
+
+/* --------------------Scrolling Cards------------------*/
+.scrolling-cards {
+  width: 70%;
+  overflow: hidden;
+  position: relative;
+}
+
+.cards-track {
+  display: flex;
+  gap: 40px;
+  transition: transform 0.8s ease-in-out;
+  will-change: transform;
+}
+
+.slick-carousel {
+  display: flex;
+  gap: 40px;
+}
+
+.feature-card {
+  text-align: center;
+  opacity: 0.6;
+  transform: scale(0.95);
+  transition: all 0.5s ease;
+  border-radius: 24px;
+  padding: 20px;
+  height: 250px !important;
+  max-height: 100%;
+  background: rgba(22, 22, 22, 0.78);
+  border: 1px solid rgba(40, 40, 40, 1);
+  flex: 0 0 auto;
+  margin-left: 20px;
+  box-shadow: 1px -1px 1px rgb(250, 247, 247);
+
+}
+
+.feature-card.active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.feature-card img {
+  width: 80px;
+  margin: 0 auto 15px auto;
+  display: block;
+}
+
+.feature-card h4 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+  white-space: normal;
+  word-wrap: break-word;
+  text-align: center;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.feature-card.active {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.carousel-controls {
+  right: 120px;
+  display: flex;
+  gap: 20px;
+}
+
+.prev,
+.next {
+  background-color: #f24822;
+  width: 44px;
+  height: 44px;
+  margin-top: 20px;
+  border-radius: 50%;
+  gap: 20px;
+  color: #dddddd;
+  font-size: 25px;
+  text-align: center;
+  border: transparent;
+}
+
+
+/* Smooth scrolling */
+@keyframes scrollCards {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* footer text */
+.footertext {
+  font-size: 2rem !important;
+}
+/* ends here */
+
+/*-----------------------Responsive Design------------------------*/
+@media (max-width: 767px) {
+  h2 {
+    letter-spacing: 1px;
+  }
+
+  /* p {
+    text-align: justify;
+  } */
+
+  .hero-section-mobile {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 30px;
+    height: auto
+  }
+
+  .left-content {
+    margin-top: 40px;
+  }
+
+  .right-content {
+    margin-top: 60px;
+  }
+
+
+  .circle {
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .halfcard {
+    display: block;
+  }
+  .footertext {
+  font-size: 1.5rem !important;
+}
+}
+
+@media screen and (max-width: 576px) {
+  .hero-section-mobile {
+    padding: 20px;
+    height: auto;
+  }
+
+  .left-content h1 {
+    font-size: 2.15em;
+    text-align: center;
+  }
+
+  .btn-mob {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+  }
+
+  .mobile-img {
+    width: 30%;
+    max-height: 50%;
+  }
+
+  .circle1 {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .circle2 {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .circle3 {
+    width: 65vw;
+    height: 65vw;
+  }
+}
+
+
+
+/* ------mobile banking two card part ---------------- */
+
+@media (max-width: 992px) {
+  .mobile-banking-section {
+    flex-direction: column;
+    padding: 60px 30px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+  }
+
+  .tilted-mobile {
+    width: 100%;
+    height: 100%;
+    transform: rotate(25deg) translateY(60px);
+  }
+
+  .right-card {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .right-card h2 {
+    font-size: 26px;
+  }
+
+  .right-card p {
+    font-size: 0.8rem;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .mobile-banking-section {
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .mobile-left-card,
+  .right-card {
+    width: 48%;
+
+  }
+
+  .tilted-mobile {
+    width: 90%;
+    height: 80%;
+    left: 25%;
+    transform: translateY(0);
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .right-card {
+    padding: 40px 30px;
+  }
+
+  .right-card h2 {
+    font-size: 28px;
+  }
+
+  .right-card p {
+    font-size: 1.3rem;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+}
+
+/* ---------- Mobile / Small Screens ---------- */
+@media screen and (max-width: 767px) {
+  .mobile-banking-section {
+    flex-direction: column-reverse;
+    /* gap: 20px; */
+    padding: 30px 20px;
+    margin-top: 50px;
+    
+  }
+
+  .mobile-left-card,
+  .right-card {
+    width: 100%;
+    /* margin-bottom: 0px; */
+  }
+
+  .tilted-mobile {
+    width: 70%;
+    left: 0;
+    margin: 0 auto;
+    position: relative;
+    transform: translateY(0);
+  }
+  .mobile-left-card{
+  margin-top: 20px;
+  }
+  .right-card {
+    margin-top: 20px;
+    margin-bottom: 1px;
+  }
+
+  .right-card h2 {
+    font-size: 23px !important;
+  }
+
+  .right-card p {
+    font-size: 1.25rem !important;
+    text-align: justify;
+    text-justify: inter-word !important;
+    text-justify: inter-character !important;
+  }
+    .highlight{
+    font-size: 1.5rem !important;
+  }
+  .mobile-banking-wrapper {
+    margin-top: -100px !important;
+  }
+  .centertext{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* ---------- Extra Small Mobile ---------- */
+@media screen and (max-width: 576px) {
+  .mobile-banking-section {
+    padding: 10px;
+  }
+
+  .tilted-mobile {
+    width: 80%;
+  }
+
+  .right-card h2 {
+    font-size: 20px;
+
+  }
+
+  .right-card p {
+    font-size: 1rem !important;
+    text-align: left;
+    hyphens: none !important;
+    /* text-align: justify;
+    text-justify: inter-word !important;
+    text-justify: inter-character !important; */
+  }
+}
+
+/* Responsive for mobile and tablets */
+
+@media (max-width: 1024px) {
+  .mobile-banking-wrapper {
+    margin-top: 50px;
+  }
+
+  .why-mobile-banking1,
+  .why-mobile-banking2,
+  .why-mobile-banking3 {
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+
+  .why-card {
+    width: 70%;
+    margin-top: 0px;
+  }
+
+  .halfcard {
+    width: 40%;
+    height: 40%;
+  }
+
+  .halfright {
+    width: 55%;
+  }
+
+  .line {
+    /* margin-left: 15%;
+    width: 70%;
+    margin-top: -80px; */
+    display: none;
+  }
+
+  .icon,
+  .icon1,
+  .icon2,
+  .icon3 {
+    width: 80px;
+    top: 65%;
+    left: 65%;
+  }
+}
+
+/* Mobile (≤ 768px) */
+@media (max-width: 767px) {
+
+  #centertxt {
+    padding: 20px;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 1px;
+  }
+
+  .why-mobile-banking1,
+  .why-mobile-banking2,
+  .why-mobile-banking3 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    margin-top: 1px !important;
+  }
+
+  .why-mobile-banking2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .why-card {
+    width: 85%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .half-card {
+    /* width: fit-content; */
+    /* max-height: 400px; */
+    height: 100%;
+    align-items: bottom;
+            margin-bottom: -10px;
+  
+  }
+
+  .halfright {
+    width: 100%;
+    height: fit-content;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .rightCA {
+    text-align: center !important;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .icon,
+  .icon1,
+  .icon2,
+  .icon3 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 25%;
+    height: auto;
+    transform: none;
+    z-index: 3;
+  }
+  
+}
+
+
+/* Small Mobile (≤ 480px) */
+@media (max-width: 480px) {
+
+  .why-mobile-banking1,
+  .why-mobile-banking2,
+  .why-mobile-banking3 {
+    padding: 0px 10px;
+    /* gap: 40px; */
+  }
+
+  .why-card {
+    border-radius: 40px;
+    width: 100%;
+  }
+
+  .icon,
+  .icon1,
+  .icon2,
+  .icon3 {
+    width: 30%;
+    bottom: 8px;
+    right: 8px;
+  }
+}
+
+
+/* -------------------------------Carousel section-------------------------- */
+@media (max-width: 1024px) {
+  .marquee-container {
+    flex-direction: row;
+    width: 100%;
+  }
+  .mobile-banking-marquee {
+    padding: 20px;
+  }
+  .phone-frame {
+        min-width: 411px;
+        height: auto;
+        width: 100%;
+        margin-left: -30px;
+  }
+}  
+
+@media (max-width: 992px) {
+  .mobile-banking-marquee {
+    padding: 20px;
+  }
+
+  .marquee-container {
+    flex-direction: row;
+  }
+ .phone-frame {
+        min-width: 411px;
+        height: auto;
+        width: 100%;
+        margin-left: -40px;
+  }
+  .mobile-display {
+    width: 45%;
+    height: 460px;
+  }
+
+  .mobile-screen {
+    top: 6%;
+    left: 28%;
+    width: 50%;
+    height: 48%;
+  }
+
+  .scrolling-cards {
+    width: 55%;
+  }
+
+  .feature-card {
+    height: 220px !important;
+    padding: 16px;
+  }
+
+  .feature-card h4 {
+    font-size: 20px;
+    max-width: 160px;
+  }
+
+  .carousel-controls {
+    right: 60px;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  .mobile-banking-marquee {
+    padding: 50px 30px;
+  }
+
+  .marquee-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .mobile-display {
+    width: 45%;
+    height: 420px;
+    position: relative;
+  }
+
+  .phone-frame {
+        min-width: 300px;
+        min-height: 320px;
+        width: 100%;
+        height: 85%;
+        /* rotate: 5deg; */
+        margin-bottom: 20px;
+  }
+
+  .mobile-screen {
+    top: 8%;
+    left: 26%;
+    width: 55%;
+    height: 52%;
+    border-radius: 16px;
+  }
+
+  .mobile-screen img {
+    width: 60%;
+    max-width: 90px;
+    rotate: 5deg;
+    margin-left: 35px;
+  }
+
+  .mobile-screen h4 {
+    font-size: 15px;
+    line-height: 1.4;
+    max-width: 98%;
+    margin-left: 25px;
+    padding: 20px;
+    rotate: 5deg;
+  }
+
+  .scrolling-cards {
+    width: 55%;
+  }
+
+  .feature-card {
+    width: 85%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .feature-card h4 {
+    font-size: 18px;
+  }
+
+  .carousel-controls {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .prev, .next {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-banking-marquee {
+    padding: 40px 16px;
+  }
+
+  .marquee-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .mobile-display {
+    width: 80%;
+    height: 340px;
+  }
+
+  .phone-frame {
+    transform: rotate(2deg);
+  }
+
+  .mobile-screen {
+    top: 22%;
+    left: 16%;
+    width: 50%;
+    height: 48%;
+  }
+
+  .mobile-screen img {
+    width: 55%;
+    max-width: 70px;
+  }
+
+  .mobile-screen h4 {
+    font-size: 16px;
+    line-height: 1.3;
+    rotate: 10deg;
+    margin-top: 10px;
+  }
+
+  .scrolling-cards {
+    width: 100%;
+  }
+
+  .feature-card {
+    width: 90%;
+    height: auto;
+    padding: 14px;
+  }
+
+  .feature-card h4 {
+    font-size: 16px;
+  }
+
+  .prev, .next {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+  }
+ 
+}
+
+@media (max-width: 360px) {
+  .mobile-display {
+    height: 300px;
+  }
+
+  .mobile-screen h4 {
+    font-size: 12px;
+  }
+
+  .mobile-screen img {
+    width: 40%;
+  }
+     .phone-frame {
+    width: 100%;
+    height: auto;
+    left: 50%;
+  }
+}

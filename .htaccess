@@ -1,0 +1,48 @@
+Options -Indexes
+RewriteEngine On
+
+# ── SEO fixes: dead blog posts -> live posts (5 Sept 2026) ──────────────
+RewriteRule ^blog1\.html$ https://secureedgefintech.com/cashless-india-fintech-tier-2-3.html [R=301,L]
+RewriteRule ^blog2\.html$ https://secureedgefintech.com/india-us-fintech-trade-impact.html [R=301,L]
+RewriteRule ^blog3\.html$ https://secureedgefintech.com/indian-financial-literacy-fintech-solution.html [R=301,L]
+RewriteRule ^blog4\.html$ https://secureedgefintech.com/sebi-research-certification-rule-india.html [R=301,L]
+RewriteRule ^blog5\.html$ https://secureedgefintech.com/india-upi-global-cross-border-payments.html [R=301,L]
+RewriteRule ^blog6\.html$ https://secureedgefintech.com/fintech-ai-reshaping-financial-services.html [R=301,L]
+
+# ── SEO fix: dead tracking link (indexed, has a space in the path) ──────
+RewriteRule ^channel_link/secureedge\ link/index\.html$ https://secureedgefintech.com/blogpage.html [R=301,L]
+
+# ── SEO fix: removed blog posts (not aligned with product focus, 5 Sept 2026) ──
+RewriteRule ^aeps-business-commission-setup-cost-guide-india\.html$ https://secureedgefintech.com/blogpage.html [R=301,L]
+RewriteRule ^how-to-become-aeps-agent-retailer-setup-guide\.html$ https://secureedgefintech.com/blogpage.html [R=301,L]
+
+# ── Remove .php extension (direct access blocked) ──────────────────────
+# Block direct access to .php files — force clean URLs
+RewriteCond %{THE_REQUEST} ^[A-Z]+\s/[^?]*\.php [NC]
+RewriteRule ^(.+)\.php$ /$1 [R=301,L]
+
+# ── Public routes ───────────────────────────────────────────────────────
+RewriteRule ^career$              career.php           [L]
+
+# ── HR portal routes ────────────────────────────────────────────────────
+RewriteRule ^hr/login$            hr_login.php         [L]
+RewriteRule ^hr/dashboard$        hr_dashboard.php     [L]
+RewriteRule ^hr/logout$           hr_logout.php        [L]
+
+# ── Internal API handlers (POST targets — not user-facing) ─────────────
+RewriteRule ^submit-career$       submit_career.php    [L]
+RewriteRule ^job-action$          job_action.php       [L]
+RewriteRule ^update-status$       update_status.php    [L]
+RewriteRule ^delete-application$  delete_application.php [L]
+RewriteRule ^fetch-applications$  fetch_applications.php [QSA,L]
+
+# ── Resume viewer/downloader ────────────────────────────────────────────
+# resume/view?file=name.pdf  →  resume_action.php?action=view&file=name.pdf
+# resume/download?file=name.pdf  →  resume_action.php?action=download&file=name.pdf
+RewriteRule ^resume/(.+)$         resume_action.php?action=$1 [QSA,L]
+
+# ── Block direct access to sensitive files ──────────────────────────────
+RewriteRule ^hr_auth\.php$        - [F,L]
+RewriteRule ^db_connect\.php$     - [F,L]
+RewriteRule ^career_db\.sql$      - [F,L]
+RewriteRule ^\.htaccess$          - [F,L]

@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="612.588" height="495.006" viewBox="0 0 612.588 495.006" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="grid" d="M61.3388 0.1V494.906M122.578 0.1V494.906M183.817 0.1V494.906M245.055 0.1V494.906M306.294 0.1V494.906M367.533 0.1V494.906M428.772 0.1V494.906M490.011 0.1V494.906M551.25 0.1V494.906M0.1 49.5806H612.488M0.1 99.0612H612.488M0.1 148.542H612.488M0.1 198.022H612.488M0.1 247.503H612.488M0.1 296.983H612.488M0.1 346.464H612.488M0.1 395.945H612.488M0.1 445.425H612.488M0.1 0.1V494.906H612.488V0.1H0.1Z" stroke-width="0.2" stroke="url(#paint0_linear_0_317)"/>
+<defs>
+<linearGradient id="paint0_linear_0_317" x1="306.294" y1="0.1" x2="306.294" y2="494.906" gradientUnits="userSpaceOnUse">
+<stop offset="0.0273854" stop-color="#0D0D0D"/>
+<stop offset="0.525113" stop-color="#999999"/>
+<stop offset="0.882664" stop-color="#131313"/>
+</linearGradient>
+</defs>
+</svg>
